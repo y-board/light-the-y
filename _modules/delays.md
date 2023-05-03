@@ -6,3 +6,7 @@ short_title: Delays
 number: 2
 order: 2
 ---
+
+
+- Make speaker buzz?
+- Delay(Ms)

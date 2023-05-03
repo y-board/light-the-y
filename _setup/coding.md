@@ -8,3 +8,8 @@ icon: fa-solid fa-code
 ---
 
 
+- statements and semicolons
+- sequential execution
+- comments 
+- functions + curly braces
+- #defined values
