@@ -26,25 +26,25 @@
 
         </div>
 
-        <div class="sidebar-heading">Setup</div>
+        <div class="sidebar-heading">Instructions</div>
         <div class="list-group list-group-flush">
             {% for item in site.setup %}
             <a href="{% link {{ item.path }} %}"
-                class="list-item-narrow list-group-item list-group-item-action bg-light sidebar-item">
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
                 {% for i in (1..{{item.indent}}) %}&emsp;{% endfor %}
-
+                <i class="fa {{item.icon}}"></i>
                 {{ item.short_title | default: item.title }}
 
             </a>
             {% endfor %}
         </div>
 
-        {% assign labs_sorted = site.labs | sort : "order" %}
-        <div class="sidebar-heading">Labs</div>
+        {% assign labs_sorted = site.modules | sort : "order" %}
+        <div class="sidebar-heading">Modules</div>
         <div class="list-group list-group-flush">
             {% for item in labs_sorted %}
             <a href="{% link {{ item.path }} %}"
-                class="list-item-normal list-group-item list-group-item-action bg-light sidebar-item">
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
                 <span class="badge badge-pill badge-dark-grey">{{ item.number }}</span>
                 {% for i in (1..{{item.indent}}) %}&emsp;{% endfor %}
 
@@ -54,7 +54,7 @@
             {% endfor %}
         </div>
 
-        <div class="sidebar-heading">Documentation</div>
+        <!-- <div class="sidebar-heading">Documentation</div>
         <div class="list-group list-group-flush">
             {% for item in site.documentation %}
             <a href="{% link {{ item.path }} %}"
@@ -78,6 +78,6 @@
 
             </a>
             {% endfor %}
-        </div>
+        </div> -->
     </div>
 </div>

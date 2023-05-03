@@ -13,14 +13,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "BYU Stem Camp Y-Board"
-short_title: Y-Board
+title: "BYU Stem Camp Y-Badge"
+short_title: Y-Badge
 # class_number: ECEN 330
 email: jgoeders@byu.edu
-baseurl: "/y-board"
+baseurl: "/y-badge"
 url: "https://byu-cpe.github.io"
 github:
-  url: https://github.com/byu-cpe/y-board
+  url: https://github.com/byu-cpe/y-badge
   # fileurl: https://github.com/byu-cpe/ecen330_student/blob/main
 
 show_construction_message: false
@@ -35,7 +35,7 @@ collections:
     output: true
     permalink: /:collection/:name/
     sort_by: number
-  labs:
+  modules:
     output: true
     permalink: /:collection/:name/
   documentation:
