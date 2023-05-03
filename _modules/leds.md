@@ -11,7 +11,7 @@ order: 1
 
 There are 20 LEDs on the Y-badge circuit board.  
 * Each LED is labelled LED1 to LED20
-* Each of these LEDs are RGB (red-green-blue) LEDs, meaning that they are made up of three smaller red, green and blue lights.  For each LED, you can set the brightness of the red, green and blue lights individually, making the LED appear to be any color you like.
+* Each of these LEDs are RGB (red-green-blue) LEDs, meaning that they are actually three smaller red, green and blue LEDs packaged together.  For each LED, you can set the brightness of the red, green and blue lights individually, making the LED appear to be any color you like.
 
 <p align="middle">
 <img src="{% link media/led_zoomed.png %}" width="32%">
