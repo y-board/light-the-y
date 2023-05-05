@@ -7,7 +7,7 @@ number: 2
 icon: fa-solid fa-code
 ---
 
-### Statements
+## Statements
 
 Computer programs are made by writing a sequence of commands for the computer to execute.  These commands are called <u>instructions</u> or <u>statements</u>.
 
@@ -19,12 +19,12 @@ The computer processing chip (called a *microcontroller*) executes these instruc
 
 **Important:** See how each statement ends with a semicolon?  This is <u>required</u> to indicate the end of a statement.  DON'T FORGET TO ADD THESE OR YOUR CODE WON'T RUN!
 
-### Comments
+## Comments
 - What are comments
 
-### Functions and Braces
+## Functions and Braces
 - What are functions
 - Diagram of a function call
 
-### Giving Names to Numbers
+## Giving Names to Numbers
 - #defined values

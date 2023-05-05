@@ -2,7 +2,7 @@
 layout: lab
 toc: false
 title: "Module 1: LEDs"
-short_title: LEDs and Functions
+short_title: LEDs
 number: 1
 order: 1
 ---
