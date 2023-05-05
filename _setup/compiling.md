@@ -1,7 +1,7 @@
 ---
 layout: page
 toc: false
-title: "Compiling and Running"
+title: "Running Code"
 indent: 0
 number: 2
 icon: fa-solid fa-person-running
