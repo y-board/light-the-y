@@ -64,10 +64,11 @@ leds_set_color(15, 0, 0, 0);
 ## Challenges
 
 1. Turn on LED5 as red. Wait 2 seconds and then turn it off and immediately turn on LED6 as red. Wait 2 seconds and move the red light to LED7, then LED8 and then LED9.
+<img src="{% link media/delay_challenge_1.gif %}" width="32%" hspace="5%">
 
 1. Repeat the previous challenge, but change the code so that the red light moves faster as it goes.  Start with 2 seconds for the first move, and then for each move, use half as much delay as the last move.  How long is your final delay?
+<img src="{% link media/delay_challenge_2.gif %}" width="32%" hspace="5%">
 
 1. Make LED1 and LED2 blink 5 times but at different rates.  LED1 should blink once per second and LED2 should blink once every 2 seconds. Pick any color you would like for the LEDs.
-
-<!-- TODO: Add GIF -->
+<img src="{% link media/delay_challenge_3.gif %}" width="32%" hspace="5%">
 
