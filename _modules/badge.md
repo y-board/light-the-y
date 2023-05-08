@@ -3,6 +3,6 @@ layout: lab
 toc: false
 title: "Module 7: Create Your Badge"
 short_title: Create Your Badge
-number: 7
+icon: fa-kit fa-y-badge
 order: 7
 ---

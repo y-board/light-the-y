@@ -3,7 +3,7 @@ layout: lab
 toc: false
 title: "Module 2: Delays"
 short_title: Delays
-number: 2
+icon: fa-solid fa-stopwatch
 order: 2
 ---
 

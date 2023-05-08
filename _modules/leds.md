@@ -3,7 +3,7 @@ layout: lab
 toc: false
 title: "Module 1: LEDs"
 short_title: LEDs
-number: 1
+icon: fa-solid fa-lightbulb
 order: 1
 ---
 
