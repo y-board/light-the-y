@@ -14,9 +14,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: "BYU Stem Camp Y-Badge"
-short_title: Y-Badge
+short_title: <i class="fa-kit fa-y-badge fa-xl"></i>-Badge
 # class_number: ECEN 330
 email: jgoeders@byu.edu
+host: localhost
 baseurl: "/y-badge"
 url: "https://byu-cpe.github.io"
 github:
