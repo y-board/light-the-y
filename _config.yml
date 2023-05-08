@@ -17,6 +17,7 @@ title: "BYU Stem Camp Y-Badge"
 short_title: Y-Badge
 # class_number: ECEN 330
 email: jgoeders@byu.edu
+host: localhost
 baseurl: "/y-badge"
 url: "https://byu-cpe.github.io"
 github:
