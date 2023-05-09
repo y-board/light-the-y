@@ -34,37 +34,14 @@ Comments are also used to add personal messages to your code.  This is done to h
 The editor will automatically comment or uncomment code for you if you put your cursor on the line and press `Ctrl + /`
 
 ## Functions and Braces
+Sometimes it is helpful to group together code statements into blocks of code that you can run in one easy step.  Grouping the statements together is like creating a *recipe* of directions.  This is called a **function**.
 
-Functions are reusable pieces of code that perform a specified task. Just like mathematical functions, they take zero or more inputs and provide a single output. There are a few good reasons to use lots of functions in your code: 
+The code below shows two different functions (*turnOnLEDs* and *turnOffLEDs*) that turn on or off the first three LEDs.  Functions start with an open brace `{` and end with a close brace `}`.  All of the instructions within the braces make up the recipe of the function.
 
-1. If you find that certain parts of your code are repetitive, you can group the redundant code into its own function and reuse that function instead of typing everything out by hand every time. A good rule of thumb is that if you reuse it more than once, you should make it into a function.
+<img src="{% link media/functions.png %}" hspace="5%" width="500">
 
-1. Functions help make it more clear what you are doing, if you use good *naming conventions*:
-    - Function names should be verbs (that is, they should be named after actions, not things... for example `runTests` or `turnOnLight` are good function names but `ledBrightness` or `kevin` are not)
-    - Function names use camelCase, where the first letter is lowercase, all the words are put together (no spaces), and every newWordIsACapitalLetter
+You can run the function recipe by **calling** a function.  This is done by writing a statement with the function name followed by parenthesis `()`. In the above code, the statements at <span style="color:green">**1**</span> and <span style="color:green">**5**</span> run the `turnOnLEDs` function to turn on the three LEDs.  The statement at <span style="color:red">**3**</span> runs the `turnOffLEDs` function to turn off the three LEDs. 
 
-There are several parts of a function **declaration**:
+Using functions helps us organize our code to make it easier to understand.  It also allows us to *reuse* code, by calling the same recipe of instructions multiple times.  
 
-1. The **function signature** which itself has a couple of parts:
-
-    - The function **return type**. This can be void (no return type), int (a whole number), double (a decimal number), char (a single alphabetical character), or many others
-    - The function **name** in camelCase
-    - The function **parameters**, all enclosed in parenthesis, each with a type and a name \
-<img src="{% link media/method_signatures.png %}">
-
-1. The function body, enclosed in `{curly braces}`
-
-    - Each statement in a function should end in a semi-colon and be on it's own line
-    - The function should end with a `return` statement, that includes the variable to return (if the function has a void return type, then no variable should be returned) \
-<img src="{% link media/function_body.png %}">
-
-This is what complete function declarations look like. Notice one with a `void` return type (no return statement) and one with an `int` return type. Why can we return `int` instead of `double`? Will we ever return a decimal number? (Hint: look at the parameter types)
-
-<img src="{% link media/two_functions.png %}">
-
-Every program should have an `int main()` function. This function is special, because it is called automatically by the computer every time your program runs. It has an `int` return type, and typically returns 0 if the program runs successfully, or some other number if it runs into an undesired **error state**.
-
-We can call functions inside of other functions! All we do is type the function name, provide any necessary parameters in parenthesis (or parenthesis with nothing between them if there are no parameters) and a semi-colon. We can also assign the value a function returns to variables:
-
-<img src="{% link media/main_function_with_calls.png %}">
 
