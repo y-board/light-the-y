@@ -29,9 +29,10 @@ Compiling and uploading can fail for many reasons. For example:
 <p align="center">
 <img src="{% link media/semicolon_error.png %}" width="900" vspace="20px"></p>
 
-In the above example, I forgot the semi-colon after my 2<sup>nd</sup> call to the `leds_set_color()` function. Luckily, the compiler is smart. The error message it provides will tell you what the problem is (`expected ';' before the next statement`) and where the problem is: `src/main.cpp:151:30` tells us that the problem is in the *main.cpp* file, line 151, the 30<sup>th</sup> character. Notice that there is a red squiggle in my code where the error is too.
+In the above example, the second `leds_set_color()` statement is missing a semicolon at the end.  Fortunately, the compiler detects this and provides a helpful error message. 
+The red error message in compiler log states: "<span style="color:red">src/main.cpp:151:30: expected ';' before 'leds_set_color'</span>".  The <span style="color:red">src/main.cpp</span> indicates that the problem is in the *main.cpp* file, and the <span style="color:red">151:30</span> means that the problem is on line number 151, and the 30<sup>th</sup> character. Notice that there is a red squiggle in the code where the error is too.
 
-Another common error you might run into is when you misspell a function or variable name. *COMPILERS ARE CASE SENSITIVE!!!* Even if you just have a single character capitalized incorrectly, it will cause an error. Two of the calls to `leds_set_color()` have mistakes. One is missing an 's' and one has a capitalized 's' that should be lower-case. Can you spot them?
+Another common error you might run into is when you misspell a function or variable name.  Function names must be spelled perfectly to compile correctly. Code is also case-sensitive, so capitalization matters! The code below has two errors, although they are easy to miss. One `leds_set_color()` statement is missing an 's' and one has a capitalized 's' that should be lower-case. Can you spot them?
 
 <p align="center">
 <img src="{% link media/mistyped_function_error.png %}" width="900" vspace="20px"></p>
