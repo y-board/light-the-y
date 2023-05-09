@@ -20,11 +20,51 @@ The computer processing chip (called a *microcontroller*) executes these instruc
 **Important:** See how each statement ends with a semicolon?  This is <u>required</u> to indicate the end of a statement.  DON'T FORGET TO ADD THESE OR YOUR CODE WON'T RUN!
 
 ## Comments
-- What are comments
+
+Comments are an important part of any good program. They let other people who might work with your code now and in the future know what's going on without having to decipher all your code. Try to keep comments brief, but make sure you include them; it's a balance! A good rule of thumb is to explain *why* something in your code is necessary (if it's not already obvious) instead of explaining *how* it works.
+
+To write a single line comment, use double slashes before your comment:
+
+<img src="{% link media/single_line_comment.png %}">
+
+To write a multi-line comment, use a `/*` to start, a `*` on every new line, and a `*/` to end:
+
+<img src="{% link media/multi_line_comment.png %}">
+
+VS Code will automatically comment or uncomment code for you if you highlight it and press `Ctrl + /`
 
 ## Functions and Braces
-- What are functions
-- Diagram of a function call
 
-## Giving Names to Numbers
-- #defined values
+Functions are reusable pieces of code that perform a specified task. Just like mathematical functions, they take zero or more inputs and provide a single output. There are a few good reasons to use lots of functions in your code: 
+
+1. If you find that certain parts of your code are repetitive, you can group the redundant code into it's own function and reuse that function instead of typing everything out by hand every time. A good rule of thumb is that if you reuse it more than once, you should make it into a function.
+
+1. Functions help make it more clear what you are doing, if you use good *naming conventions*:
+    - Function names should be verbs (that is, they should be named after actions, not things... for example `runTests` or `turnOnLight` are good function names but `ledBrightness` or `kevin` are not)
+    - Function names use camelCase, where the first letter is lowercase, all the words are put together (no spaces), and every newWordIsACapitalLetter
+
+There are several parts of a function call:
+
+1. The **function signature** which itself has a couple of parts:
+
+    - The function **return type**. This can be void (no return type), int (a whole number), double (a decimal number), char (a single alphabetical character), or many others
+    - The function **name** in camelCase
+    - The function **parameters**, all enclosed in parenthesis, each with a type and a name \
+<img src="{% link media/method_signatures.png %}">
+
+1. The function body, enclosed in `{curly braces}`
+
+    - Each statement in a function should end in a semi-colon and be on it's own line
+    - The function should end with a `return` statement, that includes the variable to return (if the function has a void return type, then no variable should be returned) \
+<img src="{% link media/function_body.png %}">
+
+This is what complete functions look like. Notice one with a `void` return type (no return statement) and one with an `int` return type. Why can we return `int` instead of `double`? Will we ever return a decimal number? (Hint: look at the parameter types)
+
+<img src="{% link media/two_functions.png %}">
+
+Every program should have an `int main()` function. This function is special, because it is called automatically by the computer every time your program runs. It has an `int` return type, and typically returns 0 if the program runs successfully, or some other number if it runs into an undesired **error state**.
+
+We can call functions inside of other functions!
+
+<img src="{% link media/main_function_with_calls.png %}">
+
