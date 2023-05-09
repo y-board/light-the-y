@@ -29,6 +29,8 @@ icon: fa-solid fa-computer
 **Clone from the Terminal**
 
 1. Open a new instance of the "Terminal" application
+    - Press the Windows key
+    - Type `terminal` and press enter
 
 1. Type `git clone https://github.com/byu-cpe/y-badge-code.git` and press enter
 
@@ -37,6 +39,8 @@ icon: fa-solid fa-computer
 **Clone from VS Code**
 
 1. Open VS Code 
+    - Press the `Windows` key
+    - Type `code` and press enter
 
 1. Click the "Source Control" button on the left toolbar
 
