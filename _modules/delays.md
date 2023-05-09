@@ -71,7 +71,7 @@ leds_set_color(15, 0, 0, 0);
 
     <img src="{% link media/delay_challenge_2.gif %}" width="400" hspace="5%" vspace="10px">
 
-1. Make LED1 and LED2 blink 5 times but at different rates.  LED1 should blink once per second and LED2 should blink once every 2 seconds. Pick any color you would like for the LEDs.
+1. Make LED1 and LED2 blink for 5 seconds but at different rates.  LED1 should blink once per second and LED2 should blink once every 2 seconds. Pick any color you would like for the LEDs.
 
     <img src="{% link media/delay_challenge_3.gif %}" width="400" hspace="5%" vspace="10px">
 
