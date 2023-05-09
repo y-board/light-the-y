@@ -20,18 +20,18 @@ The computer processing chip (called a *microcontroller*) executes these instruc
 **Important:** See how each statement ends with a semicolon?  This is <u>required</u> to indicate the end of a statement.  DON'T FORGET TO ADD THESE OR YOUR CODE WON'T RUN!
 
 ## Comments
+Sometimes we want to tell the computer to ignore certain statements.  We can do this by adding `//` in front of any lines of code we want to disable.  
 
-Comments are an important part of any good program. They let other people who might work with your code now and in the future know what's going on without having to decipher all your code. Try to keep comments brief, but make sure you include them; it's a balance! A good rule of thumb is to explain *why* something in your code is necessary (if it's not already obvious) instead of explaining *how* it works.
+For example in the code below, we comment out the second statement so that now only LED1 and LED17 turns on (and LED13 does not).  The editor helps you remember that this code is commented out by turning it green.
 
-To write a single line comment, use double slashes before your comment:
+<img src="{% link media/comments1.png %}">
 
-<img src="{% link media/single_line_comment.png %}">
+Comments are also used to add personal messages to your code.  This is done to help you remember what your code is supposed to do.  It also helps others who look at your code to understand it.  Here is an example:
 
-To write a multi-line comment, use a `/*` to start, a `*` on every new line, and a `*/` to end:
+<img src="{% link media/comments2.png %}">
 
-<img src="{% link media/multi_line_comment.png %}">
 
-VS Code will automatically comment or uncomment code for you if you highlight it and press `Ctrl + /`
+The editor will automatically comment or uncomment code for you if you put your cursor on the light and press `Ctrl + /`
 
 ## Functions and Braces
 
