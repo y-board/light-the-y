@@ -44,10 +44,10 @@ icon: fa-solid fa-computer
 
 1. Click "Clone Repository"
 
-1. Enter the url "https://github.com/byu-cpe/y-badge-code.git" and click "Clone from URL"
+1. Enter the url "https://github.com/byu-cpe/y-badge-code.git" and click "Clone from URL" \
 <img src="{% link media/vscode_gui_clone.png %}">
 
-1. A window will open and ask you to select the destination folder. Make sure you click "Home" on the left hand side of the window, then click the green "Select as Repository Destination" button
+1. A window will open and ask you to select the destination folder. Make sure you click "Home" on the left hand side of the window, then click the green "Select as Repository Destination" button \
 <img src="{% link media/select_destination_folder.png %}">
 
 1. When asked if you want to open the project, click "Open"
