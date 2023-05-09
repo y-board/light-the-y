@@ -59,11 +59,11 @@ leds_set_color(15, 255, 255, 0);
 
 ## Challenges
 1. Turn on LEDs 1, 13, and 17. Make them 3 different colors. \
-<img src="{% link media/led_challenge_1.png %}" width="32%" hspace="5%">
+<img src="{% link media/led_challenge_1.jpg %}" width="32%" hspace="5%">
 
 1. Make one of the LEDs orange. \
-<img src="{% link media/led_challenge_2.png %}" width="32%" hspace="5%">
+<img src="{% link media/led_challenge_2.jpg %}" width="32%" hspace="5%">
 
 1. Turn on all of the LEDs with a progression between colors, starting with pure red and going to pure blue. \
-<img src="{% link media/led_challenge_3.png %}" width="32%" hspace="5%">
+<img src="{% link media/led_challenge_3.jpg %}" width="32%" hspace="5%">
 
