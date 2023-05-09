@@ -10,6 +10,8 @@ icon: fa-solid fa-computer
 ## Install VS Code
 
 1. Open the "Ubuntu Software" Application
+    - Press the `Windows` key
+    - Type `ubuntu software` and press `Enter`
 
 1. Search for "Visual Studio Code" and install the application shown here:
     <img src="{% link media/vs_code_appstore.png %}" width="800" vspace="10px">
@@ -29,14 +31,18 @@ icon: fa-solid fa-computer
 **Clone from the Terminal**
 
 1. Open a new instance of the "Terminal" application
+    - Press the `Windows` key
+    - Type `terminal` and press `Enter`
 
-1. Type `git clone https://github.com/byu-cpe/y-badge-code.git` and press enter
+1. Type `git clone https://github.com/byu-cpe/y-badge-code.git` and press `Enter`
 
-1. Type `code y-badge-code` and press enter
+1. Type `code y-badge-code` and press `Enter`
 
 **Clone from VS Code**
 
 1. Open VS Code 
+    - Press the `Windows` key
+    - Type `code` and press `Enter`
 
 1. Click the "Source Control" button on the left toolbar
 

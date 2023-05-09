@@ -37,13 +37,13 @@ VS Code will automatically comment or uncomment code for you if you highlight it
 
 Functions are reusable pieces of code that perform a specified task. Just like mathematical functions, they take zero or more inputs and provide a single output. There are a few good reasons to use lots of functions in your code: 
 
-1. If you find that certain parts of your code are repetitive, you can group the redundant code into it's own function and reuse that function instead of typing everything out by hand every time. A good rule of thumb is that if you reuse it more than once, you should make it into a function.
+1. If you find that certain parts of your code are repetitive, you can group the redundant code into its own function and reuse that function instead of typing everything out by hand every time. A good rule of thumb is that if you reuse it more than once, you should make it into a function.
 
 1. Functions help make it more clear what you are doing, if you use good *naming conventions*:
     - Function names should be verbs (that is, they should be named after actions, not things... for example `runTests` or `turnOnLight` are good function names but `ledBrightness` or `kevin` are not)
     - Function names use camelCase, where the first letter is lowercase, all the words are put together (no spaces), and every newWordIsACapitalLetter
 
-There are several parts of a function call:
+There are several parts of a function **declaration**:
 
 1. The **function signature** which itself has a couple of parts:
 
@@ -58,13 +58,13 @@ There are several parts of a function call:
     - The function should end with a `return` statement, that includes the variable to return (if the function has a void return type, then no variable should be returned) \
 <img src="{% link media/function_body.png %}">
 
-This is what complete functions look like. Notice one with a `void` return type (no return statement) and one with an `int` return type. Why can we return `int` instead of `double`? Will we ever return a decimal number? (Hint: look at the parameter types)
+This is what complete function declarations look like. Notice one with a `void` return type (no return statement) and one with an `int` return type. Why can we return `int` instead of `double`? Will we ever return a decimal number? (Hint: look at the parameter types)
 
 <img src="{% link media/two_functions.png %}">
 
 Every program should have an `int main()` function. This function is special, because it is called automatically by the computer every time your program runs. It has an `int` return type, and typically returns 0 if the program runs successfully, or some other number if it runs into an undesired **error state**.
 
-We can call functions inside of other functions!
+We can call functions inside of other functions! All we do is type the function name, provide any necessary parameters in parenthesis (or parenthesis with nothing between them if there are no parameters) and a semi-colon. We can also assign the value a function returns to variables:
 
 <img src="{% link media/main_function_with_calls.png %}">
 
