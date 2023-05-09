@@ -31,7 +31,7 @@ Comments are also used to add personal messages to your code.  This is done to h
 <img src="{% link media/comments2.png %}">
 
 
-The editor will automatically comment or uncomment code for you if you put your cursor on the light and press `Ctrl + /`
+The editor will automatically comment or uncomment code for you if you put your cursor on the line and press `Ctrl + /`
 
 ## Functions and Braces
 
