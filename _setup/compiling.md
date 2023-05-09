@@ -29,9 +29,9 @@ Compiling and uploading can fail for many reasons. For example:
 <p align="center">
 <img src="{% link media/semicolon_error.png %}" width="900" vspace="20px"></p>
 
-In the above example, I forgot the semi-colon after my call to the `ex7()` function. Luckily, the compiler is smart. The error message it provides will tell you what the problem is (`expected ';' before the next statement`) and where the problem is: `src/main.cpp:151:8` tells us that the problem is in the *main.cpp* file, line 151, the 8th character. Notice that there is a red squiggle in my code where the error is too.
+In the above example, I forgot the semi-colon after my 2<sup>nd</sup> call to the `leds_set_color()` function. Luckily, the compiler is smart. The error message it provides will tell you what the problem is (`expected ';' before the next statement`) and where the problem is: `src/main.cpp:151:30` tells us that the problem is in the *main.cpp* file, line 151, the 30<sup>th</sup> character. Notice that there is a red squiggle in my code where the error is too.
 
-Another common error you might run into is when you misspell a function or variable name. *COMPILERS ARE CASE SENSITIVE!!!* Even if you just have a single character capitalized incorrectly, it will cause an error:
+Another common error you might run into is when you misspell a function or variable name. *COMPILERS ARE CASE SENSITIVE!!!* Even if you just have a single character capitalized incorrectly, it will cause an error. Two of the calls to `leds_set_color()` have mistakes. One is missing an 's' and one has a capitalized 's' that should be lower-case. Can you spot them?
 
 <p align="center">
 <img src="{% link media/mistyped_function_error.png %}" width="900" vspace="20px"></p>
