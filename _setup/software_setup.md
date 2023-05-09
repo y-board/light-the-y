@@ -11,18 +11,18 @@ icon: fa-solid fa-computer
 
 1. Open the "Ubuntu Software" Application
 
-1. Search for "Visual Studio Code" and install the application that looks like the one outlined in red:
-<img src="{% link media/vs_code_appstore.png %}">
+1. Search for "Visual Studio Code" and install the application shown here:
+    <img src="{% link media/vs_code_appstore.png %}" width="800" vspace="10px">
 
-1. Once VS Code is done installing, launch it
+1. Once VS Code is done installing, launch it.
 
 ## Install PlatformIO Extension
 
 1. Within VS Code, click the "Extensions" button on the left toolbar:
-<img src="{% link media/extensions_button_vscode.png %}">
+    <img src="{% link media/extensions_button_vscode.png %}" width="800" vspace="10px">
 
 1. Search for "Platform IO" and install the one that looks like this:
-<img src="{% link media/platformio_extension.png %}">
+<img src="{% link media/platformio_extension.png %}" width="800" vspace="10px">
 
 ## Clone GitHub Repository
 
@@ -32,9 +32,7 @@ icon: fa-solid fa-computer
 
 1. Type `git clone https://github.com/byu-cpe/y-badge-code.git` and press enter
 
-1. Type `cd y-badge-code` and press enter
-
-1. Type `code .` and press enter to launch the project in VS Code
+1. Type `code y-badge-code` and press enter
 
 **Clone from VS Code**
 
@@ -44,11 +42,11 @@ icon: fa-solid fa-computer
 
 1. Click "Clone Repository"
 
-1. Enter the url "https://github.com/byu-cpe/y-badge-code.git" and click "Clone from URL" \
-<img src="{% link media/vscode_gui_clone.png %}">
+1. Enter the url `https://github.com/byu-cpe/y-badge-code.git` and click "Clone from URL" \
+<img src="{% link media/vscode_gui_clone.png %}" width="800" vspace="10px">
 
 1. A window will open and ask you to select the destination folder. Make sure you click "Home" on the left hand side of the window, then click the green "Select as Repository Destination" button \
-<img src="{% link media/select_destination_folder.png %}">
+<img src="{% link media/select_destination_folder.png %}" width="800" vspace="10px">
 
 1. When asked if you want to open the project, click "Open"
 
