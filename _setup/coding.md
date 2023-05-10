@@ -9,7 +9,7 @@ icon: fa-solid fa-code
 
 ## Statements
 
-Computer programs are made by writing a sequence of commands for the computer to execute.  These commands are called <u>instructions</u> or <u>statements</u>.
+Computer programs are made by writing a sequence of commands for the computer to execute.  These commands are called *instructions* or *statements*.
 
 <img src="{% link media/code.png %}">
 
@@ -17,10 +17,10 @@ The computer processing chip (called a *microcontroller*) executes these instruc
 
 <img src="{% link media/semicolons.png %}">
 
-**Important:** See how each statement ends with a semicolon?  This is <u>required</u> to indicate the end of a statement.  DON'T FORGET TO ADD THESE OR YOUR CODE WON'T RUN!
+**Important:** See how each statement ends with a semicolon?  This is *required* to indicate the end of a statement.  DON'T FORGET TO ADD THESE OR YOUR CODE WON'T RUN!
 
 ## Comments
-Sometimes we want to tell the computer to ignore certain statements.  We can do this by adding `//` in front of any lines of code we want to disable.  
+Sometimes we want to tell the computer to ignore certain statements.  We can do this by adding `//` in front of any lines of code we want to disable. This is called a **comment**. 
 
 For example in the code below, we comment out the second statement so that now only LED1 and LED17 turns on (and LED13 does not).  The editor helps you remember that this code is commented out by turning it green.
 
@@ -36,7 +36,7 @@ The editor will automatically comment or uncomment code for you if you put your 
 ## Functions and Braces
 Sometimes it is helpful to group together code statements into blocks of code that you can run in one easy step.  Grouping the statements together is like creating a *recipe* of directions.  This is called a **function**.
 
-The code below shows two different functions (*turnOnLEDs* and *turnOffLEDs*) that turn on or off the first three LEDs.  Functions start with an open brace `{` and end with a close brace `}`.  All of the instructions within the braces make up the recipe of the function.
+The code below shows two different functions (`turnOnLEDs` and `turnOffLEDs`) that turn on or off the first three LEDs.  Functions start with an open brace `{` and end with a close brace `}`.  All of the instructions within the braces make up the recipe of the function.
 
 <img src="{% link media/functions.png %}" hspace="5%" width="500">
 
