@@ -9,7 +9,7 @@ icon: fa-solid fa-code
 
 ## Statements
 
-Computer programs are made by writing a sequence of commands for the computer to execute.  These commands are called <u>instructions</u> or <u>statements</u>.
+Computer programs are made by writing a sequence of commands for the computer to execute.  These commands are called *instructions* or *statements*.
 
 <img src="{% link media/code.png %}">
 
@@ -17,7 +17,7 @@ The computer processing chip (called a *microcontroller*) executes these instruc
 
 <img src="{% link media/semicolons.png %}">
 
-**Important:** See how each statement ends with a semicolon?  This is <u>required</u> to indicate the end of a statement.  DON'T FORGET TO ADD THESE OR YOUR CODE WON'T RUN!
+**Important:** See how each statement ends with a semicolon?  This is *required* to indicate the end of a statement.  DON'T FORGET TO ADD THESE OR YOUR CODE WON'T RUN!
 
 ## Comments
 Sometimes we want to tell the computer to ignore certain statements.  We can do this by adding `//` in front of any lines of code we want to disable.  
