@@ -56,6 +56,13 @@ leds_set_color(15, 0, 0, 0);
 ```
 
 ## Exploration
+
+> 📝 **_NOTE:_** You will need to go to `main.cpp` and change the comments to call the correct activity function:
+```c
+// led_activity();
+delay_activity();
+```
+
 1. Change some of your previous code and add `delay` statements.  How does the behavior change?
 
 1. Can you make an LED blink slowly?  Quickly?  
