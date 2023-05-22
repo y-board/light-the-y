@@ -9,7 +9,7 @@ order: 3
 
 ## Sounds on the Y-Badge
 
-Your Y-Badge has a buzzer built into it. This buzzer is able to play single-note sounds by turning an electromagnet on and off at high speeds. The magnetic field that is produced vibrates a small disk very quickly, creating the sound you hear. We can specify the note the buzzer plays, and how long that note is played for. However, we can't specify the volume of the sound; it's fixed.
+Your Y-Badge has a buzzer built into it. This buzzer is able to play single-note sounds by turning an electromagnet on and off at high speeds. The magnetic field that is produced vibrates a small disk very quickly, creating the sound you hear. We can specify the frequency of the buzzer in order to play different notes, and how long that note is played for. However, we can't specify the volume of the sound; it's fixed.
 
 <img src="{% link media/buzzer.png %}" width="400" hspace="5%" vspace="10px">
 
@@ -20,7 +20,7 @@ The function to play a sound looks like this:
 speaker_play_note(<note>, <duration>);
 ```
 
-* The `<note>` should be a constant value that we've defined for you (for example, NOTE_C4, which would play a middle C). For a list of other note options, explore the `yboard.h` file.
+* The `<note>` should be a number that represents the frequency. For example, 262 could be used to play "middle C". We have created several constants that represent the values of these notes. For example, typing NOTE_C4 in your code is the same as typing the number 262. For a list of other note options, explore the `yboard.h` file.
 * The `<duration>` should be the length you want the note to play in _milliseconds_ (a duration of 1000 would play the note for one second).
 
 ## Examples
