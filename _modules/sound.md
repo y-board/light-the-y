@@ -56,6 +56,10 @@ speaker_play_note(NOTE_C4, 800);
 
 1. Make the speaker play C, D, E, D, C for 500ms each.
 
+1. What happens if you try to call `leds_set_color(1, 255, 0, 0)` to turn LED 1 red right after you call `speaker_play_note(NOTE_C4, 5000)` to play middle C for 5 seconds? Does the board wait to turn the light on until the sound is done playing? 
+
+    * The `speaker_play_note()` function is a **non-blocking** function, which means other functions that are called after it will actually run at the same time. However, the buzzer can only play one note at a time, so any additional `speaker_play_note()` calls will wait until the one before has finished.
+
 ## Challenges
 
 1. Experiment with the durations of the above song to add some rythm or adjust the speed of the song. How long the notes are played in comparison to each other can change how the song sounds (note how some notes are played twice as long as others above). Can you make the song twice as fast?
