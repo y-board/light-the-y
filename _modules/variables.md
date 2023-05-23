@@ -52,13 +52,13 @@ currentLed++;
 leds_set_color(currentLed, 255, 0, 0);
 ```
 
-As you probably guessed by the lights on your board turning on, adding `++` to our variable name (with a semicolon at the end) increments the number our variable represents by 1. We've now turned on the first four LEDs on without hard-coding their numbers anywhere!
+As you probably guessed by the lights on your board turning on, adding `++` to our variable name (with a semicolon at the end) increments the number our variable represents by 1. This is exactly the same as if we had written `currentLed = currentLed + 1`. We've now turned on the first four LEDs on without hard-coding their numbers anywhere!
 
 ## Exploration
 
 1. Divide `currentNote` by 2 using the following code snippet: `currentNote = currentNote / 2;` Play a sound again. How does our new sound compare to our old one?
 
-1. See what happens if you multiply or divide `currentNote` by powers of 2 and use it to play a sound. For example, how does the sound compare to our old ones if we write `currentNote = currentNote * 8;`?
+1. See what happens if you multiply or divide `currentNote` by powers of 2 (2, 4, 8, 16) and use it to play a sound. For example, how does the sound compare to our old ones if we write `currentNote = currentNote * 8;`?
     * Hint: when we divide and multiply the frequency of notes by powers of 2, we get "octaves". For Middle C, this means we get higher or lower C notes. 
 
 1. Light up three additional LEDs in the same way we did above.
@@ -66,7 +66,7 @@ As you probably guessed by the lights on your board turning on, adding `++` to o
 ## Challenges
 
 1. Light up all the LEDs on the board using the pattern above, then turn them all off again.
-    * Hint: we can use `currentNote--;` to decrement our variable by 1.
+    * Hint: we can use `currentNote--;` to decrement our variable by 1. This is the same as writing `currentNote = currentNote - 1;`
 
 1. Use the `currentNote` and `duration` variables to play notes with random sound lengths and frequencies
     * You can use any mathematical expression you like and set your variable equal to it. For example: `duration = ((8 * 7) / 3) * 10;` or `currentNote = 2 * 2 * 2 + 1034;`
