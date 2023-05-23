@@ -30,10 +30,10 @@ Let's add a few variables to our code. In your `variables_activity.cpp` file, in
 ```c
 int currentLed = 1;
 int currentNote = NOTE_C4;
-int delay = 1000;
+int duration = 1000;
 ```
 
-We've now made three variables. Hopefully it's obvious what they represent based on their names. Notice that we can set our variables equal to other variables! `currentNote` has the same value as `NOTE_C4`. If we add `speaker_play_note(currentNote, delay)` to our code, it's the same as adding `speaker_play_note(NOTE_C4, 1000)`. Middle C will be played for one second.
+We've now made three variables. Hopefully it's obvious what they represent based on their names. Notice that we can set our variables equal to other variables! `currentNote` has the same value as `NOTE_C4`. If we add `speaker_play_note(currentNote, duration)` to our code, it's the same as adding `speaker_play_note(NOTE_C4, 1000)`. Middle C will be played for one second.
 
 Let's use our variables to do something interesting. First, let's light up our current LED. Add the following to your code, and upload it to your board:
 
