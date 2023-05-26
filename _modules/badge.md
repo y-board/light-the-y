@@ -11,6 +11,8 @@ order: 7
 
 Before you begin customizing your Y-Badge, let's explore the knob on it. The knob is a device known as a **potentiometer**. We send a _voltage_ through it and measure how much of that voltage is allowed to pass through, based on the position of the knob. This allows us to return a value based on the current position of the knob using the `knob_get()` function.
 
+<img src="{% link media/knob.png %}" width="400" hspace="5%" vspace="10px">
+
 We can use the value returned from the `knob_get()` function to change the brightness of the LEDs on our board. This is the code:
 
 ```c
