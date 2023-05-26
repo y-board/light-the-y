@@ -7,6 +7,16 @@ icon: fa-solid fa-toggle-on
 order: 6
 ---
 
+## Functions
+
+There are a two new functions we will use in this module. The first is the `buttons_get(<number>)` function. It returns a `true` value if the button we specify is pressed on our board and `false` if it is not pressed. For example, the variable button1IsPressed below has a `true` value if button 1 is pressed and `false` otherwise:
+
+```c
+bool button1IsPressed = buttons_get(1);
+```
+
+The second function to know is `switches_get(<number>)` which does the same thing as `buttons_get()` except for with the switches instead of the buttons.
+
 ## What are Conditionals?
 
 In this module, we'll explore **conditionals** which are statements in a program that evaluate to `true` or `false`. You've already seen conditionals when we learned about the **loop condition** in the last module. We'll begin here by exploring the **if statement**, which looks like the following:
@@ -17,11 +27,29 @@ if (buttons_get(1)) {
 }
 ```
 
-This block of code tells our board to turn on LED1 _if_ Button1 is pressed. The function `buttons_get()` can be used as a **conditional** because it returns a `true` or `false` value that indicates whether the button that was passed into it (in this case Button1) is pressed. Notice that in an **if statement** the **conditional** is placed in parenthesis and the commands to execute if it is true are placed in curly braces.
+This block of code tells our board to turn on LED1 _if_ Button1 is pressed. The function `buttons_get()` can be used as a **conditional** because it returns a `true` or `false` value.
+
+Notice that in an **if statement** the **conditional** is placed in parenthesis and the commands to execute if it is true are placed in curly braces.
+
+Additionally, we can chain conditionals together using `&&` or `||`. The `&&` symbol is called a "logical AND", and the `||` symbol is called "logical OR". Here's an example of using each:
+
+```c
+if(buttons_get(1) && buttons_get(2)) {
+    leds_set_color(1, 255, 0, 0);
+}
+
+if(switches_get(1) || switches_get(2)) {
+    leds_set_color(1, 0, 0, 255);
+}
+```
+
+The first `if` statement tells the board "if button 1 AND button 2 are pressed, turn led 1 red". The second `if` statement tells the board "if switch 1 OR switch 2 is on, turn led 1 blue".
+
+Finally, we can compare numbers or values using `==`. For example, `if (1 == 3)...` will always be `false` and `if (1 < 3)...` will always be `true`. On the other hand, `if (buttons_get(1) == true)...` will be `true` if button 1 is pressed and `false` if it is not. Because `buttons_get(1)` already tells us this without comparing it, the `== true` part in this condition is not necessary. 
 
 
 ## Examples
-If you copy the above code into your program, and then try to upload it to your board and press the button, LED1 won't turn on! The reason why is that the _if_ statement is run immediately when you upload your code and it is only run once. In order to get the board to _continuously check_ the state of Button1 and turn LED1 on if it is pressed, we need to wrap our `if` statement in a `while` loop:
+If you copy one of the above examples into your program, and then try to upload it to your board and press the buttons, LED1 won't turn on! The reason why is that the _if_ statement is run immediately when you upload your code and it is only run once. In order to get the board to _continuously check_ the state of Button1 and turn LED1 on if it is pressed, we need to wrap our `if` statement in a `while` loop:
 
 ```c
 while(true) {
@@ -51,64 +79,47 @@ leds_set_color(15, 255, 0, 0);
 
 This code block only checks if Button1 is pressed in 0.1 second increments for 10 seconds. 0.1 seconds is faster than the average person can press the button, so it will work just fine, and once the `for` loop is done, you can continue writing your code as normal.
 
-Now let's talk about the `else if` block. If we want to turn LED1 red when only one button is pressed, yellow when two buttons are pressed, or green when all three buttons are pressed, we could use the following:
+Now let's talk about the `else if` block. If we want to turn LED1 red, yellow, or green depending on which _two_ buttons we press, we could use the following:
 
 ```c
 while (true) {
-    if (buttons_get(1) && buttons_get(2) && buttons_get(3)) {
-        leds_set_color(1, 0, 255, 0);
-    } else if (buttons_get(1) && buttons_get(2)) {
-        leds_set_color(1, 255, 255, 0);
+    if (buttons_get(1) && buttons_get(2)) {
+        leds_set_color(1, 255, 0, 0);
     } else if (buttons_get(2) && buttons_get(3)) {
         leds_set_color(1, 255, 255, 0);
     } else if (buttons_get(1) && buttons_get(3)) {
-        leds_set_color(1, 255, 255, 0);
-    } else if (buttons_get(1)) {
-        leds_set_color(1, 255, 0, 0);
-    } else if (buttons_get(2)) {
-        leds_set_color(1, 255, 0, 0);
-    } else if (buttons_get(3)) {
-        leds_set_color(1, 255, 0, 0);
+        leds_set_color(1, 0, 255, 0);
     } else {
         leds_set_color(1, 0, 0, 0);
     }
 }
 ```
 
-There are two important things to notice in this example:
-
-1. We can "chain" as many `else if` blocks together as we want! This gives us a lot of freedom to make our code do anything we want it to.
-
-1. We introduced the use of `&&` which is a "logical AND". Using `&&` we can link _two or more_ conditionals together and only execute the code inside the block if they are ALL `true`. For example, we can read `if (buttons_get(1) && buttons_get(2) && buttons_get(3)) {...` as "if button 1 is pressed AND button 2 is pressed AND button 3 is pressed..."
+Notice that we can "chain" as many `else if` blocks together as we want! This gives us a lot of freedom to make our code do anything we want it to.
 
 Let's try one final example using a switch instead of a button:
 
 ```c
 while (true) {
-    while (true) {
-        if (switches_get(2)) {
+    if(switches_get(2)) {
+        while(switches_get(2)) {
             leds_set_color(1, 255, 0, 0);
-            break;
         }
-    }
-    while (true) {
-        if (!switches_get(2)) {
+    } else {
+        while(switches_get(2) == false) {
             leds_set_color(1, 0, 0, 0);
-            break;
         }
     }
 }
 ```
 
-Woah! That looks a little scary! We have infinite loops inside of infinite loops, and if statements inside of them. However, this code does exactly the same thing as our first example with a `while` loop above. If Switch2 on our board is ON, LED1 will turn on. And if Switch2 is OFF, LED2 will turn off.
+Woah! That looks a little scary! We have `if` statements inside of infinite loops, and more `while` loops inside of them. However, this code does exactly the same thing as our first example with a `while` loop above. If Switch2 on our board is ON, LED1 will turn on. And if Switch2 is OFF, LED2 will turn off.
 
 There are a few important things to notice in this example:
 
-1. There is a `break` statement inside of each `if` block. This tells the board that if our conditional is `true`, we want it to "break" out of the current `while` loop and move on. Because each of our inner `while` loops uses this pattern, and is inside an outer `while` loop, the inner loops will switch off between each other.
+1. The second conditional checks if Switch2 is NOT on using `switches_get(2) == false`
 
-1. We have placed a `!` at the front of our conditional in our second inner `while` loop.This is called a "bang" and it inverts our condition. The conditional `if (!switches_get(2))` could be read as "if switch 2 is NOT on". If switch 2 is NOT on, then the code inside this `if` block will run.
-
-1. This demonstrates that there is almost always more than one way to write code that works. Be creative, and try to find a solution that is simple, clear, and fast.
+1. There is almost always more than one way to write code that works. Be creative, and try to find a solution that is simple, clear, and fast.
 
 ## Exploration
 
@@ -121,4 +132,5 @@ There are a few important things to notice in this example:
 1. Make your board play a C note if Button1 is pressed, D note if Button2 is pressed, and E note if Button3 is pressed.
     * Hint: You can use a `while` loop inside your `if` statements to play the note for as long as you are holding the button. Use the same condition for both your `if` statements and your nested `while` loop. Set the duration on `speaker_play_note` to something small like 20ms.
 
-1. Invert the conditionals for our "red, yellow, green" light example above using `!` operators so that not pressing any buttons yields a green light, one button yields a yellow light, two buttons yields a red light, and three buttons turns the light off. Can you make it so it does this for all of the lights on the board at the same time? 
+1.  Use `&&` and `||` to chain conditions together so that if any one button is pressed LED1 turns red, if any two are pressed, LED1 turns yellow, and if all three are pressed LED1 turns green. Can you make all of the lights do this instead of just LED1?
+    * Hint: use a `for` loop inside of your `if` statements
