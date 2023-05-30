@@ -45,7 +45,7 @@ leds_set_color(15, 255, 255, 0);
 ```
 
 Add the example code to your own to test it out. Don't forget to click "upload" in the top right corner dropdown to program your board with new code!\
-<img src="{% link media/upload_examples.png %}" width="800" vspace="10px">
+<p align="middle"><img src="{% link media/upload_examples.png %}" width="800" vspace="10px"></p>
 
 ## Exploration
 1. Pick an LED of your choice and turn it on.
@@ -58,6 +58,16 @@ Add the example code to your own to test it out. Don't forget to click "upload" 
 
 
 ## Challenges
+
+_Remember to comment out the `led_exploration();` call in the `led_activity` function and uncomment the correct challenge function._
+
+```c
+// led_exploration();
+led_challenge1();
+// led_challenge2();
+// led_challenge3();
+```
+
 **Challenge 1:** Turn on LEDs 1, 13, and 17. Make them 3 different colors. \
 <img src="{% link media/led_challenge_1.jpg %}" width="400" hspace="5%" vspace="10px">
 
