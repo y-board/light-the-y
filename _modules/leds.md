@@ -18,8 +18,6 @@ There are 20 LEDs on the Y-badge circuit board.
 <img src="{% link media/rgb_led.png %}" width="32%" hspace="5%">
 </p>
 
-<!-- TODO: Add photo of board and of an RGB LED -->
-
 ## Functions
 
 To make things happen on the Y-badge, you will need to call **functions** from your code. A function is a set of instructions that a computer can follow to perform a specific task. Functions are very useful because they allow programmers to write code that can be reused multiple times in a program.
@@ -46,6 +44,8 @@ To make LED15 display bright yellow, you should turn on the red and green pixels
 leds_set_color(15, 255, 255, 0);
 ```
 
+Add the example code to your own to test it out. Don't forget to click "upload" in the top right corner dropdown to program your board with new code!\
+<img src="{% link media/upload_examples.png %}" width="800" vspace="10px">
 
 ## Exploration
 1. Pick an LED of your choice and turn it on.
