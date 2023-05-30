@@ -18,7 +18,7 @@ icon: fa-solid fa-computer
 
 1. Once VS Code is done installing, launch it.
 
-## Install PlatformIO Extension
+## Install PlatformIO Extension in VS Code
 
 1. Within VS Code, click the "Extensions" button on the left toolbar:
     <img src="{% link media/extensions_button_vscode.png %}" width="800" vspace="10px">
@@ -28,15 +28,7 @@ icon: fa-solid fa-computer
 
 ## Clone GitHub Repository
 
-**Clone from the Terminal**
-
-1. Open a new instance of the "Terminal" application
-    - Press the `Windows` key
-    - Type `terminal` and press `Enter`
-
-1. Type `git clone https://github.com/byu-cpe/y-badge-code.git` and press `Enter`
-
-1. Type `code y-badge-code` and press `Enter`
+We've created a **code repository** that will get your board ready to program and provide you with a place to write your code. You will need to "clone" a copy of that repository onto your computer. To do so, follow the steps below for _one_ of the two options (Clone from VS Code recommended).
 
 **Clone from VS Code**
 
@@ -55,4 +47,14 @@ icon: fa-solid fa-computer
 <img src="{% link media/select_destination_folder.png %}" width="800" vspace="10px">
 
 1. When asked if you want to open the project, click "Open"
+
+**Clone from the Terminal**
+
+1. Open a new instance of the "Terminal" application
+    - Press the `Windows` key
+    - Type `terminal` and press `Enter`
+
+1. Type `git clone https://github.com/byu-cpe/y-badge-code.git` and press `Enter`
+
+1. Type `code y-badge-code` and press `Enter`
 
