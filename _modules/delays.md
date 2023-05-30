@@ -7,14 +7,18 @@ icon: fa-solid fa-stopwatch
 order: 2
 ---
 
-## What are Delays?
+<p>
+  <a class="btn btn-primary" data-toggle="collapse" href="#collapseDelaysInfo" role="button" aria-expanded="false" aria-controls="collapseDelaysInfo">
+    What are Delays?
+  </a>
+</p>
+<div class="collapse" id="collapseDelaysInfo">
+  <div class="card card-body">
+    Since the computer runs our instructions very fast, sometimes we want to instruct it to stop and wait before continuing to run the next instruction.
 
-Since the computer runs our instructions very fast, sometimes we want to instruct it to stop and wait before continuing to run the next instruction.
-
-Delay statements allow us to stop the computer for a set amount of time. 
-
-What does this code do?
-
+    Delay statements allow us to stop the computer for a set amount of time.
+  </div>
+</div>
 
 <img src="{% link media/delay.png %}">
 
@@ -27,8 +31,23 @@ The function to cause a delay in your code is this:
 delay(<milliseconds>);
 ```
 
-* For `<milliseconds>`, indicate how long you want the computer to stop here for.  
-* Remember, there are 1000 milliseconds in a second, so if you wanted to stop for 2.5 seconds, you would write `delay(2500);` in your code.
+<p>
+  <a class="btn btn-primary" data-toggle="collapse" href="#collapseDelayFuncExplanation" role="button" aria-expanded="false" aria-controls="collapseDelayFuncExplanation">
+    Explanation
+  </a>
+</p>
+<div class="collapse" id="collapseDelayFuncExplanation">
+  <div class="card card-body">
+    <ul>
+        <li>
+            For <code>&lt;milliseconds&gt;</code>, indicate how long you want the computer to stop running more code for.
+        </li>
+        <li>
+            Remember, there are 1000 milliseconds in a second, so if you wanted to stop for 2.5 seconds, you would write <code>delay(2500);</code> in your code.
+        </li>
+    </ul>
+  </div>
+</div>
 
 ## Examples
 To make LED3 display bright red and then switch to bright green after half a second, then switch to bright blue after another half second, you can use this code:
