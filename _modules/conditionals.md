@@ -129,8 +129,10 @@ There are a few important things to notice in this example:
 
 ## Challenges
 
-1. Make your board play a C note if Button1 is pressed, D note if Button2 is pressed, and E note if Button3 is pressed.
-    * Hint: You can use a `while` loop inside your `if` statements to play the note for as long as you are holding the button. Use the same condition for both your `if` statements and your nested `while` loop. Set the duration on `speaker_play_note` to something small like 20ms.
+**Challenge 1:** Make your board play a C note if Button1 is pressed, D note if Button2 is pressed, and E note if Button3 is pressed.
+    
+* Hint: You can use a `while` loop inside your `if` statements to play the note for as long as you are holding the button. Use the same condition for both your `if` statements and your nested `while` loop. Set the duration on `speaker_play_note` to something small like 20ms.
 
-1.  Use `&&` and `||` to chain conditions together so that if any one button is pressed LED1 turns red, if any two are pressed, LED1 turns yellow, and if all three are pressed LED1 turns green. Can you make all of the lights do this instead of just LED1?
-    * Hint: use a `for` loop inside of your `if` statements
+**Challenge 2:** Use `&&` and `||` to chain conditions together so that if any one button is pressed LED1 turns red, if any two are pressed, LED1 turns yellow, and if all three are pressed LED1 turns green. Can you make all of the lights do this instead of just LED1?
+
+* Hint: use a `for` loop inside of your `if` statements
