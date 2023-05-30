@@ -43,15 +43,15 @@ leds_set_color(3, 0, 0, 255);
 To make LED15 display bright yellow and then slowly turn off, you can use this code:
 ```c
 leds_set_color(15, 255, 255, 0);
-delay(200);
+delay(500);
 leds_set_color(15, 204, 204, 0);
-delay(200);
+delay(500);
 leds_set_color(15, 153, 153, 0);
-delay(200);
+delay(500);
 leds_set_color(15, 102, 102, 0);
-delay(200);
+delay(500);
 leds_set_color(15, 51, 51, 0);
-delay(200);
+delay(500);
 leds_set_color(15, 0, 0, 0);
 ```
 
