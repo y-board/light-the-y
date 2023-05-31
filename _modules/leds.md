@@ -7,24 +7,15 @@ icon: fa-solid fa-lightbulb
 order: 1
 ---
 
-<p>
-  <a class="btn btn-primary" data-toggle="collapse" href="#collapseLedDetails" role="button" aria-expanded="false" aria-controls="collapseLedDetails">
-    LEDs on the Y-Badge
-  </a>
-</p>
-<div class="collapse" id="collapseLedDetails">
-  <div class="card card-body">
-    There are 20 LEDs on the Y-badge circuit board.
-    <ul>
-        <li>
-            Each LED is labeled LED1 to LED20
-        </li>
-        <li>
-            Each of these LEDs are RGB (red-green-blue) LEDs, meaning that they are actually three smaller red, green, and blue lights packaged together.  For each LED, you can set the brightness of the red, green, and blue lights individually, making the LED appear to be any color you like.
-        </li>
-    </ul>
-  </div>
-</div>
+<details markdown="block">
+<summary markdown="span">LEDs On The Y-Badge
+</summary>
+
+There are 20 LEDs on the Y-Badge circuit board.
+
+* Each LED is labeled LED1 to LED20.
+* Each of these LEDs are RGB (red-green-blue) LEDs, meaning that they are actually three smaller red, green, and blue lights packaged together. For each LED, you can set the brightness of the red, green, and blue lights individually, making the LED appear to be any color you like.
+</details>
 
 <p align="middle">
 <img src="{% link media/led_zoomed.png %}" width="32%" hspace="5%" vspace="2%">
@@ -40,23 +31,13 @@ The function to set an LED color looks like this:
 leds_set_color(<LED number>, <red>, <green>, <blue>);
 ```
 
-<p>
-  <a class="btn btn-primary" data-toggle="collapse" href="#collapseLedFunctionExplain" role="button" aria-expanded="false" aria-controls="collapseLedFunctionExplain">
-    Explanation
-  </a>
-</p>
-<div class="collapse" id="collapseLedFunctionExplain">
-  <div class="card card-body">
-    <ul>
-        <li>
-            The <code>&lt;LED number&gt;</code> can be any value from 1 to 20.
-        </li>
-        <li>
-            The <code>&lt;red&gt;</code>, <code>&lt;green&gt;</code>, and <code>&lt;blue&gt;</code> values represent the brightness of that color and can be any value from 0 to 255.
-        </li>
-    </ul>
-  </div>
-</div>
+<details markdown="block">
+<summary markdown="span">Explanation
+</summary>
+
+* The `<LED number>` can be any value from 1 to 20.
+* The `red`, `green`, and `blue` values represent the brightness of that color and can be any value from 0 to 255.
+</details>
 
 ## Examples
 To make LED3 display bright red, you should use this statement in your code (don't forget to add the semicolon):
