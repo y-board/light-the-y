@@ -9,12 +9,40 @@ icon: fa-solid fa-computer
 
 ## Install VS Code
 
+### Install VS Code on Linux
+
 1. Open the "Ubuntu Software" Application
     - Press the `Windows` key
     - Type `ubuntu software` and press `Enter`
 
 1. Search for "Visual Studio Code" and install the application shown here:
     <img src="{% link media/vs_code_appstore.png %}" width="800" vspace="10px">
+
+1. Once VS Code is done installing, launch it.
+
+### Install VS Code on Windows
+
+1. First go [download VS Code](https://code.visualstudio.com/download).
+
+1. Click on the Windows installer.
+    <img src="{% link media/vs_code_download_windows.png %}" width="800" vspace="10px">
+
+1. Go to files on your computer and double click on the VS Code setup file you just downloaded.
+
+1. Follow the steps of the installer.
+
+1. Once VS Code is done installing, launch it.
+
+### Install VS Code on Mac
+
+1. First go [download VS Code](https://code.visualstudio.com/download).
+
+1. Click on the Mac installer.
+    <img src="{% link media/vs_code_download_mac.png %}" width="800" vspace="10px">
+
+1. Go to files on your computer and double click on the VS Code setup file you just downloaded.
+
+1. Follow the steps of the installer.
 
 1. Once VS Code is done installing, launch it.
 
