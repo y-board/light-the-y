@@ -7,18 +7,12 @@ icon: fa-solid fa-arrow-rotate-left
 order: 5
 ---
 
-<p>
-  <a class="btn btn-primary" data-toggle="collapse" href="#collapseLoopIntro" role="button" aria-expanded="false" aria-controls="collapseLoopIntro">
-    What Are Loops?
-  </a>
-</p>
-<div class="collapse" id="collapseLoopIntro">
-  <div class="card card-body">
-    <p>
-        As a programmer, it's important to write code that isn't repetitive; it makes your program much easier to understand and speeds up the pace at which you can work. <strong>Loops</strong> are a fundamental programming tool we can use to eliminate repetitive code. Similar to functions, they can include as many commands inside them as you'd like. Unlike functions, they are able to <em>repeat those commands</em> for as long as you want them to. We will explore two types of loops: <strong>while loops</strong> and <strong>for loops</strong>.
-    </p>
-  </div>
-</div>
+<details markdown="block">
+<summary markdown="span">What Are Loops?
+</summary>
+
+As a programmer, it's important to write code that isn't repetitive; it makes your program much easier to understand and speeds up the pace at which you can work. **Loops** are a fundamental programming tool we can use to eliminate repetitive code. Similar to functions, they can include as many commands inside them as you'd like. Unlike functions, they are able to _repeat those commands_ for as long as you want them to. We will explore two types of loops: **while loops** and **for loops**.
+</details>
 
 ## While Loops
 
@@ -33,24 +27,15 @@ while (true) {
 }
 ```
 
-<p>
-  <a class="btn btn-primary" data-toggle="collapse" href="#collapseWhileExample" role="button" aria-expanded="false" aria-controls="collapseWhileExample">
-    More Details
-  </a>
-</p>
-<div class="collapse" id="collapseWhileExample">
-  <div class="card card-body">
-    There are a few things to notice about this loop:
-    <ul>
-        <li>
-            The thing we place inside parenthesis after the <code>while</code> keyword is called the <strong>loop condition</strong>. The loop condition should be a statement that evaluates to either <code>true</code> or <code>false</code>. Because we've hard-coded <code>true</code> into this loop, the condition will never change and the loop will run forever.
-        </li>
-        <li>
-            The commands we want the <code>while</code> loop to execute should be placed after the <strong>loop condition</strong> inside curly braces.
-        </li>
-    </ul>
-  </div>
-</div>
+<details markdown="block">
+<summary markdown="span">More Details
+</summary>
+
+There are a few things to notice about this loop:
+
+* The thing we place inside parenthesis after the `while` keyword is called the **loop condition**. The loop condition should be a statement that evaluates to either `true` or `false`. Because we've hard-coded `true` into this loop, the condition will never change and the loop will run forever.
+* The commands we want the `while` loop to execute should be placed after the **loop condition** inside curly braces.
+</details>
 
 What if we wanted to use a `while` loop to make the first 10 leds blink one time each, in sequence? We could do something like the following:
 
@@ -80,24 +65,16 @@ for(int currentLed = 1; currentLed <= 10; currentLed++) {
 
 Seems like a better way of doing things, right?
 
-<p>
-  <a class="btn btn-primary" data-toggle="collapse" href="#collapseForExample" role="button" aria-expanded="false" aria-controls="collapseForExample">
-    More Details
-  </a>
-</p>
-<div class="collapse" id="collapseForExample">
-    <div class="card card-body">
-        <p>
-            Our code to make the first 10 leds blink using a <code>while</code> loop is a little clunky. Did you notice that we had to declare a variable <em>outside of our loop</em> called <code>currentLed</code> to keep track of our condition? And then we had to increment it <em>inside of our loop</em>. That's a little confusing.
-        </p>
-        <p>
-            <code>for</code> loops and <code>while</code> loops can do the same things, but <em>for loops are better for running code a certain number of times and while loops are better for running code until a certain condition is met in our program.</em>
-        </p>
-        <p>
-            Notice the similarities between a <code>for</code> loop and a <code>while</code> loop. We still declare a variable called <code>currentLed</code>, we still have a <strong>loop condition</strong> that keeps track of whether the loop should run again, and we still increment <code>currentLed</code> every time the loop runs. But, we do all of that on a single line inside the parenthesis. This is a nice way to organize our code and keep track of our variable in one spot.
-        </p>
-    </div>
-</div>
+<details markdown="block">
+<summary markdown="span">More Details
+</summary>
+
+Our code to make the first 10 leds blink using a `while` loop is a little clunky. Did you notice that we had to declare a variable _outside of our loop_ called `currentLed` to keep track of our condition? And then we had to increment it _inside of our loop_. That's a little confusing.
+
+`for` loops and `while` loops can do the same things, but _for loops are better for running code a certain number of times and while loops are better for running code until a certain condition is met in our program._
+
+Notice the similarities between a `for` loop and a `while` loop. We still declare a variable called `currentLed`, we still have a **loop condition** that keeps track of whether the loop should run again, and we still increment `currentLed` every time the loop runs. But, we do all of that on a single line inside the parenthesis. This is a nice way to organize our code and keep track of our variable in one spot.
+</details>
 
 ## Exploration:
 1. Use a loop to turn on all the LEDs white. \
