@@ -75,12 +75,10 @@ Remember, _a while loop is used to run code until a condition is met_ and _a for
 
 ## Challenges:
 
-1. Copy the code for "Twinkle Twinkle Little Star" from the `sound_activity.cpp` file and play it on repeat using a loop.
+**Challenge 1:** Copy the code for "Twinkle Twinkle Little Star" from the `sound_activity.cpp` file and play it on repeat using a loop.
 
-1. Make a single LED circle around the board forever, you choose the speed.
+**Challenge 2:** Make a single LED circle around the board forever, you choose the speed. \
+<img src="{% link media/chasing_cw_lights.gif %}" width="400" hspace="5%" vspace="10px">
 
-    <img src="{% link media/chasing_cw_lights.gif %}" width="400" hspace="5%" vspace="10px">
-
-1. Change the last program to make the LED circle around the other direction.
-
-    <img src="{% link media/chasing_ccw_lights.gif %}" width="400" hspace="5%" vspace="10px">
+**Challenge 3:** Change the last program to make the LED circle around the other direction. \
+<img src="{% link media/chasing_ccw_lights.gif %}" width="400" hspace="5%" vspace="10px">

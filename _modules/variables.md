@@ -65,10 +65,12 @@ As you probably guessed by the lights on your board turning on, adding `++` to o
 
 ## Challenges
 
-1. Light up all the LEDs on the board using the pattern above, then turn them all off again.
-    * Hint: we can use `currentNote--;` to decrement our variable by 1. This is the same as writing `currentNote = currentNote - 1;`
+**Challenge 1:** Light up all the LEDs on the board using the pattern above, then turn them all off again.
 
-1. Use the `currentNote` and `duration` variables to play notes with random sound lengths and frequencies
-    * You can use any mathematical expression you like and set your variable equal to it. For example: `duration = ((8 * 7) / 3) * 10;` or `currentNote = 2 * 2 * 2 + 1034;`
+* Hint: we can use `currentNote--;` to decrement our variable by 1. This is the same as writing `currentNote = currentNote - 1;`
 
-* IMPORTANT: For your `variables_challenge1` and `variables_challenge2` functions, you will need to redeclare your variables. Variables live inside functions. If we are in a new function, the variable doesn't exist any more. Can you think of any other variables you might want to make?
+**Challenge 2:** Use the `currentNote` and `duration` variables to play notes with random sound lengths and frequencies
+
+* You can use any mathematical expression you like and set your variable equal to it. For example: `duration = ((8 * 7) / 3) * 10;` or `currentNote = 2 * 2 * 2 + 1034;`
+
+IMPORTANT: For your `variables_challenge1` and `variables_challenge2` functions, you will need to redeclare your variables. Variables live inside functions. If we are in a new function, the variable doesn't exist any more. Can you think of any other variables you might want to make?

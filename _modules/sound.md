@@ -62,6 +62,6 @@ speaker_play_note(NOTE_C4, 800);
 
 ## Challenges
 
-1. Experiment with the durations of the above song to add some rythm or adjust the speed of the song. How long the notes are played in comparison to each other can change how the song sounds (note how some notes are played twice as long as others above). Can you make the song twice as fast?
+**Challenge 1:** Experiment with the durations of the above song to add some rythm or adjust the speed of the song. How long the notes are played in comparison to each other can change how the song sounds (note how some notes are played twice as long as others above). Can you make the song twice as fast?
 
-1. Finish the rest of "Twinkle Twinkle Little Star" by adding more to the code.
+**Challenge 2:** Finish the rest of "Twinkle Twinkle Little Star" by adding more to the code.
