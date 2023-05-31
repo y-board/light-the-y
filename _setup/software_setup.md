@@ -20,8 +20,6 @@ icon: fa-solid fa-computer
 
 1. Once VS Code is done installing, launch it.
 
-### Install VS Code on Windows
-
 <details markdown="block">
 <summary markdown="span">Install VS Code On Windows
 </summary>
@@ -29,7 +27,8 @@ icon: fa-solid fa-computer
 1. First go [download VS Code](https://code.visualstudio.com/download).
 
 1. Click on the Windows installer.
-    <img src="{% link media/vs_code_download_windows.png %}" width="800" vspace="10px">
+
+<img src="{% link media/vs_code_download_windows.png %}" width="800" vspace="10px">
 
 1. Go to files on your computer and double click on the VS Code setup file you just downloaded.
 
@@ -38,16 +37,15 @@ icon: fa-solid fa-computer
 1. Once VS Code is done installing, launch it.
 </details>
 
-### Install VS Code on Mac
-
 <details markdown="block">
-<summary markdown="span">Install VS Code On Windows
+<summary markdown="span">Install VS Code On Mac
 </summary>
 
 1. First go [download VS Code](https://code.visualstudio.com/download).
 
 1. Click on the Windows installer.
-    <img src="{% link media/vs_code_download_mac.png %}" width="800" vspace="10px">
+
+<img src="{% link media/vs_code_download_mac.png %}" width="800" vspace="10px">
 
 1. Go to files on your computer and double click on the VS Code setup file you just downloaded.
 
@@ -71,6 +69,7 @@ icon: fa-solid fa-computer
 </summary>
 
 We've created a **code repository** that will get your board ready to program and provide you with a place to write your code. You will need to "clone" a copy of that repository onto your computer. To do so, follow the steps below for _one_ of the two options (Clone from VS Code recommended).
+
 </details>
 
 **Clone from VS Code**
