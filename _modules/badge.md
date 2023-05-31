@@ -31,7 +31,7 @@ while(true) {
 ```
 
 <details markdown="block">
-<summary markdown="span">Read More
+<summary markdown="span">More Details
 </summary>
 You'll notice that we've multiplied the value of `knob_get()` by 255 and divided it by 100. The reason is because `leds_set_brightness()` needs a brightness between 0 and 255, but `knob_get()` gives us a value between 0 and 100. We can _scale_ our value from `knob_get()` to a value that `leds_set_brightness()` will understand by _multiplying_ it by the maximum value of our _brightness function_ and _dividing_ by the maximum value of our _knob function_.
 

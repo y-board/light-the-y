@@ -70,7 +70,7 @@ As you probably guessed by the lights on your board turning on, adding `++` to o
 
 1. See what happens if you multiply or divide `currentNote` by powers of 2 (2, 4, 8, 16) and use it to play a sound. For example, how does the sound compare to our old ones if we write `currentNote = currentNote * 8;`?
     <details markdown="block">
-    <summary markdown="span">Hints
+    <summary markdown="span">Hint
     </summary>
     
     When we divide and multiply the frequency of notes by powers of 2, we get "octaves". For Middle C, this means we get higher or lower C notes.

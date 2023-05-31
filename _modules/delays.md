@@ -31,7 +31,7 @@ delay(<milliseconds>);
 <summary markdown="span">Explanation
 </summary>
 
-* For <milliseconds>, indicate how long you want the computer to stop running more code for.
+* For `<milliseconds>`, indicate how long you want the computer to stop running more code for.
 * Remember, there are 1000 milliseconds in a second, so if you wanted to stop for 2.5 seconds, you would write `delay(2500);` in your code.
 </details>
 
