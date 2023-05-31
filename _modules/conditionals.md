@@ -18,18 +18,7 @@ order: 6
   </div>
 </div>
 
-<p align="center"><img src="{% link media/buttons_a<!-- <p markdown="1">
-  <a  data-toggle="collapse" href="#collapseConditionalFuncInfo" role="button" aria-expanded="false" aria-controls="collapseConditionalFuncInfo">
-    More Details
-  </a>
-</p>
-<div class="collapse" id="collapseConditionalFuncInfo">
-  <div class="card card-body">
-    <p markdown="1">
-        Each of these functions returns `true` if the button/switch is pressed or ON, and `false` otherwise. `&lt;button_number&gt;` or `&lt;switch_number&gt;` should be the number of the button or switch whose position you want to check as an `int` (eg. 1, 2, or 3).
-    </p>
-  </div>
-</div> -->nd_switches.png %}" width="400" hspace="5%" vspace="2%"/></p>
+<p align="center"><img src="{% link media/buttons_and_switches.png %}" width="400" hspace="5%" vspace="2%"></p>
 
 ## Functions
 
