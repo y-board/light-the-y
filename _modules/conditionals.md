@@ -113,13 +113,21 @@ while (true) {
 }
 ```
 
+<details>
+<summary markdown='span'>Read more...
+</summary>
+
 Woah! That looks a little scary! We have `if` statements inside of infinite loops, and more `while` loops inside of them. However, this code does exactly the same thing as our first example with a `while` loop above. If Switch2 on our board is ON, LED1 will turn on. And if Switch2 is OFF, LED2 will turn off.
+
 
 There are a few important things to notice in this example:
 
 1. The second conditional checks if Switch2 is NOT on using `switches_get(2) == false`
 
 1. There is almost always more than one way to write code that works. Be creative, and try to find a solution that is simple, clear, and fast.
+
+</details>
+
 
 ## Exploration
 
