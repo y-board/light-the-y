@@ -22,6 +22,10 @@ icon: fa-solid fa-computer
 
 ### Install VS Code on Windows
 
+<details markdown="block">
+<summary markdown="span">Install VS Code On Windows
+</summary>
+
 1. First go [download VS Code](https://code.visualstudio.com/download).
 
 1. Click on the Windows installer.
@@ -32,12 +36,17 @@ icon: fa-solid fa-computer
 1. Follow the steps of the installer.
 
 1. Once VS Code is done installing, launch it.
+</details>
 
 ### Install VS Code on Mac
 
+<details markdown="block">
+<summary markdown="span">Install VS Code On Windows
+</summary>
+
 1. First go [download VS Code](https://code.visualstudio.com/download).
 
-1. Click on the Mac installer.
+1. Click on the Windows installer.
     <img src="{% link media/vs_code_download_mac.png %}" width="800" vspace="10px">
 
 1. Go to files on your computer and double click on the VS Code setup file you just downloaded.
@@ -45,6 +54,7 @@ icon: fa-solid fa-computer
 1. Follow the steps of the installer.
 
 1. Once VS Code is done installing, launch it.
+</details>
 
 ## Install PlatformIO Extension in VS Code
 
@@ -56,18 +66,12 @@ icon: fa-solid fa-computer
 
 ## Clone GitHub Repository
 
-<p>
-  <a class="btn btn-primary" data-toggle="collapse" href="#collapseGitCloneExplanation" role="button" aria-expanded="false" aria-controls="collapseGitCloneExplanation">
-    What Does This Mean?
-  </a>
-</p>
-<div class="collapse" id="collapseGitCloneExplanation">
-  <div class="card card-body">
-    <p>
-        We've created a <strong>code repository</strong> that will get your board ready to program and provide you with a place to write your code. You will need to "clone" a copy of that repository onto your computer. To do so, follow the steps below for <em>one</em> of the two options (Clone from VS Code recommended).
-    </p>
-  </div>
-</div>
+<details markdown="block">
+<summary markdown="span">What Does This Mean?
+</summary>
+
+We've created a **code repository** that will get your board ready to program and provide you with a place to write your code. You will need to "clone" a copy of that repository onto your computer. To do so, follow the steps below for _one_ of the two options (Clone from VS Code recommended).
+</details>
 
 **Clone from VS Code**
 
