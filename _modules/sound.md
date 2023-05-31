@@ -20,7 +20,7 @@ The function to play a sound looks like this:
 speaker_play_note(<note>, <duration>);
 ```
 
-* The `<note>` should be a number that represents the frequency. For example, 262 could be used to play "middle C". We have created several constants that represent the values of these notes. For example, typing NOTE_C4 in your code is the same as typing the number 262. For a list of other note options, explore the `yboard.h` file.
+* The `<note>` should be a number that represents the frequency. For example, 262 could be used to play "middle C". We have created several constants that represent the values of these notes. For example, typing NOTE_C4 in your code is the same as typing the number 262. For a list of other note options, explore the `ybadge.h` file.
 * The `<duration>` should be the length you want the note to play in _milliseconds_ (a duration of 1000 would play the note for one second).
 
 ## Examples
