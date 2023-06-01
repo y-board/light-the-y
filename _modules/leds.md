@@ -7,15 +7,19 @@ icon: fa-solid fa-lightbulb
 order: 1
 ---
 
-## LEDs on the Y-Badge
+<details markdown="block">
+<summary markdown="span">LEDs On The Y-Badge
+</summary>
 
-There are 20 LEDs on the Y-badge circuit board.  
-* Each LED is labelled LED1 to LED20
-* Each of these LEDs are RGB (red-green-blue) LEDs, meaning that they are actually three smaller red, green, and blue lights packaged together.  For each LED, you can set the brightness of the red, green, and blue lights individually, making the LED appear to be any color you like.
+There are 20 LEDs on the Y-Badge circuit board.
+
+* Each LED is labeled LED1 to LED20.
+* Each of these LEDs are RGB (red-green-blue) LEDs, meaning that they are actually three smaller red, green, and blue lights packaged together. For each LED, you can set the brightness of the red, green, and blue lights individually, making the LED appear to be any color you like.
+</details>
 
 <p align="middle">
-<img src="{% link media/led_zoomed.png %}" width="32%" hspace="5%">
-<img src="{% link media/rgb_led.png %}" width="32%" hspace="5%">
+<img src="{% link media/led_zoomed.png %}" width="32%" hspace="5%" vspace="2%">
+<img src="{% link media/rgb_led.png %}" width="32%" hspace="5%" vspace="2%">
 </p>
 
 ## Functions
@@ -27,10 +31,13 @@ The function to set an LED color looks like this:
 leds_set_color(<LED number>, <red>, <green>, <blue>);
 ```
 
+<details markdown="block">
+<summary markdown="span">Explanation
+</summary>
+
 * The `<LED number>` can be any value from 1 to 20.
-
-* The `<red>`, `<green>`, and `<blue>` values represent the brightness of that color and can be any value from 0 to 255.
-
+* The `red`, `green`, and `blue` values represent the brightness of that color and can be any value from 0 to 255.
+</details>
 
 ## Examples
 To make LED3 display bright red, you should use this statement in your code (don't forget to add the semicolon):
@@ -44,7 +51,7 @@ To make LED15 display bright yellow, you should turn on the red and green pixels
 leds_set_color(15, 255, 255, 0);
 ```
 
-Add the example code to your own to test it out. Don't forget to click "upload" in the top right corner dropdown to program your board with new code!\
+Add the example code to your own to test it out. Don't forget to click "upload" in the top right corner dropdown to program your board with new code! 
 <p align="middle"><img src="{% link media/upload_examples.png %}" width="800" vspace="10px"></p>
 
 ## Exploration
@@ -59,7 +66,7 @@ Add the example code to your own to test it out. Don't forget to click "upload" 
 
 ## Challenges
 
-_Remember to comment out the `led_exploration();` call in the `led_activity` function and uncomment the correct challenge function._
+_Remember to comment out the `led_exploration();` call in the `led_activity` function and uncomment the correct challenge function:_
 
 ```c
 // led_exploration();

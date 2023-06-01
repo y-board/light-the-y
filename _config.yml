@@ -30,6 +30,8 @@ construction_message: These lab pages are under construction and subject to chan
 permalink: pretty
 
 markdown: kramdown
+kramdown:
+  parse_block_html: true
 
 collections:
   setup:
