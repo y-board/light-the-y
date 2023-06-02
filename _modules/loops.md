@@ -77,6 +77,13 @@ Notice the similarities between a `for` loop and a `while` loop. We still declar
 </details>
 
 ## Exploration:
+
+> 📝 **_NOTE:_** You will need to go to `main.cpp` and change the comments to call the correct activity function:
+```c
+// variables_activity();
+loop_activity();
+```
+
 1. Use a loop to turn on all the LEDs white. \
 <img src="{% link media/white_lights.png %}" width="400" hspace="5%" vspace="10px">
 
@@ -86,6 +93,15 @@ Notice the similarities between a `for` loop and a `while` loop. We still declar
     <img src="{% link media/white_blinking_lights.gif %}" width="400" hspace="5%" vspace="10px">
 
 ## Challenges:
+
+_Remember to comment out the `loop_exploration();` call in the `loop_activity` function and uncomment the correct challenge function:_
+
+```c
+loop_exploration();
+// loop_challenge1();
+// loop_challenge2();
+// loop_challenge3();
+```
 
 **Challenge 1:** Copy the code for "Twinkle Twinkle Little Star" from the `sound_activity.cpp` file and play it on repeat using a loop.
 

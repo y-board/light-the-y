@@ -66,6 +66,12 @@ As you probably guessed by the lights on your board turning on, adding `++` to o
 
 ## Exploration
 
+> 📝 **_NOTE:_** You will need to go to `main.cpp` and change the comments to call the correct activity function:
+```c
+// sound_activity();
+variables_activity();
+```
+
 1. Divide `currentNote` by 2 using the following code snippet: `currentNote = currentNote / 2;` Play a sound again. How does our new sound compare to our old one?
 
 1. See what happens if you multiply or divide `currentNote` by powers of 2 (2, 4, 8, 16) and use it to play a sound. For example, how does the sound compare to our old ones if we write `currentNote = currentNote * 8;`?
@@ -79,6 +85,14 @@ As you probably guessed by the lights on your board turning on, adding `++` to o
 1. Light up three additional LEDs in the same way we did above.
 
 ## Challenges
+
+_Remember to comment out the `variables_exploration();` call in the `variables_activity` function and uncomment the correct challenge function:_
+
+```c
+variables_exploration();
+// variables_challenge1();
+// variables_challenge2();
+```
 
 **Challenge 1:** Light up all the LEDs on the board using the pattern above, then turn them all off again.
 

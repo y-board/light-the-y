@@ -75,6 +75,15 @@ delay_activity();
 
 ## Challenges
 
+_Remember to comment out the `delay_exploration();` call in the `delay_activity` function and uncomment the correct challenge function:_
+
+```c
+delay_exploration();
+//   delay_challenge1();
+//   delay_challenge2();
+//   delay_challenge3();
+```
+
 **Challenge 1:** Turn on LED5 as red. Wait 2 seconds and then turn it off and immediately turn on LED6 as red. Wait 2 seconds and move the red light to LED7, then LED8 and then LED9. \
 <img src="{% link media/delay_challenge_1.gif %}" width="400" hspace="5%" vspace="10px">
 
