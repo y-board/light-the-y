@@ -33,6 +33,7 @@ speaker_play_note(<note>, <duration>);
 </details>
 
 ## Examples
+
 To play a G5 for 1/4 second, you would write:
 
 ```c
@@ -61,6 +62,12 @@ speaker_play_note(NOTE_C4, 800);
 
 ## Exploration
 
+> 📝 **_NOTE:_** You will need to go to `main.cpp` and change the comments to call the correct activity function:
+```c
+// delay_activity();
+sound_activity();
+```
+
 1. Make the speaker play a C note for 3 seconds and then stop. 
 
 1. Make the speaker play C, D, E, D, C for 500ms each.
@@ -74,6 +81,14 @@ speaker_play_note(NOTE_C4, 800);
     </details>
 
 ## Challenges
+
+_Remember to comment out the `sound_exploration();` call in the `sound_activity` function and uncomment the correct challenge function:_
+
+```c
+sound_exploration();
+// sound_challenge1();
+// sound_challenge2();
+```
 
 **Challenge 1:** Experiment with the durations of the above song to add some rythm or adjust the speed of the song. How long the notes are played in comparison to each other can change how the song sounds (note how some notes are played twice as long as others above). Can you make the song twice as fast?
 

@@ -55,6 +55,7 @@ Add the example code to your own to test it out. Don't forget to click "upload" 
 <p align="middle"><img src="{% link media/upload_examples.png %}" width="800" vspace="10px"></p>
 
 ## Exploration
+
 1. Pick an LED of your choice and turn it on.
 
 1. What happens if you use **_255, 255, 255_** for your RGB values? 

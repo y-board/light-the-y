@@ -175,11 +175,25 @@ There are a few important things to notice in this example:
 
 ## Exploration
 
+> 📝 **_NOTE:_** You will need to go to `main.cpp` and change the comments to call the correct activity function:
+```c
+// loop_activity();
+conditionals_activity();
+```
+
 1. Reuse your code from the last module to make a single light circle around the board, but _only if Switch1 is turned on_.
 
 1. Make the light circle around in the opposite direction _if Switch2 is on_ but if both switches are on or off, do nothing.
 
 ## Challenges
+
+_Remember to comment out the `conditionals_exploration();` call in the `conditionals_activity` function and uncomment the correct challenge function:_
+
+```c
+conditionals_exploration();
+// conditionals_challenge1();
+// conditionals_challenge2();
+```
 
 **Challenge 1:** Make your board play a C note if Button1 is pressed, D note if Button2 is pressed, and E note if Button3 is pressed.
 
