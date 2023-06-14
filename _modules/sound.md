@@ -23,14 +23,10 @@ The function to play a sound looks like this:
 speaker_play_note(<note>, <duration>);
 ```
 
-<details markdown="block">
-<summary markdown="span">Explanation
-</summary>
 
 * The `<note>` should be a number that represents the frequency. For example, 262 could be used to play "middle C". We have created several constants that represent the values of these notes. For example, typing `NOTE_C4` in your code is the same as typing the number `262`. For a list of other note options, explore the `ybadge.h` file.
 
 * The `<duration>` should be the length you want the note to play in _milliseconds_ (a duration of 1000 would play the note for one second).
-</details>
 
 ## Examples
 
@@ -62,11 +58,15 @@ speaker_play_note(NOTE_C4, 800);
 
 ## Exploration
 
+<details markdown="block">
+<summary markdown="span">Remember to change `main.cpp` before continuing...
+</summary>
 > 📝 **_NOTE:_** You will need to go to `main.cpp` and change the comments to call the correct activity function:
 ```c
 // delay_activity();
 sound_activity();
 ```
+</details>
 
 1. Make the speaker play a C note for 3 seconds and then stop. 
 
@@ -82,6 +82,9 @@ sound_activity();
 
 ## Challenges
 
+<details markdown="block">
+<summary markdown="span">Remember to comment/uncomment the correct function calls...
+</summary>
 _Remember to comment out the `sound_exploration();` call in the `sound_activity` function and uncomment the correct challenge function:_
 
 ```c
@@ -89,6 +92,7 @@ sound_exploration();
 // sound_challenge1();
 // sound_challenge2();
 ```
+</details>
 
 **Challenge 1:** Experiment with the durations of the above song to add some rythm or adjust the speed of the song. How long the notes are played in comparison to each other can change how the song sounds (note how some notes are played twice as long as others above). Can you make the song twice as fast?
 

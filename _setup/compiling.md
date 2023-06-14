@@ -20,22 +20,6 @@ If your code compiles correctly and uploads to the board, you should see somethi
 
 <p align="center"><img src="{% link media/successful_upload.png %}" width="900" vspace="20px"></p>
 
-<details markdown="block">
-<summary markdown="span">What If My Code Isn't Uploading?
-</summary>
-
-1. Unplug the board from your computer.
-
-1. Restart VS Code.
-
-1. Press random buttons on your board for about 30-60 seconds.
-
-1. Hold down the button labeled "BOOT1" while plugging the board back into the computer.
-
-1. While still holding down "BOOT1" try uploading.
-
-1. Repeat until the board successfully uploads.
-</details>
 
 
 ## Compile Errors
@@ -55,3 +39,24 @@ Another common error you might run into is when you misspell a function or varia
 
 
 Just because your code compiles without error, doesn't mean that it does what you are expecting.  Compiling and uploading without error just means that your code contains valid instructions for the computer to execute.  The instructions may not actually do what you are try to accomplish.
+
+## What If My Board Isn't Working
+Sometimes your board might get stuck in a bad state, and either you won't be able to upload your code, or your code will upload but won't run.  
+
+_Note: Before following the next steps to reset your board, make sure the problem isn't actually in your code! It's easy to think that the board isn't working when it's really a bug in your code that's cuasing it to get stuck.  A good thing to try is to turn an LED on or off at start of your code to see if it works.  Also, double check `main.cpp` to make sure the correct function is being called._
+
+
+If your board is stuck, you can reset it by following these steps:
+
+
+1. Unplug the board from your computer.
+
+1. Restart VS Code.
+
+1. Press random buttons on your board for about 30-60 seconds.
+
+1. Hold down the button labeled "BOOT1" while plugging the board back into the computer.
+
+1. While still holding down "BOOT1" try uploading.
+
+1. Repeat until the board successfully uploads.

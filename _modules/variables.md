@@ -65,12 +65,15 @@ As you probably guessed by the lights on your board turning on, adding `++` to o
 </details>
 
 ## Exploration
-
+<details markdown="block">
+<summary markdown="span">Remember to change `main.cpp` before continuing...
+</summary>
 > 📝 **_NOTE:_** You will need to go to `main.cpp` and change the comments to call the correct activity function:
 ```c
 // sound_activity();
 variables_activity();
 ```
+</details>
 
 1. Divide `currentNote` by 2 using the following code snippet: `currentNote = currentNote / 2;` Play a sound again. How does our new sound compare to our old one?
 
@@ -86,6 +89,10 @@ variables_activity();
 
 ## Challenges
 
+
+<details markdown="block">
+<summary markdown="span">Remember to comment/uncomment the correct function calls...
+</summary>
 _Remember to comment out the `variables_exploration();` call in the `variables_activity` function and uncomment the correct challenge function:_
 
 ```c
@@ -93,6 +100,7 @@ variables_exploration();
 // variables_challenge1();
 // variables_challenge2();
 ```
+</details>
 
 **Challenge 1:** Light up all the LEDs on the board using the pattern above, then turn them all off again.
 
@@ -104,6 +112,7 @@ We can use `currentNote--;` to decrement our variable by 1. This is the same as 
 </details>
 
 **Challenge 2:** Use the `currentNote` and `duration` variables to play notes with random sound lengths and frequencies
+
 
 <details markdown="block">
 <summary markdown="span">Hint

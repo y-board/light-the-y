@@ -60,13 +60,16 @@ delay(500);
 leds_set_color(15, 0, 0, 0);
 ```
 
-## Exploration
+## Before You Start
 
-> 📝 **_NOTE:_** You will need to go to `main.cpp` and change the comments to call the correct activity function:
+Each time we start a new activity, you will need to go to the `main.cpp` file and change which activity function is called when the program starts up. Before proceeding, go to `main.cpp` and comment out the `led_activity()` function call, and uncomment the `delay_activity()` function call:
 ```c
 // led_activity();
 delay_activity();
 ```
+
+## Exploration
+
 
 1. Change some of your previous code and add `delay` statements.  How does the behavior change?
 
@@ -75,7 +78,7 @@ delay_activity();
 
 ## Challenges
 
-_Remember to comment out the `delay_exploration();` call in the `delay_activity` function and uncomment the correct challenge function:_
+_As you work on the challenges below, we don't want you to erase your existing code.  Instead, each challenge will be coded in their own function.  You will need to comment out the `delay_exploration();` call in the `delay_activity` function and uncomment the correct challenge function:_
 
 ```c
 delay_exploration();
