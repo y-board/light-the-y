@@ -44,8 +44,12 @@ There are other things you can try to control with `knob_get()` (for example, yo
 
 Now it's your turn to customize your badge. Write code to make it your own. You could make it into a three-key piano, display a spectacular light show, or anything else. The possibilities are endless! Just be sure to put all the skills you've learned to good use!
 
+<details markdown="block">
+<summary markdown="span">Remember to change `main.cpp` before continuing...
+</summary>
 > 📝 **_NOTE:_** You will need to go to `main.cpp` and change the comments to call the correct activity function:
 ```c
 // conditionals_activity();
 badge_activity();
 ```
+</details>

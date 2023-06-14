@@ -30,12 +30,8 @@ And the function to determine if a switch is ON is:
 switches_get(<switch_number>);
 ```
 
-<details markdown="block">
-<summary markdown="span">More Details
-</summary>
 
 Each of these functions returns `true` if the button/switch is pressed or ON, and `false` otherwise. `<button_number>` or `<switch_number>` should be the number of the button or switch whose position you want to check as an `int` (eg. 1, 2, or 3).
-</details>
 
 ## What are Conditionals?
 
@@ -174,12 +170,15 @@ There are a few important things to notice in this example:
 </details>
 
 ## Exploration
-
+<details markdown="block">
+<summary markdown="span">Remember to change `main.cpp` before continuing...
+</summary>
 > 📝 **_NOTE:_** You will need to go to `main.cpp` and change the comments to call the correct activity function:
 ```c
 // loop_activity();
 conditionals_activity();
 ```
+</details>
 
 1. Reuse your code from the last module to make a single light circle around the board, but _only if Switch1 is turned on_.
 
@@ -187,6 +186,9 @@ conditionals_activity();
 
 ## Challenges
 
+<details markdown="block">
+<summary markdown="span">Remember to comment/uncomment the correct function calls...
+</summary>
 _Remember to comment out the `conditionals_exploration();` call in the `conditionals_activity` function and uncomment the correct challenge function:_
 
 ```c
@@ -194,6 +196,7 @@ conditionals_exploration();
 // conditionals_challenge1();
 // conditionals_challenge2();
 ```
+</details>
 
 **Challenge 1:** Make your board play a C note if Button1 is pressed, D note if Button2 is pressed, and E note if Button3 is pressed.
 
