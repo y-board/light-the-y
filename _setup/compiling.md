@@ -20,6 +20,22 @@ If your code compiles correctly and uploads to the board, you should see somethi
 
 <p align="center"><img src="{% link media/successful_upload.png %}" width="900" vspace="20px"></p>
 
+<details markdown="block">
+<summary markdown="span">What If My Code Isn't Uploading?
+</summary>
+
+1. Unplug the board from your computer.
+
+1. Restart VS Code.
+
+1. Press random buttons on your board for about 30-60 seconds.
+
+1. Hold down the button labeled "BOOT1" while plugging the board back into the computer.
+
+1. While still holding down "BOOT1" try uploading.
+
+1. Repeat until the board successfully uploads.
+</details>
 
 
 ## Compile Errors
