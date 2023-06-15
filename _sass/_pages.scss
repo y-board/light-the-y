@@ -124,6 +124,14 @@ ol li {
     }
 }
 
+.home-page {
+    color: rgb(188, 188, 188);
+
+    h1 {
+        color: $brand-color;
+    }
+}
+
 .home-cards .col {
     margin-bottom: 30px;
 }
@@ -136,7 +144,7 @@ ol li {
 .firstcharacter {
     color: $brand-color;
     float: left;
-    font-family: omnium, sans-serif;
+    font-family: "century-gothic", sans-serif;
     font-size: 75px;
     line-height: 60px;
     padding-top: 0px;
