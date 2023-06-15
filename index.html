@@ -1,0 +1,58 @@
+---
+title: Home
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include head.html %}
+</head>
+
+<body>
+    <div class="d-flex toggled" id="wrapper">
+        {% include sidebar.html %}
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper" class="home-image">
+
+            <nav class="navbar sticky-top navbar-expand-lg home-nav-bg border-bottom">
+                <button class="btn btn-brand" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <a href="#" class="navbar-brand mb-0 h1 text-center mx-auto"></a>
+            </nav>
+
+            <div class="container">
+
+                <article class="page home-page">
+                    <h1 class="page-title" id="page-title">Light the Y</h1>
+                    <div class="page-content">
+                        <p><span class="firstcharacter">C</span>omputers have become an essential part of our daily
+                            lives and play a vital role in many aspects of modern society. They are used in a wide range
+                            of fields, including education, business, medicine, entertainment, and communication.
+                            Computers allow us to process and store vast amounts of information, communicate with
+                            others, and access a vast array of resources and information through the internet. They also
+                            enable us to perform a wide range of tasks more efficiently, including data analysis, word
+                            processing, and decision making. In short, computers have greatly improved our productivity
+                            and have made many aspects of our lives easier and more convenient.</p>
+                    </div>
+                </article>
+                <div class="thanks">
+                    <p>Special thanks to <a href="https://www.linkedin.com/in/brynn-lafleur-301a991a3/">Brynn
+                            LaFleur</a> for all of the graphics and icons!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    {% include scripts.html %}
+
+</body>
+
+</html>

@@ -189,6 +189,7 @@ table {
 
 .home-nav-bg {
     border-bottom: 0px !important;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .home-image {
@@ -196,20 +197,20 @@ table {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 20% 0%;
-    background-image: url("../images/background.svg");
+    background-image: url("../assets/background.svg");
 }
 
 @include media-query($on-md) {
     .home-image {
         // background-position: 0% -40px;
-        background-image: url("../images/background-medium.svg");
+        background-image: url("../assets/background-medium.svg");
         padding-bottom: 450px;
     }
 }
 
 @include media-query($on-sm) {
     .home-image {
-        background-image: url("../images/background-small.svg");
+        background-image: url("../assets/background-medium.svg");
         padding-bottom: 250px;
     }
 }
@@ -220,26 +221,6 @@ table {
     margin-top: 20px;
     width: 70px;
     height: 70px;
-}
-
-.cloud-icon {
-    background: url("../images/cloud-icon.svg") no-repeat center center;
-}
-
-.socket-icon {
-    background: url("../images/socket-icon.svg") no-repeat center center;
-}
-
-.concurrency-icon {
-    background: url("../images/concurrency-icon.svg") no-repeat center center;
-}
-
-.nodes-icon {
-    background: url("../images/nodes-icon.svg") no-repeat center center;
-}
-
-.wireless-icon {
-    background: url("../images/wireless-icon.svg") no-repeat center center;
 }
 
 .almost-hide {
@@ -258,7 +239,7 @@ table {
     position: fixed;
     bottom: 0;
     right: 10px;
-    color: rgba(0, 0, 0, 0.3);
+    color: rgba(white, 0.2);
     font-size: 12px;
 
     a {

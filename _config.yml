@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "BYU Stem Camp Y-Badge"
+title: "BYU STEM Camp Y-Badge"
 short_title: -Badge
 # class_number: ECEN 330
 email: jgoeders@byu.edu
