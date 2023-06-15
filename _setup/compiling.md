@@ -43,7 +43,7 @@ Just because your code compiles without error, doesn't mean that it does what yo
 ## What If My Board Isn't Working
 Sometimes your board might get stuck in a bad state, and either you won't be able to upload your code, or your code will upload but won't run.  
 
-_Note: Before following the next steps to reset your board, make sure the problem isn't actually in your code! It's easy to think that the board isn't working when it's really a bug in your code that's cuasing it to get stuck.  A good thing to try is to turn an LED on or off at start of your code to see if it works.  Also, double check `main.cpp` to make sure the correct function is being called._
+_Note: Before following the next steps to reset your board, make sure the problem isn't actually in your code! It's easy to think that the board isn't working when it's really a bug in your code that's causing it to get stuck.  A good thing to try is to turn an LED on or off at the start of your code to see if it works.  Also, double check `main.cpp` to make sure the correct function is being called._
 
 
 If your board is stuck, you can reset it by following these steps:
