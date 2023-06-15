@@ -130,6 +130,11 @@ ol li {
     h1 {
         color: $brand-color;
     }
+
+    img {
+        margin: 0 auto;
+        max-width: 300px;
+    }
 }
 
 .home-cards .col {
