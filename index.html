@@ -1,0 +1,66 @@
+---
+title: Home
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include head.html %}
+</head>
+
+<body>
+    <div class="d-flex toggled" id="wrapper">
+        {% include sidebar.html %}
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper" class="home-image">
+
+            <nav class="navbar sticky-top navbar-expand-lg home-nav-bg border-bottom">
+                <button class="btn btn-brand" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <a href="#" class="navbar-brand mb-0 h1 text-center mx-auto"></a>
+            </nav>
+
+            <div class="container">
+
+                <article class="page home-page">
+                    <h1 class="page-title" id="page-title">Light the Y</h1>
+                    <div class="page-content">
+                        <p>Welcome to the BYU STEM Camp "Light the Y" activity! We're happy to have you. Once you have
+                            your Y-badge PCB board, you're ready to get programming.</p>
+
+                        <p>These online modules are designed to be used with an instructor or as a self-paced program.
+                            Feel free to take as much time as needed to complete each module. If you already feel
+                            comfortable with one of the topics discussed in these activities, feel free to challenge
+                            yourself and think outside the box. The <a
+                                href="https://github.com/byu-cpe/y-badge-code">Y-badge code GitHub repository</a>
+                            contains all the code needed to use the modules on this website. For instructions on cloning
+                            this GitHub repo to your computer, consult the <b>Software Setup</b> tab from the left menu.
+                        </p>
+
+                        <p>Happy coding!</p>
+
+                        <img src="{% link media/y-badge.png %}" alt="Y-badge" class="img-fluid mx-auto d-block">
+
+                    </div>
+                </article>
+                <div class="thanks">
+                    <p>Special thanks to <a href="https://www.linkedin.com/in/brynn-lafleur-301a991a3/">Brynn
+                            LaFleur</a> for all of the graphics and icons!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    {% include scripts.html %}
+
+</body>
+
+</html>

@@ -13,32 +13,29 @@ $base-line-height: 1.5;
 
 $spacing-unit: 30px;
 
-
 // $color1: #8d8741;
 // $color2: #659dbd;
 // $color3: #daad86;
 // $color4: #bc986a;
 // $color5: #fbeec1;
 
-
-$color1: #eae7dc;
-$color2: #d8c3a5;
-$color3: #8e8d8a;
-$color4: #e98074;
+$color1: #1b1d2d;
+$color2: #2c70b8;
+$color3: #7a868c;
+$color4: #2c70b8;
 $color5: #e85a4f;
-
 
 $text-color: #111;
 $background-color: #fdfdfd;
 $brand-color: $color4;
-$secondary-color: #c3e6ef;
+$secondary-color: $color2;
 
-$selection-color: #ffde16;
+$selection-color: #7a868c;
 $sidebar-color: $background-color;
 $sidebar-hover-color: lighten($color2, 10%);
 $nav-color: $background-color;
 
-$code-color: $color5;
+$code-color: #2c70b8;
 
 $grey-color: #424242;
 $grey-color-light: lighten($grey-color, 40%);

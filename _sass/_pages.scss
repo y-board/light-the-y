@@ -9,13 +9,22 @@
 
 h1 {
     padding-top: 20px;
+    font-family: "century-gothic", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 h2 {
     margin-top: 30px;
+    font-family: "century-gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 h3 {
+    font-family: "century-gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     text-transform: uppercase;
     color: gray;
     font-size: 1.3rem;
@@ -115,6 +124,19 @@ ol li {
     }
 }
 
+.home-page {
+    color: rgb(188, 188, 188);
+
+    h1 {
+        color: $brand-color;
+    }
+
+    img {
+        margin: 0 auto;
+        max-width: 300px;
+    }
+}
+
 .home-cards .col {
     margin-bottom: 30px;
 }
@@ -127,7 +149,7 @@ ol li {
 .firstcharacter {
     color: $brand-color;
     float: left;
-    font-family: omnium, sans-serif;
+    font-family: "century-gothic", sans-serif;
     font-size: 75px;
     line-height: 60px;
     padding-top: 0px;
@@ -180,27 +202,27 @@ table {
 
 .home-nav-bg {
     border-bottom: 0px !important;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .home-image {
-    // background-image: url("../images/background.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 20% 0%;
-    background-image: url("../images/background.svg");
+    background-image: url("../media/background.svg");
 }
 
 @include media-query($on-md) {
     .home-image {
         // background-position: 0% -40px;
-        background-image: url("../images/background-medium.svg");
+        background-image: url("../media/background-medium.svg");
         padding-bottom: 450px;
     }
 }
 
 @include media-query($on-sm) {
     .home-image {
-        background-image: url("../images/background-small.svg");
+        background-image: url("../media/background-medium.svg");
         padding-bottom: 250px;
     }
 }
@@ -211,26 +233,6 @@ table {
     margin-top: 20px;
     width: 70px;
     height: 70px;
-}
-
-.cloud-icon {
-    background: url("../images/cloud-icon.svg") no-repeat center center;
-}
-
-.socket-icon {
-    background: url("../images/socket-icon.svg") no-repeat center center;
-}
-
-.concurrency-icon {
-    background: url("../images/concurrency-icon.svg") no-repeat center center;
-}
-
-.nodes-icon {
-    background: url("../images/nodes-icon.svg") no-repeat center center;
-}
-
-.wireless-icon {
-    background: url("../images/wireless-icon.svg") no-repeat center center;
 }
 
 .almost-hide {
@@ -249,7 +251,7 @@ table {
     position: fixed;
     bottom: 0;
     right: 10px;
-    color: rgba(0, 0, 0, 0.3);
+    color: rgba(white, 0.2);
     font-size: 12px;
 
     a {
