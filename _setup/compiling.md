@@ -51,12 +51,8 @@ If your board is stuck, you can reset it by following these steps:
 
 1. Unplug the board from your computer.
 
-1. Restart VS Code.
+1. Hold down the button labeled "BOOT1" and the button labeled "RESET" at the same time, while plugging the board back into the computer.
 
-1. Press random buttons on your board for about 30-60 seconds.
+1. Let go of both buttons and wait 10-15 seconds before attempting to upload your code again.
 
-1. Hold down the button labeled "BOOT1" while plugging the board back into the computer.
-
-1. While still holding down "BOOT1" try uploading.
-
-1. Repeat until the board successfully uploads.
+1. Repeat as needed.
