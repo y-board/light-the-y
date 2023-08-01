@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>
+    
+    Module 2: Delays • BYU STEM Camp Y-Badge
+    
+</title>
+
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<!-- Custom styles for this template -->
+<link rel="stylesheet" href=/y-badge/css/main.css>
+
+<!-- <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"> -->
+<!-- <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet"> -->
+<link rel="stylesheet" href="https://use.typekit.net/jcn6ybb.css">
+<link rel="stylesheet" href="https://use.typekit.net/tzi8ooy.css">
+
+<!-- <link rel="icon" type="image/png" sizes="96x96" href=/y-badge/icon/favicon-96x96.png>
+<link rel="icon" type="image/png" sizes="32x32" href=/y-badge/icon/favicon-32x32.png>
+<link rel="icon" type="image/png" sizes="16x16" href=/y-badge/icon/favicon-16x16.png> -->
+
+<script src="https://kit.fontawesome.com/624d595ebf.js" crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        console.log("hi there");
+        // this will get the full URL at the address bar
+        var url = window.location.href;
+        console.log(url);
+
+        // passes on every "a" tag
+        $(".list-group a").each(function () {
+            console.log(this)
+            // checks if its the same on the address bar
+            if (url == (this.href)) {
+                $(this).addClass("active");
+            }
+        });
+    });        
+</script>
+
+
+</head>
+
+<body>
+  <div class="d-flex" id="wrapper">
+    <div class="border-right sidebar-color" id="sidebar-wrapper">
+    <div class="sidebar-sticky">
+        <div class="sidebar-heading-big">
+            <a href="/y-badge/"><img src=/y-badge/icon/icon.svg>-Badge</a>
+        </div>
+        <div class="list-group list-group-flush sidebar-color">
+
+            
+
+            
+            
+            
+            <!-- <a href="https://slack.com/app_redirect?team=T01J887F8MU&channel=C01JF1N6TH8"
+                class="list-item-normal list-group-item list-group-item-action sidebar-item" target="_blank"><i
+                    class="fa fa-question-circle"></i>
+                Slack</a> -->
+
+        </div>
+
+        <div class="sidebar-heading">Instructions</div>
+        <div class="list-group list-group-flush">
+            
+            <a href="/y-badge/setup/software-setup/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-computer"></i>
+                Software Setup
+
+            </a>
+            
+            <a href="/y-badge/setup/coding/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-code"></i>
+                Coding Intro
+
+            </a>
+            
+            <a href="/y-badge/setup/compiling/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-person-running"></i>
+                Running Code
+
+            </a>
+            
+        </div>
+
+        
+        <div class="sidebar-heading">Modules</div>
+        <div class="list-group list-group-flush">
+            
+            <a href="/y-badge/modules/leds/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-lightbulb"></i>
+                
+
+                
+
+                LEDs
+
+            </a>
+            
+            <a href="/y-badge/modules/delays/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-stopwatch"></i>
+                
+
+                
+
+                Delays
+
+            </a>
+            
+            <a href="/y-badge/modules/sound/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-volume"></i>
+                
+
+                
+
+                Sound
+
+            </a>
+            
+            <a href="/y-badge/modules/variables/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-square-root-variable"></i>
+                
+
+                
+
+                Variables
+
+            </a>
+            
+            <a href="/y-badge/modules/loops/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-arrow-rotate-left"></i>
+                
+
+                
+
+                Loops
+
+            </a>
+            
+            <a href="/y-badge/modules/conditionals/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-toggle-on"></i>
+                
+
+                
+
+                Buttons and Switches
+
+            </a>
+            
+            <a href="/y-badge/modules/badge/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-kit fa-y-badge"></i>
+                
+
+                
+
+                Create Your Badge
+
+            </a>
+            
+        </div>
+
+        <!-- <div class="sidebar-heading">Documentation</div>
+        <div class="list-group list-group-flush">
+            
+            <a href="/y-badge/documentation/cmake/"
+                class="list-item-narrow list-group-item list-group-item-action bg-light sidebar-item">
+                &emsp;
+
+                CMake
+
+            </a>
+            
+        </div>
+
+        <div class="sidebar-heading">Other</div>
+        <div class="list-group list-group-flush">
+            
+            <a href="/y-badge/other/c-programming/"
+                class="list-item-narrow list-group-item list-group-item-action bg-light sidebar-item">
+                
+
+                'C Programming' Study Questions
+
+            </a>
+            
+        </div> -->
+    </div>
+</div>
+
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar sticky-top navbar-expand-lg border-bottom">
+        <button class="btn btn-brand" id="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <a href="" class="navbar-brand mb-0 h1 page-title-bar text-center mx-auto" id="page-title-bar"></a>
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link btn btn-brand suggest-edits" target="_blank" rel="noopener noreferrer"
+              href="https://github.com/byu-cpe/y-badge/issues/new?labels=website&title=Updates to Module 2: Delays page"><i
+                class="fab fa-github"></i> Suggest
+              Edits</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="container">
+        
+
+        <article class="page lab">
+    <h1 class="page-title" id="page-title">
+        Module 2: Delays
+        
+    </h1>
+
+    <div class="page-content">
+        
+
+        
+
+        <details>
+  <summary>What Are Delays?
+</summary>
+
+  <p>Since the computer runs our instructions very fast, sometimes we want to instruct it to stop and wait before continuing to run the next instruction.</p>
+
+  <p>Delay statements allow us to stop the computer for a set amount of time.</p>
+</details>
+
+<p><img src="/y-badge/media/delay.png" /></p>
+
+<p>This code turns on LED1 as red and LED10 as blue.  Then, it waits for 1 second before turning off LED1.</p>
+
+<h2 id="functions">Functions</h2>
+<p>The function to cause a delay in your code is this:</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">delay</span><span class="p">(</span><span class="o">&lt;</span><span class="n">milliseconds</span><span class="o">&gt;</span><span class="p">);</span>
+</code></pre></div></div>
+
+<details>
+  <summary>Explanation
+</summary>
+
+  <ul>
+    <li>For <code class="language-plaintext highlighter-rouge">&lt;milliseconds&gt;</code>, indicate how long you want the computer to stop running more code for.</li>
+    <li>Remember, there are 1000 milliseconds in a second, so if you wanted to stop for 2.5 seconds, you would write <code class="language-plaintext highlighter-rouge">delay(2500);</code> in your code.</li>
+  </ul>
+</details>
+
+<h2 id="examples">Examples</h2>
+<p>To make LED3 display bright red and then switch to bright green after half a second, then switch to bright blue after another half second, you can use this code:</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">leds_set_color</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+<span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+<span class="n">leds_set_color</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+<span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+<span class="n">leds_set_color</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>To make LED15 display bright yellow and then slowly turn off, you can use this code:</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">leds_set_color</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+<span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+<span class="n">leds_set_color</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">204</span><span class="p">,</span> <span class="mi">204</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+<span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+<span class="n">leds_set_color</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">153</span><span class="p">,</span> <span class="mi">153</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+<span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+<span class="n">leds_set_color</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">102</span><span class="p">,</span> <span class="mi">102</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+<span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+<span class="n">leds_set_color</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">51</span><span class="p">,</span> <span class="mi">51</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+<span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+<span class="n">leds_set_color</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h2 id="before-you-start">Before You Start</h2>
+
+<p>Each time we start a new activity, you will need to go to the <code class="language-plaintext highlighter-rouge">main.cpp</code> file and change which activity function is called when the program starts up. Before proceeding, go to <code class="language-plaintext highlighter-rouge">main.cpp</code> and comment out the <code class="language-plaintext highlighter-rouge">led_activity()</code> function call, and uncomment the <code class="language-plaintext highlighter-rouge">delay_activity()</code> function call:</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// led_activity();</span>
+<span class="n">delay_activity</span><span class="p">();</span>
+</code></pre></div></div>
+
+<h2 id="exploration">Exploration</h2>
+
+<ol>
+  <li>
+    <p>Change some of your previous code and add <code class="language-plaintext highlighter-rouge">delay</code> statements.  How does the behavior change?</p>
+  </li>
+  <li>
+    <p>Can you make an LED blink slowly?  Quickly?</p>
+  </li>
+</ol>
+
+<h2 id="challenges">Challenges</h2>
+
+<p><em>As you work on the challenges below, we don’t want you to erase your existing code.  Instead, each challenge will be coded in their own function.  You will need to comment out the <code class="language-plaintext highlighter-rouge">delay_exploration();</code> call in the <code class="language-plaintext highlighter-rouge">delay_activity</code> function and uncomment the correct challenge function:</em></p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">delay_exploration</span><span class="p">();</span>
+<span class="c1">//   delay_challenge1();</span>
+<span class="c1">//   delay_challenge2();</span>
+<span class="c1">//   delay_challenge3();</span>
+</code></pre></div></div>
+
+<p><strong>Challenge 1:</strong> Turn on LED5 as red. Wait 2 seconds and then turn it off and immediately turn on LED6 as red. Wait 2 seconds and move the red light to LED7, then LED8 and then LED9. <br />
+<img src="/y-badge/media/delay_challenge_1.gif" width="400" hspace="5%" vspace="10px" /></p>
+
+<p><strong>Challenge 2:</strong> Repeat the previous challenge, but change the code so that the red light moves faster as it goes.  Start with 2 seconds for the first move, and then for each move, use half as much delay as the last move.  How long is your final delay? <br />
+<img src="/y-badge/media/delay_challenge_2.gif" width="400" hspace="5%" vspace="10px" /></p>
+
+<p><strong>Challenge 3:</strong> Make LED1 and LED2 blink for 5 seconds but at different rates.  LED1 should blink once per second and LED2 should blink once every 2 seconds. Pick any color you would like for the LEDs. <br />
+<img src="/y-badge/media/delay_challenge_3.gif" width="400" hspace="5%" vspace="10px" /></p>
+
+
+    </div>
+</article>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+<script src=/y-badge/js/jquery.visible.min.js></script>
+
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+
+    var prevVisible = $('#page-title').visible();
+
+    $(window).scroll(function () {
+        currentVisible = $('#page-title').visible()
+        if (prevVisible && !currentVisible) {
+            console.log("Do something!");
+            $("#page-title-bar").html($('#page-title').text());
+        }
+
+        if (!prevVisible && currentVisible) {
+            $("#page-title-bar").html("")
+        }
+
+        prevVisible = currentVisible;
+    });
+
+</script>
+
+</body>
+
+</html>

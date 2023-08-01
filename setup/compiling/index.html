@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>
+    
+    Running Code • BYU STEM Camp Y-Badge
+    
+</title>
+
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<!-- Custom styles for this template -->
+<link rel="stylesheet" href=/y-badge/css/main.css>
+
+<!-- <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"> -->
+<!-- <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet"> -->
+<link rel="stylesheet" href="https://use.typekit.net/jcn6ybb.css">
+<link rel="stylesheet" href="https://use.typekit.net/tzi8ooy.css">
+
+<!-- <link rel="icon" type="image/png" sizes="96x96" href=/y-badge/icon/favicon-96x96.png>
+<link rel="icon" type="image/png" sizes="32x32" href=/y-badge/icon/favicon-32x32.png>
+<link rel="icon" type="image/png" sizes="16x16" href=/y-badge/icon/favicon-16x16.png> -->
+
+<script src="https://kit.fontawesome.com/624d595ebf.js" crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        console.log("hi there");
+        // this will get the full URL at the address bar
+        var url = window.location.href;
+        console.log(url);
+
+        // passes on every "a" tag
+        $(".list-group a").each(function () {
+            console.log(this)
+            // checks if its the same on the address bar
+            if (url == (this.href)) {
+                $(this).addClass("active");
+            }
+        });
+    });        
+</script>
+
+
+</head>
+
+<body>
+  <div class="d-flex" id="wrapper">
+    <div class="border-right sidebar-color" id="sidebar-wrapper">
+    <div class="sidebar-sticky">
+        <div class="sidebar-heading-big">
+            <a href="/y-badge/"><img src=/y-badge/icon/icon.svg>-Badge</a>
+        </div>
+        <div class="list-group list-group-flush sidebar-color">
+
+            
+
+            
+            
+            
+            <!-- <a href="https://slack.com/app_redirect?team=T01J887F8MU&channel=C01JF1N6TH8"
+                class="list-item-normal list-group-item list-group-item-action sidebar-item" target="_blank"><i
+                    class="fa fa-question-circle"></i>
+                Slack</a> -->
+
+        </div>
+
+        <div class="sidebar-heading">Instructions</div>
+        <div class="list-group list-group-flush">
+            
+            <a href="/y-badge/setup/software-setup/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-computer"></i>
+                Software Setup
+
+            </a>
+            
+            <a href="/y-badge/setup/coding/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-code"></i>
+                Coding Intro
+
+            </a>
+            
+            <a href="/y-badge/setup/compiling/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-person-running"></i>
+                Running Code
+
+            </a>
+            
+        </div>
+
+        
+        <div class="sidebar-heading">Modules</div>
+        <div class="list-group list-group-flush">
+            
+            <a href="/y-badge/modules/leds/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-lightbulb"></i>
+                
+
+                
+
+                LEDs
+
+            </a>
+            
+            <a href="/y-badge/modules/delays/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-stopwatch"></i>
+                
+
+                
+
+                Delays
+
+            </a>
+            
+            <a href="/y-badge/modules/sound/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-volume"></i>
+                
+
+                
+
+                Sound
+
+            </a>
+            
+            <a href="/y-badge/modules/variables/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-square-root-variable"></i>
+                
+
+                
+
+                Variables
+
+            </a>
+            
+            <a href="/y-badge/modules/loops/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-arrow-rotate-left"></i>
+                
+
+                
+
+                Loops
+
+            </a>
+            
+            <a href="/y-badge/modules/conditionals/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-toggle-on"></i>
+                
+
+                
+
+                Buttons and Switches
+
+            </a>
+            
+            <a href="/y-badge/modules/badge/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-kit fa-y-badge"></i>
+                
+
+                
+
+                Create Your Badge
+
+            </a>
+            
+        </div>
+
+        <!-- <div class="sidebar-heading">Documentation</div>
+        <div class="list-group list-group-flush">
+            
+            <a href="/y-badge/documentation/cmake/"
+                class="list-item-narrow list-group-item list-group-item-action bg-light sidebar-item">
+                &emsp;
+
+                CMake
+
+            </a>
+            
+        </div>
+
+        <div class="sidebar-heading">Other</div>
+        <div class="list-group list-group-flush">
+            
+            <a href="/y-badge/other/c-programming/"
+                class="list-item-narrow list-group-item list-group-item-action bg-light sidebar-item">
+                
+
+                'C Programming' Study Questions
+
+            </a>
+            
+        </div> -->
+    </div>
+</div>
+
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar sticky-top navbar-expand-lg border-bottom">
+        <button class="btn btn-brand" id="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <a href="" class="navbar-brand mb-0 h1 page-title-bar text-center mx-auto" id="page-title-bar"></a>
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link btn btn-brand suggest-edits" target="_blank" rel="noopener noreferrer"
+              href="https://github.com/byu-cpe/y-badge/issues/new?labels=website&title=Updates to Running Code page"><i
+                class="fab fa-github"></i> Suggest
+              Edits</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="container">
+        
+
+        <article class="page">
+  <h1 class="page-title" id="page-title">
+    
+    <i class="fa-solid fa-person-running"></i>
+    
+    Running Code
+  </h1>
+
+  <div class="page-content">
+    
+
+    <p>In order to check that your code doesn’t have any mistakes that will prevent it from running, it has to be checked by a special program called a <em>compiler</em>. The compiler takes the code you wrote and transforms it into instructions that the computer chip can understand.</p>
+
+<h2 id="uploading">Uploading</h2>
+<p>In order to compile your code and upload it to the board, click the <em>right arrow</em> button at the bottom of the screen or select “Upload” from the dropdown in VS Code.</p>
+<p align="center"> <img src="/y-badge/media/compiling_code.png" width="900" vspace="20px" /></p>
+
+<p>If your code compiles correctly and uploads to the board, you should see something like this.  Note the green <span style="color:green"><strong>SUCCESS</strong></span> text.</p>
+
+<p align="center"><img src="/y-badge/media/successful_upload.png" width="900" vspace="20px" /></p>
+
+<h2 id="compile-errors">Compile Errors</h2>
+
+<p>Compiling and uploading can fail for many reasons. For example:</p>
+
+<p align="center">
+<img src="/y-badge/media/semicolon_error.png" width="900" vspace="20px" /></p>
+
+<p>In the above example, the second <code class="language-plaintext highlighter-rouge">leds_set_color()</code> statement is missing a semicolon at the end.  Fortunately, the compiler detects this and provides a helpful error message. 
+The red error message in compiler log states: “<span style="color:red">src/main.cpp:151:30: expected ‘;’ before ‘leds_set_color’</span>”.  The <span style="color:red">src/main.cpp</span> indicates that the problem is in the <em>main.cpp</em> file, and the <span style="color:red">151:30</span> means that the problem is on line number 151, and the 30<sup>th</sup> character. Notice that there is a red squiggle in the code where the error is too.</p>
+
+<p>Another common error you might run into is when you misspell a function or variable name.  Function names must be spelled perfectly to compile correctly. Code is also case-sensitive, so capitalization matters! The code below has two errors, although they are easy to miss. One <code class="language-plaintext highlighter-rouge">leds_set_color()</code> statement is missing an ‘s’ and one has a capitalized ‘s’ that should be lower-case. Can you spot them?</p>
+
+<p align="center">
+<img src="/y-badge/media/mistyped_function_error.png" width="900" vspace="20px" /></p>
+
+<p>Just because your code compiles without error, doesn’t mean that it does what you are expecting.  Compiling and uploading without error just means that your code contains valid instructions for the computer to execute.  The instructions may not actually do what you are try to accomplish.</p>
+
+<h2 id="what-if-my-board-isnt-working">What If My Board Isn’t Working</h2>
+<p>Sometimes your board might get stuck in a bad state, and either you won’t be able to upload your code, or your code will upload but won’t run.</p>
+
+<p><em>Note: Before following the next steps to reset your board, make sure the problem isn’t actually in your code! It’s easy to think that the board isn’t working when it’s really a bug in your code that’s causing it to get stuck.  A good thing to try is to turn an LED on or off at the start of your code to see if it works.  Also, double check <code class="language-plaintext highlighter-rouge">main.cpp</code> to make sure the correct function is being called.</em></p>
+
+<p>If your board is stuck, you can reset it by following these steps:</p>
+
+<ol>
+  <li>
+    <p>Unplug the board from your computer.</p>
+  </li>
+  <li>
+    <p>Hold down the button labeled “BOOT1” and the button labeled “RESET” at the same time, while plugging the board back into the computer.</p>
+  </li>
+  <li>
+    <p>Let go of both buttons and wait 10-15 seconds before attempting to upload your code again.</p>
+  </li>
+  <li>
+    <p>Repeat as needed.</p>
+  </li>
+</ol>
+
+  </div>
+</article>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+<script src=/y-badge/js/jquery.visible.min.js></script>
+
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+
+    var prevVisible = $('#page-title').visible();
+
+    $(window).scroll(function () {
+        currentVisible = $('#page-title').visible()
+        if (prevVisible && !currentVisible) {
+            console.log("Do something!");
+            $("#page-title-bar").html($('#page-title').text());
+        }
+
+        if (!prevVisible && currentVisible) {
+            $("#page-title-bar").html("")
+        }
+
+        prevVisible = currentVisible;
+    });
+
+</script>
+
+</body>
+
+</html>

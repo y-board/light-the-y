@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>
+    
+    Module 5: Loops • BYU STEM Camp Y-Badge
+    
+</title>
+
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<!-- Custom styles for this template -->
+<link rel="stylesheet" href=/y-badge/css/main.css>
+
+<!-- <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"> -->
+<!-- <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet"> -->
+<link rel="stylesheet" href="https://use.typekit.net/jcn6ybb.css">
+<link rel="stylesheet" href="https://use.typekit.net/tzi8ooy.css">
+
+<!-- <link rel="icon" type="image/png" sizes="96x96" href=/y-badge/icon/favicon-96x96.png>
+<link rel="icon" type="image/png" sizes="32x32" href=/y-badge/icon/favicon-32x32.png>
+<link rel="icon" type="image/png" sizes="16x16" href=/y-badge/icon/favicon-16x16.png> -->
+
+<script src="https://kit.fontawesome.com/624d595ebf.js" crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        console.log("hi there");
+        // this will get the full URL at the address bar
+        var url = window.location.href;
+        console.log(url);
+
+        // passes on every "a" tag
+        $(".list-group a").each(function () {
+            console.log(this)
+            // checks if its the same on the address bar
+            if (url == (this.href)) {
+                $(this).addClass("active");
+            }
+        });
+    });        
+</script>
+
+
+</head>
+
+<body>
+  <div class="d-flex" id="wrapper">
+    <div class="border-right sidebar-color" id="sidebar-wrapper">
+    <div class="sidebar-sticky">
+        <div class="sidebar-heading-big">
+            <a href="/y-badge/"><img src=/y-badge/icon/icon.svg>-Badge</a>
+        </div>
+        <div class="list-group list-group-flush sidebar-color">
+
+            
+
+            
+            
+            
+            <!-- <a href="https://slack.com/app_redirect?team=T01J887F8MU&channel=C01JF1N6TH8"
+                class="list-item-normal list-group-item list-group-item-action sidebar-item" target="_blank"><i
+                    class="fa fa-question-circle"></i>
+                Slack</a> -->
+
+        </div>
+
+        <div class="sidebar-heading">Instructions</div>
+        <div class="list-group list-group-flush">
+            
+            <a href="/y-badge/setup/software-setup/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-computer"></i>
+                Software Setup
+
+            </a>
+            
+            <a href="/y-badge/setup/coding/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-code"></i>
+                Coding Intro
+
+            </a>
+            
+            <a href="/y-badge/setup/compiling/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-person-running"></i>
+                Running Code
+
+            </a>
+            
+        </div>
+
+        
+        <div class="sidebar-heading">Modules</div>
+        <div class="list-group list-group-flush">
+            
+            <a href="/y-badge/modules/leds/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-lightbulb"></i>
+                
+
+                
+
+                LEDs
+
+            </a>
+            
+            <a href="/y-badge/modules/delays/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-stopwatch"></i>
+                
+
+                
+
+                Delays
+
+            </a>
+            
+            <a href="/y-badge/modules/sound/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-volume"></i>
+                
+
+                
+
+                Sound
+
+            </a>
+            
+            <a href="/y-badge/modules/variables/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-square-root-variable"></i>
+                
+
+                
+
+                Variables
+
+            </a>
+            
+            <a href="/y-badge/modules/loops/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-arrow-rotate-left"></i>
+                
+
+                
+
+                Loops
+
+            </a>
+            
+            <a href="/y-badge/modules/conditionals/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-toggle-on"></i>
+                
+
+                
+
+                Buttons and Switches
+
+            </a>
+            
+            <a href="/y-badge/modules/badge/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-kit fa-y-badge"></i>
+                
+
+                
+
+                Create Your Badge
+
+            </a>
+            
+        </div>
+
+        <!-- <div class="sidebar-heading">Documentation</div>
+        <div class="list-group list-group-flush">
+            
+            <a href="/y-badge/documentation/cmake/"
+                class="list-item-narrow list-group-item list-group-item-action bg-light sidebar-item">
+                &emsp;
+
+                CMake
+
+            </a>
+            
+        </div>
+
+        <div class="sidebar-heading">Other</div>
+        <div class="list-group list-group-flush">
+            
+            <a href="/y-badge/other/c-programming/"
+                class="list-item-narrow list-group-item list-group-item-action bg-light sidebar-item">
+                
+
+                'C Programming' Study Questions
+
+            </a>
+            
+        </div> -->
+    </div>
+</div>
+
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar sticky-top navbar-expand-lg border-bottom">
+        <button class="btn btn-brand" id="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <a href="" class="navbar-brand mb-0 h1 page-title-bar text-center mx-auto" id="page-title-bar"></a>
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link btn btn-brand suggest-edits" target="_blank" rel="noopener noreferrer"
+              href="https://github.com/byu-cpe/y-badge/issues/new?labels=website&title=Updates to Module 5: Loops page"><i
+                class="fab fa-github"></i> Suggest
+              Edits</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="container">
+        
+
+        <article class="page lab">
+    <h1 class="page-title" id="page-title">
+        Module 5: Loops
+        
+    </h1>
+
+    <div class="page-content">
+        
+
+        
+
+        <details>
+  <summary>What Are Loops?
+</summary>
+
+  <p>As a programmer, it’s important to write code that isn’t repetitive; it makes your program much easier to understand and speeds up the pace at which you can work. <strong>Loops</strong> are a fundamental programming tool we can use to eliminate repetitive code. Similar to functions, they can include as many commands inside them as you’d like. Unlike functions, they are able to <em>repeat those commands</em> for as long as you want them to. We will explore two types of loops: <strong>while loops</strong> and <strong>for loops</strong>.</p>
+</details>
+
+<h2 id="while-loops">While Loops</h2>
+
+<p><strong>While loops</strong> are loops that run the code inside them <em>until a certain condition is met</em>. We can also use <code class="language-plaintext highlighter-rouge">while</code> loops to make our code run forever. For example, the following code will make LED1 on our board blink forever:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">while</span> <span class="p">(</span><span class="nb">true</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">leds_set_color</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">250</span><span class="p">);</span>
+    <span class="n">leds_set_color</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">250</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<details>
+  <summary>More Details
+</summary>
+
+  <p>There are a few things to notice about this loop:</p>
+
+  <ul>
+    <li>The thing we place inside parenthesis after the <code class="language-plaintext highlighter-rouge">while</code> keyword is called the <strong>loop condition</strong>. The loop condition should be a statement that evaluates to either <code class="language-plaintext highlighter-rouge">true</code> or <code class="language-plaintext highlighter-rouge">false</code>. Because we’ve hard-coded <code class="language-plaintext highlighter-rouge">true</code> into this loop, the condition will never change and the loop will run forever.</li>
+    <li>The commands we want the <code class="language-plaintext highlighter-rouge">while</code> loop to execute should be placed after the <strong>loop condition</strong> inside curly braces.</li>
+  </ul>
+</details>
+
+<p>What if we wanted to use a <code class="language-plaintext highlighter-rouge">while</code> loop to make the first 10 leds blink one time each, in sequence? We could do something like the following:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">currentLed</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="k">while</span><span class="p">(</span><span class="n">currentLed</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">leds_set_color</span><span class="p">(</span><span class="n">currentLed</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">250</span><span class="p">);</span>
+    <span class="n">leds_set_color</span><span class="p">(</span><span class="n">currentLed</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+    <span class="n">currentLed</span><span class="o">++</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>This loop has a <strong>loop condition</strong> that isn’t always true, because we increment the value of <code class="language-plaintext highlighter-rouge">currentLed</code> every time it runs using <code class="language-plaintext highlighter-rouge">currentLed++;</code>. We want it to run as long as <code class="language-plaintext highlighter-rouge">currentLed &lt;= 10</code> is true. Once <code class="language-plaintext highlighter-rouge">currentLed</code> is 11 or larger, the loop won’t run again.</p>
+
+<h2 id="for-loops">For Loops</h2>
+
+<p>A <code class="language-plaintext highlighter-rouge">for</code> loop to do the same thing as above looks like the following:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">currentLed</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">currentLed</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="p">;</span> <span class="n">currentLed</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">leds_set_color</span><span class="p">(</span><span class="n">currentLed</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">250</span><span class="p">);</span>
+    <span class="n">leds_set_color</span><span class="p">(</span><span class="n">currentLed</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Seems like a better way of doing things, right?</p>
+
+<details>
+  <summary>More Details
+</summary>
+
+  <p>Our code to make the first 10 leds blink using a <code class="language-plaintext highlighter-rouge">while</code> loop is a little clunky. Did you notice that we had to declare a variable <em>outside of our loop</em> called <code class="language-plaintext highlighter-rouge">currentLed</code> to keep track of our condition? And then we had to increment it <em>inside of our loop</em>. That’s a little confusing.</p>
+
+  <p><code class="language-plaintext highlighter-rouge">for</code> loops and <code class="language-plaintext highlighter-rouge">while</code> loops can do the same things, but <em>for loops are better for running code a certain number of times and while loops are better for running code until a certain condition is met in our program.</em></p>
+
+  <p>Notice the similarities between a <code class="language-plaintext highlighter-rouge">for</code> loop and a <code class="language-plaintext highlighter-rouge">while</code> loop. We still declare a variable called <code class="language-plaintext highlighter-rouge">currentLed</code>, we still have a <strong>loop condition</strong> that keeps track of whether the loop should run again, and we still increment <code class="language-plaintext highlighter-rouge">currentLed</code> every time the loop runs. But, we do all of that on a single line inside the parenthesis. This is a nice way to organize our code and keep track of our variable in one spot.</p>
+</details>
+
+<h2 id="exploration">Exploration:</h2>
+<details>
+  <summary>Remember to change <code class="language-plaintext highlighter-rouge">main.cpp</code> before continuing…
+</summary>
+  <blockquote>
+    <p>📝 <strong><em>NOTE:</em></strong> You will need to go to <code class="language-plaintext highlighter-rouge">main.cpp</code> and change the comments to call the correct activity function:</p>
+    <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// variables_activity();</span>
+<span class="n">loop_activity</span><span class="p">();</span>
+</code></pre></div>    </div>
+  </blockquote>
+</details>
+
+<ol>
+  <li>
+    <p>Use a loop to turn on all the LEDs white. <br />
+<img src="/y-badge/media/white_lights.png" width="400" hspace="5%" vspace="10px" /></p>
+  </li>
+  <li>
+    <p>Make all the LEDs blink. On for 500ms then off for 500ms, repeated forever.</p>
+    <ul>
+      <li>Hint: Try using <code class="language-plaintext highlighter-rouge">for</code> loops <em>inside</em> of a <code class="language-plaintext highlighter-rouge">while</code> loop.</li>
+    </ul>
+
+    <p><img src="/y-badge/media/white_blinking_lights.gif" width="400" hspace="5%" vspace="10px" /></p>
+  </li>
+</ol>
+
+<h2 id="challenges">Challenges:</h2>
+
+<details>
+  <summary>Remember to comment/uncomment the correct function calls…
+</summary>
+  <p><em>Remember to comment out the <code class="language-plaintext highlighter-rouge">loop_exploration();</code> call in the <code class="language-plaintext highlighter-rouge">loop_activity</code> function and uncomment the correct challenge function:</em></p>
+
+  <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">loop_exploration</span><span class="p">();</span>
+<span class="c1">// loop_challenge1();</span>
+<span class="c1">// loop_challenge2();</span>
+<span class="c1">// loop_challenge3();</span>
+</code></pre></div>  </div>
+</details>
+
+<p><strong>Challenge 1:</strong> Copy the code for “Twinkle Twinkle Little Star” from the <code class="language-plaintext highlighter-rouge">sound_activity.cpp</code> file and play it on repeat using a loop.</p>
+
+<p><strong>Challenge 2:</strong> Make a single LED circle around the board forever, you choose the speed. <br />
+<img src="/y-badge/media/chasing_cw_lights.gif" width="400" hspace="5%" vspace="10px" /></p>
+
+<p><strong>Challenge 3:</strong> Change the last program to make the LED circle around the other direction. <br />
+<img src="/y-badge/media/chasing_ccw_lights.gif" width="400" hspace="5%" vspace="10px" /></p>
+
+    </div>
+</article>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+<script src=/y-badge/js/jquery.visible.min.js></script>
+
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+
+    var prevVisible = $('#page-title').visible();
+
+    $(window).scroll(function () {
+        currentVisible = $('#page-title').visible()
+        if (prevVisible && !currentVisible) {
+            console.log("Do something!");
+            $("#page-title-bar").html($('#page-title').text());
+        }
+
+        if (!prevVisible && currentVisible) {
+            $("#page-title-bar").html("")
+        }
+
+        prevVisible = currentVisible;
+    });
+
+</script>
+
+</body>
+
+</html>

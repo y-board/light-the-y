@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>
+    
+    Module 4: Variables • BYU STEM Camp Y-Badge
+    
+</title>
+
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<!-- Custom styles for this template -->
+<link rel="stylesheet" href=/y-badge/css/main.css>
+
+<!-- <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"> -->
+<!-- <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet"> -->
+<link rel="stylesheet" href="https://use.typekit.net/jcn6ybb.css">
+<link rel="stylesheet" href="https://use.typekit.net/tzi8ooy.css">
+
+<!-- <link rel="icon" type="image/png" sizes="96x96" href=/y-badge/icon/favicon-96x96.png>
+<link rel="icon" type="image/png" sizes="32x32" href=/y-badge/icon/favicon-32x32.png>
+<link rel="icon" type="image/png" sizes="16x16" href=/y-badge/icon/favicon-16x16.png> -->
+
+<script src="https://kit.fontawesome.com/624d595ebf.js" crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        console.log("hi there");
+        // this will get the full URL at the address bar
+        var url = window.location.href;
+        console.log(url);
+
+        // passes on every "a" tag
+        $(".list-group a").each(function () {
+            console.log(this)
+            // checks if its the same on the address bar
+            if (url == (this.href)) {
+                $(this).addClass("active");
+            }
+        });
+    });        
+</script>
+
+
+</head>
+
+<body>
+  <div class="d-flex" id="wrapper">
+    <div class="border-right sidebar-color" id="sidebar-wrapper">
+    <div class="sidebar-sticky">
+        <div class="sidebar-heading-big">
+            <a href="/y-badge/"><img src=/y-badge/icon/icon.svg>-Badge</a>
+        </div>
+        <div class="list-group list-group-flush sidebar-color">
+
+            
+
+            
+            
+            
+            <!-- <a href="https://slack.com/app_redirect?team=T01J887F8MU&channel=C01JF1N6TH8"
+                class="list-item-normal list-group-item list-group-item-action sidebar-item" target="_blank"><i
+                    class="fa fa-question-circle"></i>
+                Slack</a> -->
+
+        </div>
+
+        <div class="sidebar-heading">Instructions</div>
+        <div class="list-group list-group-flush">
+            
+            <a href="/y-badge/setup/software-setup/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-computer"></i>
+                Software Setup
+
+            </a>
+            
+            <a href="/y-badge/setup/coding/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-code"></i>
+                Coding Intro
+
+            </a>
+            
+            <a href="/y-badge/setup/compiling/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-person-running"></i>
+                Running Code
+
+            </a>
+            
+        </div>
+
+        
+        <div class="sidebar-heading">Modules</div>
+        <div class="list-group list-group-flush">
+            
+            <a href="/y-badge/modules/leds/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-lightbulb"></i>
+                
+
+                
+
+                LEDs
+
+            </a>
+            
+            <a href="/y-badge/modules/delays/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-stopwatch"></i>
+                
+
+                
+
+                Delays
+
+            </a>
+            
+            <a href="/y-badge/modules/sound/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-volume"></i>
+                
+
+                
+
+                Sound
+
+            </a>
+            
+            <a href="/y-badge/modules/variables/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-square-root-variable"></i>
+                
+
+                
+
+                Variables
+
+            </a>
+            
+            <a href="/y-badge/modules/loops/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-arrow-rotate-left"></i>
+                
+
+                
+
+                Loops
+
+            </a>
+            
+            <a href="/y-badge/modules/conditionals/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-toggle-on"></i>
+                
+
+                
+
+                Buttons and Switches
+
+            </a>
+            
+            <a href="/y-badge/modules/badge/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-kit fa-y-badge"></i>
+                
+
+                
+
+                Create Your Badge
+
+            </a>
+            
+        </div>
+
+        <!-- <div class="sidebar-heading">Documentation</div>
+        <div class="list-group list-group-flush">
+            
+            <a href="/y-badge/documentation/cmake/"
+                class="list-item-narrow list-group-item list-group-item-action bg-light sidebar-item">
+                &emsp;
+
+                CMake
+
+            </a>
+            
+        </div>
+
+        <div class="sidebar-heading">Other</div>
+        <div class="list-group list-group-flush">
+            
+            <a href="/y-badge/other/c-programming/"
+                class="list-item-narrow list-group-item list-group-item-action bg-light sidebar-item">
+                
+
+                'C Programming' Study Questions
+
+            </a>
+            
+        </div> -->
+    </div>
+</div>
+
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar sticky-top navbar-expand-lg border-bottom">
+        <button class="btn btn-brand" id="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <a href="" class="navbar-brand mb-0 h1 page-title-bar text-center mx-auto" id="page-title-bar"></a>
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link btn btn-brand suggest-edits" target="_blank" rel="noopener noreferrer"
+              href="https://github.com/byu-cpe/y-badge/issues/new?labels=website&title=Updates to Module 4: Variables page"><i
+                class="fab fa-github"></i> Suggest
+              Edits</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="container">
+        
+
+        <article class="page lab">
+    <h1 class="page-title" id="page-title">
+        Module 4: Variables
+        
+    </h1>
+
+    <div class="page-content">
+        
+
+        
+
+        <h2 id="what-are-variables">What are Variables?</h2>
+
+<p>Variables are a way for us to store information in our program that we can change later. There are three parts to a variable: a <strong>type</strong>, a <strong>name</strong>, and a <strong>value</strong>. For example, I could store a variable in my program called “myFavoriteNumber” like this:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">myFavoriteNumber</span> <span class="o">=</span> <span class="mi">8</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>After I have <em>declared</em> <code class="language-plaintext highlighter-rouge">myFavoriteNumber</code>, I can use it anywhere in my program. And if my favorite number changes later, I can change my variable to reflect that:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">myFavoriteNumber</span> <span class="o">=</span> <span class="mi">21</span><span class="p">;</span>
+</code></pre></div></div>
+
+<details>
+  <summary>About Variable Types
+</summary>
+
+  <p>Notice that I only have to tell the <em>compiler</em> what type of variable myFavoriteNumber is when I first declare it. If I change the value later, I don’t have to include the type; the <em>compiler</em> will remember it automatically. <code class="language-plaintext highlighter-rouge">myFavoriteNumber</code> is an <code class="language-plaintext highlighter-rouge">int</code> type variable, which means that it can only be a whole number. If my favorite number was 3.14, this type wouldn’t work! Some other common variable types include <code class="language-plaintext highlighter-rouge">double</code> (for decimal numbers), <code class="language-plaintext highlighter-rouge">bool</code> (for <code class="language-plaintext highlighter-rouge">true</code> or <code class="language-plaintext highlighter-rouge">false</code> values), and <code class="language-plaintext highlighter-rouge">char</code> (for single characters like the letter <code class="language-plaintext highlighter-rouge">'a'</code>).</p>
+</details>
+
+<h2 id="examples">Examples</h2>
+
+<p>Let’s add a few variables to our code. In your <code class="language-plaintext highlighter-rouge">variables_activity.cpp</code> file, in the <code class="language-plaintext highlighter-rouge">variables_exploration</code> function definition, add the following lines of code:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">currentLed</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">currentNote</span> <span class="o">=</span> <span class="n">NOTE_C4</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">duration</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">;</span>
+</code></pre></div></div>
+
+<details>
+  <summary>More Details
+</summary>
+
+  <p>Hopefully it’s obvious what our variables represent based on their names. Notice that we can set our variables equal to other variables! <code class="language-plaintext highlighter-rouge">currentNote</code> has the same value as <code class="language-plaintext highlighter-rouge">NOTE_C4</code>. If we add <code class="language-plaintext highlighter-rouge">speaker_play_note(currentNote, duration)</code> to our code, it’s the same as adding <code class="language-plaintext highlighter-rouge">speaker_play_note(NOTE_C4, 1000)</code>. Middle C will be played for one second.</p>
+</details>
+
+<p>We’ve now made three variables. Let’s use them to do something interesting. First, let’s light up our current LED. Add the following to your code, and upload it to your board:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">leds_set_color</span><span class="p">(</span><span class="n">currentLed</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+<span class="n">currentLed</span><span class="o">++</span><span class="p">;</span>
+<span class="n">leds_set_color</span><span class="p">(</span><span class="n">currentLed</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+<span class="n">currentLed</span><span class="o">++</span><span class="p">;</span>
+<span class="n">leds_set_color</span><span class="p">(</span><span class="n">currentLed</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+<span class="n">currentLed</span><span class="o">++</span><span class="p">;</span>
+<span class="n">leds_set_color</span><span class="p">(</span><span class="n">currentLed</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</code></pre></div></div>
+
+<details>
+  <summary>More Details
+</summary>
+
+  <p>As you probably guessed by the lights on your board turning on, adding <code class="language-plaintext highlighter-rouge">++</code> to our variable name (with a semicolon at the end) increments the number our variable represents by 1. This is exactly the same as if we had written <code class="language-plaintext highlighter-rouge">currentLed = currentLed + 1</code>. It’s nice that we don’t have to hard-code the LED numbers into our code to tell the <em>compiler</em> that we want to light them up. It makes our code a little easier to read.</p>
+</details>
+
+<h2 id="exploration">Exploration</h2>
+<details>
+  <summary>Remember to change <code class="language-plaintext highlighter-rouge">main.cpp</code> before continuing…
+</summary>
+  <blockquote>
+    <p>📝 <strong><em>NOTE:</em></strong> You will need to go to <code class="language-plaintext highlighter-rouge">main.cpp</code> and change the comments to call the correct activity function:</p>
+    <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// sound_activity();</span>
+<span class="n">variables_activity</span><span class="p">();</span>
+</code></pre></div>    </div>
+  </blockquote>
+</details>
+
+<ol>
+  <li>
+    <p>Divide <code class="language-plaintext highlighter-rouge">currentNote</code> by 2 using the following code snippet: <code class="language-plaintext highlighter-rouge">currentNote = currentNote / 2;</code> Play a sound again. How does our new sound compare to our old one?</p>
+  </li>
+  <li>See what happens if you multiply or divide <code class="language-plaintext highlighter-rouge">currentNote</code> by powers of 2 (2, 4, 8, 16) and use it to play a sound. For example, how does the sound compare to our old ones if we write <code class="language-plaintext highlighter-rouge">currentNote = currentNote * 8;</code>?
+    <details>
+      <summary>Hint
+ </summary>
+
+      <p>When we divide and multiply the frequency of notes by powers of 2, we get “octaves”. For Middle C, this means we get higher or lower C notes.</p>
+    </details>
+  </li>
+  <li>Light up three additional LEDs in the same way we did above.</li>
+</ol>
+
+<h2 id="challenges">Challenges</h2>
+
+<details>
+  <summary>Remember to comment/uncomment the correct function calls…
+</summary>
+  <p><em>Remember to comment out the <code class="language-plaintext highlighter-rouge">variables_exploration();</code> call in the <code class="language-plaintext highlighter-rouge">variables_activity</code> function and uncomment the correct challenge function:</em></p>
+
+  <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">variables_exploration</span><span class="p">();</span>
+<span class="c1">// variables_challenge1();</span>
+<span class="c1">// variables_challenge2();</span>
+</code></pre></div>  </div>
+</details>
+
+<p><strong>Challenge 1:</strong> Light up all the LEDs on the board using the pattern above, then turn them all off again.</p>
+
+<details>
+  <summary>Hint
+</summary>
+
+  <p>We can use <code class="language-plaintext highlighter-rouge">currentNote--;</code> to decrement our variable by 1. This is the same as writing <code class="language-plaintext highlighter-rouge">currentNote = currentNote - 1;</code></p>
+</details>
+
+<p><strong>Challenge 2:</strong> Use the <code class="language-plaintext highlighter-rouge">currentNote</code> and <code class="language-plaintext highlighter-rouge">duration</code> variables to play notes with random sound lengths and frequencies</p>
+
+<details>
+  <summary>Hint
+</summary>
+
+  <p>You can use any mathematical expression you like and set your variable equal to it. For example: <code class="language-plaintext highlighter-rouge">duration = ((8 * 7) / 3) * 10;</code> or <code class="language-plaintext highlighter-rouge">currentNote = 2 * 2 * 2 + 1034;</code></p>
+</details>
+
+<p>IMPORTANT: For your <code class="language-plaintext highlighter-rouge">variables_challenge1</code> and <code class="language-plaintext highlighter-rouge">variables_challenge2</code> functions, you will need to redeclare your variables. Variables live inside functions. If we are in a new function, the variable doesn’t exist any more. Can you think of any other variables you might want to make?</p>
+
+    </div>
+</article>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+<script src=/y-badge/js/jquery.visible.min.js></script>
+
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+
+    var prevVisible = $('#page-title').visible();
+
+    $(window).scroll(function () {
+        currentVisible = $('#page-title').visible()
+        if (prevVisible && !currentVisible) {
+            console.log("Do something!");
+            $("#page-title-bar").html($('#page-title').text());
+        }
+
+        if (!prevVisible && currentVisible) {
+            $("#page-title-bar").html("")
+        }
+
+        prevVisible = currentVisible;
+    });
+
+</script>
+
+</body>
+
+</html>

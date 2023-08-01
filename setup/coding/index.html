@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>
+    
+    Coding Intro • BYU STEM Camp Y-Badge
+    
+</title>
+
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<!-- Custom styles for this template -->
+<link rel="stylesheet" href=/y-badge/css/main.css>
+
+<!-- <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"> -->
+<!-- <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet"> -->
+<link rel="stylesheet" href="https://use.typekit.net/jcn6ybb.css">
+<link rel="stylesheet" href="https://use.typekit.net/tzi8ooy.css">
+
+<!-- <link rel="icon" type="image/png" sizes="96x96" href=/y-badge/icon/favicon-96x96.png>
+<link rel="icon" type="image/png" sizes="32x32" href=/y-badge/icon/favicon-32x32.png>
+<link rel="icon" type="image/png" sizes="16x16" href=/y-badge/icon/favicon-16x16.png> -->
+
+<script src="https://kit.fontawesome.com/624d595ebf.js" crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        console.log("hi there");
+        // this will get the full URL at the address bar
+        var url = window.location.href;
+        console.log(url);
+
+        // passes on every "a" tag
+        $(".list-group a").each(function () {
+            console.log(this)
+            // checks if its the same on the address bar
+            if (url == (this.href)) {
+                $(this).addClass("active");
+            }
+        });
+    });        
+</script>
+
+
+</head>
+
+<body>
+  <div class="d-flex" id="wrapper">
+    <div class="border-right sidebar-color" id="sidebar-wrapper">
+    <div class="sidebar-sticky">
+        <div class="sidebar-heading-big">
+            <a href="/y-badge/"><img src=/y-badge/icon/icon.svg>-Badge</a>
+        </div>
+        <div class="list-group list-group-flush sidebar-color">
+
+            
+
+            
+            
+            
+            <!-- <a href="https://slack.com/app_redirect?team=T01J887F8MU&channel=C01JF1N6TH8"
+                class="list-item-normal list-group-item list-group-item-action sidebar-item" target="_blank"><i
+                    class="fa fa-question-circle"></i>
+                Slack</a> -->
+
+        </div>
+
+        <div class="sidebar-heading">Instructions</div>
+        <div class="list-group list-group-flush">
+            
+            <a href="/y-badge/setup/software-setup/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-computer"></i>
+                Software Setup
+
+            </a>
+            
+            <a href="/y-badge/setup/coding/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-code"></i>
+                Coding Intro
+
+            </a>
+            
+            <a href="/y-badge/setup/compiling/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-person-running"></i>
+                Running Code
+
+            </a>
+            
+        </div>
+
+        
+        <div class="sidebar-heading">Modules</div>
+        <div class="list-group list-group-flush">
+            
+            <a href="/y-badge/modules/leds/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-lightbulb"></i>
+                
+
+                
+
+                LEDs
+
+            </a>
+            
+            <a href="/y-badge/modules/delays/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-stopwatch"></i>
+                
+
+                
+
+                Delays
+
+            </a>
+            
+            <a href="/y-badge/modules/sound/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-volume"></i>
+                
+
+                
+
+                Sound
+
+            </a>
+            
+            <a href="/y-badge/modules/variables/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-square-root-variable"></i>
+                
+
+                
+
+                Variables
+
+            </a>
+            
+            <a href="/y-badge/modules/loops/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-arrow-rotate-left"></i>
+                
+
+                
+
+                Loops
+
+            </a>
+            
+            <a href="/y-badge/modules/conditionals/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-solid fa-toggle-on"></i>
+                
+
+                
+
+                Buttons and Switches
+
+            </a>
+            
+            <a href="/y-badge/modules/badge/"
+                class="list-item-tall list-group-item list-group-item-action bg-light sidebar-item">
+                
+                <i class="fa-kit fa-y-badge"></i>
+                
+
+                
+
+                Create Your Badge
+
+            </a>
+            
+        </div>
+
+        <!-- <div class="sidebar-heading">Documentation</div>
+        <div class="list-group list-group-flush">
+            
+            <a href="/y-badge/documentation/cmake/"
+                class="list-item-narrow list-group-item list-group-item-action bg-light sidebar-item">
+                &emsp;
+
+                CMake
+
+            </a>
+            
+        </div>
+
+        <div class="sidebar-heading">Other</div>
+        <div class="list-group list-group-flush">
+            
+            <a href="/y-badge/other/c-programming/"
+                class="list-item-narrow list-group-item list-group-item-action bg-light sidebar-item">
+                
+
+                'C Programming' Study Questions
+
+            </a>
+            
+        </div> -->
+    </div>
+</div>
+
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar sticky-top navbar-expand-lg border-bottom">
+        <button class="btn btn-brand" id="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <a href="" class="navbar-brand mb-0 h1 page-title-bar text-center mx-auto" id="page-title-bar"></a>
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link btn btn-brand suggest-edits" target="_blank" rel="noopener noreferrer"
+              href="https://github.com/byu-cpe/y-badge/issues/new?labels=website&title=Updates to Coding Intro page"><i
+                class="fab fa-github"></i> Suggest
+              Edits</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="container">
+        
+
+        <article class="page">
+  <h1 class="page-title" id="page-title">
+    
+    <i class="fa-solid fa-code"></i>
+    
+    Coding Intro
+  </h1>
+
+  <div class="page-content">
+    
+
+    <details>
+  <summary>Project Layout Information
+</summary>
+
+  <p>The project code is organized in a way that makes it easy for you to write separate code for each module:</p>
+
+  <ul>
+    <li>
+      <p>You should begin <em>each activity</em> in <code class="language-plaintext highlighter-rouge">src/main.cpp</code> which is the <code class="language-plaintext highlighter-rouge">main.cpp</code> file in the <code class="language-plaintext highlighter-rouge">src</code> folder of the project. <code class="language-plaintext highlighter-rouge">main.cpp</code> has several function calls with names like <code class="language-plaintext highlighter-rouge">led_activity();</code> or <code class="language-plaintext highlighter-rouge">loop_activity();</code> on lines 14-20. You should uncomment the function call for the activity you are currently working on by <em>removing</em> the <code class="language-plaintext highlighter-rouge">//</code> from in front of it. Make sure the function calls on lines 14-20 for the activities you are <em>not</em> currently working on <em>have</em> the <code class="language-plaintext highlighter-rouge">//</code> in front of them.</p>
+    </li>
+    <li>
+      <p>Each function call on lines 14-20 of <code class="language-plaintext highlighter-rouge">main.cpp</code> has a corresponding file. For example, <code class="language-plaintext highlighter-rouge">led_activity();</code> corresponds to a file named <code class="language-plaintext highlighter-rouge">led_activity.cpp</code> in the <code class="language-plaintext highlighter-rouge">src</code> folder of the project.</p>
+    </li>
+    <li>
+      <p>You should navigate to the file that corresponds to your current activity and write all of your code for that activity in that file.</p>
+    </li>
+    <li>
+      <p>For each activity and its corresponding file, there is an activity function that calls other functions for exploration and two or more challenges. These function calls should be commented or uncommented depending on which one you are working on <em>just like how only the current activity was uncommented in <code class="language-plaintext highlighter-rouge">main.cpp</code>.</em></p>
+    </li>
+    <li>
+      <p>Write the code for the activity’s exploration and challenge sections inside the curly braces for the corresponding function definitions.</p>
+    </li>
+    <li>
+      <p>You may choose to add the code provided in the <strong>Example</strong> sections of each module to the exploration function, so that you can see how it works.</p>
+    </li>
+    <li>
+      <p>For more information about functions, see the <em>Coding Intro</em> page.</p>
+    </li>
+  </ul>
+
+</details>
+
+<h2 id="statements">Statements</h2>
+
+<p>Computer programs are made by writing a sequence of commands for the computer to execute.  These commands are called <em>instructions</em> or <em>statements</em>.</p>
+
+<p><img src="/y-badge/media/code.png" /></p>
+
+<p>The computer processing chip (called a <em>microcontroller</em>) executes these instructions in sequence.  It can execute instructions VERY fast (up to 240 million per second), so even if you write several instructions in a sequence, it will execute them so fast it will appear to you that they execute instantly and all at the same time.</p>
+
+<p><img src="/y-badge/media/semicolons.png" /></p>
+
+<p><strong>Important:</strong> See how each statement ends with a semicolon?  This is <em>required</em> to indicate the end of a statement.  DON’T FORGET TO ADD THESE OR YOUR CODE WON’T RUN!</p>
+
+<h2 id="comments">Comments</h2>
+<p>Sometimes we want to tell the computer to ignore certain statements.  We can do this by adding <code class="language-plaintext highlighter-rouge">//</code> in front of any lines of code we want to disable. This is called a <strong>comment</strong>.</p>
+
+<p>For example in the code below, we comment out the second statement so that now only LED1 and LED17 turns on (and LED13 does not).  The editor helps you remember that this code is commented out by turning it green.</p>
+
+<p><img src="/y-badge/media/comments1.png" /></p>
+
+<p>Comments are also used to add personal messages to your code.  This is done to help you remember what your code is supposed to do.  It also helps others who look at your code to understand it.  Here is an example:</p>
+
+<p><img src="/y-badge/media/comments2.png" /></p>
+
+<p>The editor will automatically comment or uncomment code for you if you put your cursor on the line and press <code class="language-plaintext highlighter-rouge">Ctrl + /</code></p>
+
+<h2 id="functions-and-braces">Functions and Braces</h2>
+<p>Sometimes it is helpful to group together code statements into blocks of code that you can run in one easy step.  Grouping the statements together is like creating a <em>recipe</em> of directions.  This is called a <strong>function</strong>.</p>
+
+<p>The code below shows two different functions (<code class="language-plaintext highlighter-rouge">turnOnLEDs</code> and <code class="language-plaintext highlighter-rouge">turnOffLEDs</code>) that turn on or off the first three LEDs.  Functions start with an open brace <code class="language-plaintext highlighter-rouge">{</code> and end with a close brace <code class="language-plaintext highlighter-rouge">}</code>.  All of the instructions within the braces make up the recipe of the function.</p>
+
+<p><img src="/y-badge/media/functions.png" hspace="5%" width="500" /></p>
+
+<p>You can run the function recipe by <strong>calling</strong> a function.  This is done by writing a statement with the function name followed by parenthesis <code class="language-plaintext highlighter-rouge">()</code>. In the above code, the statements at <span style="color:green"><strong>1</strong></span> and <span style="color:green"><strong>5</strong></span> run the <code class="language-plaintext highlighter-rouge">turnOnLEDs</code> function to turn on the three LEDs.  The statement at <span style="color:red"><strong>3</strong></span> runs the <code class="language-plaintext highlighter-rouge">turnOffLEDs</code> function to turn off the three LEDs.</p>
+
+<p>Using functions helps us organize our code to make it easier to understand.  It also allows us to <em>reuse</em> code, by calling the same recipe of instructions multiple times.</p>
+
+
+  </div>
+</article>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+<script src=/y-badge/js/jquery.visible.min.js></script>
+
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+
+    var prevVisible = $('#page-title').visible();
+
+    $(window).scroll(function () {
+        currentVisible = $('#page-title').visible()
+        if (prevVisible && !currentVisible) {
+            console.log("Do something!");
+            $("#page-title-bar").html($('#page-title').text());
+        }
+
+        if (!prevVisible && currentVisible) {
+            $("#page-title-bar").html("")
+        }
+
+        prevVisible = currentVisible;
+    });
+
+</script>
+
+</body>
+
+</html>
