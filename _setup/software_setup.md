@@ -82,7 +82,7 @@ We've created a **code repository** that will get your board ready to program an
 
 1. Click "Clone Repository"
 
-1. Enter the url `https://github.com/byu-cpe/y-badge-code.git` and click "Clone from URL" \
+1. Enter the url `https://github.com/y-badge/light-the-y-code.git` and click "Clone from URL" \
 <img src="{% link media/vscode_gui_clone.png %}" width="800" vspace="10px">
 
 1. A window will open and ask you to select the destination folder. Make sure you click "Home" on the left hand side of the window, then click the green "Select as Repository Destination" button \
@@ -96,6 +96,6 @@ We've created a **code repository** that will get your board ready to program an
     - Press the `Windows` key
     - Type `terminal` and press `Enter`
 
-1. Type `git clone https://github.com/byu-cpe/y-badge-code.git` and press `Enter`
+1. Type `git clone https://github.com/y-badge/light-the-y-code.git` and press `Enter`
 
-1. Type `code y-badge-code` and press `Enter`
+1. Type `code light-the-y-code` and press `Enter`
