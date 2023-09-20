@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "BYU STEM Camp Y-Badge"
+title: "BYU STEM Camp Light the Y"
 short_title: -Badge
 # class_number: ECEN 330
 email: jgoeders@byu.edu
@@ -21,7 +21,7 @@ host: localhost
 baseurl: "/light-the-y"
 url: "https://y-badge.github.io"
 github:
-  url: https://github.com/byu-cpe/y-badge
+  url: https://github.com/y-badge/light-the-y
   # fileurl: https://github.com/byu-cpe/ecen330_student/blob/main
 
 show_construction_message: false
