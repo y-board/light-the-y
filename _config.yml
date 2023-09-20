@@ -18,8 +18,8 @@ short_title: -Badge
 # class_number: ECEN 330
 email: jgoeders@byu.edu
 host: localhost
-baseurl: "/y-badge"
-url: "https://byu-cpe.github.io"
+baseurl: "/light-the-y"
+url: "https://y-badge.github.io"
 github:
   url: https://github.com/byu-cpe/y-badge
   # fileurl: https://github.com/byu-cpe/ecen330_student/blob/main
