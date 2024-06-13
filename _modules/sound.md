@@ -22,7 +22,7 @@ Y-Board v2 Buzzer. Y-Board v3 has a speaker.
 
 The function to play a sound looks like this:
 ```cpp
-Yboard.play_note(<note>, <duration>);
+Yboard.play_note_background(<note>, <duration>);
 ```
 
 
@@ -35,26 +35,26 @@ Yboard.play_note(<note>, <duration>);
 To play a G5 for 1/4 second, you would write:
 
 ```cpp
-Yboard.play_note(NOTE_G5, 250)
+Yboard.play_note_background(NOTE_G5, 250)
 ```
 
 To play "Twinkle Twinkle Little Star", you would use the following code:
 
 ```cpp
-Yboard.play_note(NOTE_C4, 400);
-Yboard.play_note(NOTE_C4, 400);
-Yboard.play_note(NOTE_G4, 400);
-Yboard.play_note(NOTE_G4, 400);
-Yboard.play_note(NOTE_A4, 400);
-Yboard.play_note(NOTE_A4, 400);
-Yboard.play_note(NOTE_G4, 800);
-Yboard.play_note(NOTE_F4, 400);
-Yboard.play_note(NOTE_F4, 400);
-Yboard.play_note(NOTE_E4, 400);
-Yboard.play_note(NOTE_E4, 400);
-Yboard.play_note(NOTE_D4, 400);
-Yboard.play_note(NOTE_D4, 400);
-Yboard.play_note(NOTE_C4, 800);
+Yboard.play_note_background(NOTE_C4, 400);
+Yboard.play_note_background(NOTE_C4, 400);
+Yboard.play_note_background(NOTE_G4, 400);
+Yboard.play_note_background(NOTE_G4, 400);
+Yboard.play_note_background(NOTE_A4, 400);
+Yboard.play_note_background(NOTE_A4, 400);
+Yboard.play_note_background(NOTE_G4, 800);
+Yboard.play_note_background(NOTE_F4, 400);
+Yboard.play_note_background(NOTE_F4, 400);
+Yboard.play_note_background(NOTE_E4, 400);
+Yboard.play_note_background(NOTE_E4, 400);
+Yboard.play_note_background(NOTE_D4, 400);
+Yboard.play_note_background(NOTE_D4, 400);
+Yboard.play_note_background(NOTE_C4, 800);
 ```
 
 
@@ -74,12 +74,12 @@ sound_activity();
 
 1. Make the speaker play C, D, E, D, C for 500ms each.
 
-1. What happens if you try to call `Yboard.set_led_color(1, 255, 0, 0)` to turn LED 1 red right after you call `Yboard.play_note(NOTE_C4, 5000)` to play middle C for 5 seconds? Does the board wait to turn the light on until the sound is done playing?
+1. What happens if you try to call `Yboard.set_led_color(1, 255, 0, 0)` to turn LED 1 red right after you call `Yboard.play_note_background(NOTE_C4, 5000)` to play middle C for 5 seconds? Does the board wait to turn the light on until the sound is done playing?
     <details markdown="block">
     <summary markdown="span">Why Does This Happen?
     </summary>
     
-    The `Yboard.play_note()` function is a **non-blocking** function, which means other functions that are called after it will actually run at the same time. However, the speaker can only play one note at a time, so any additional `Yboard.play_note()` calls will wait until the one before has finished.
+    The `Yboard.play_note_background()` function is a **non-blocking** function, which means other functions that are called after it will actually run at the same time. However, the speaker can only play one note at a time, so any additional `Yboard.play_note_background()` calls will wait until the one before has finished.
     </details>
 
 ## Challenges
