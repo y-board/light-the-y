@@ -11,7 +11,7 @@ order: 7
 <summary markdown="span">The Knob on the Y-Badge
 </summary>
 
-The knob is a device known as a **potentiometer**. We send a _voltage_ through it and measure how much of that voltage is allowed to pass through, based on the position of the knob. This allows us to return a value based on the current position of the knob using the `knob_get()` function.
+The knob is a device known as a **potentiometer**. We send a _voltage_ through it and measure how much of that voltage is allowed to pass through, based on the position of the knob. This allows us to return a value based on the current position of the knob using the `Yboard.get_knob()` function.
 
 </details>
 
