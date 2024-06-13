@@ -29,10 +29,10 @@ Compiling and uploading can fail for many reasons. For example:
 <p align="center">
 <img src="{% link media/semicolon_error.png %}" width="900" vspace="20px"></p>
 
-In the above example, the second `leds_set_color()` statement is missing a semicolon at the end.  Fortunately, the compiler detects this and provides a helpful error message. 
-The red error message in compiler log states: "<span style="color:red">src/main.cpp:151:30: expected ';' before 'leds_set_color'</span>".  The <span style="color:red">src/main.cpp</span> indicates that the problem is in the *main.cpp* file, and the <span style="color:red">151:30</span> means that the problem is on line number 151, and the 30<sup>th</sup> character. Notice that there is a red squiggle in the code where the error is too.
+In the above example, the second `Yboard.set_led_color()` statement is missing a semicolon at the end.  Fortunately, the compiler detects this and provides a helpful error message. 
+The red error message in compiler log states: "<span style="color:red">src/main.cpp:29:40: expected ';' before 'Yboard'</span>".  The <span style="color:red">src/main.cpp</span> indicates that the problem is in the *main.cpp* file, and the <span style="color:red">29:40</span> means that the problem is on line number 29, and the 40<sup>th</sup> character. Notice that there is a red squiggle in the code where the error is too.
 
-Another common error you might run into is when you misspell a function or variable name.  Function names must be spelled perfectly to compile correctly. Code is also case-sensitive, so capitalization matters! The code below has two errors, although they are easy to miss. One `leds_set_color()` statement is missing an 's' and one has a capitalized 's' that should be lower-case. Can you spot them?
+Another common error you might run into is when you misspell a function or variable name.  Function names must be spelled perfectly to compile correctly. Code is also case-sensitive, so capitalization matters! The code below has an error, although it is easy to miss. One `Yboard.set_led_color()` statement has a capitalized 's' that should be lower-case. Can you spot the error?
 
 <p align="center">
 <img src="{% link media/mistyped_function_error.png %}" width="900" vspace="20px"></p>

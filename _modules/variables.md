@@ -47,14 +47,14 @@ Hopefully it's obvious what our variables represent based on their names. Notice
 
 We've now made three variables. Let's use them to do something interesting. First, let's light up our current LED. Add the following to your code, and upload it to your board:
 
-```c
-leds_set_color(currentLed, 255, 0, 0);
+```cpp
+Yboard.set_led_color(currentLed, 255, 0, 0);
 currentLed++;
-leds_set_color(currentLed, 255, 0, 0);
+Yboard.set_led_color(currentLed, 255, 0, 0);
 currentLed++;
-leds_set_color(currentLed, 255, 0, 0);
+Yboard.set_led_color(currentLed, 255, 0, 0);
 currentLed++;
-leds_set_color(currentLed, 255, 0, 0);
+Yboard.set_led_color(currentLed, 255, 0, 0);
 ```
 
 <details markdown="block">

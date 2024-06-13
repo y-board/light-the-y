@@ -31,13 +31,25 @@ The project code is organized in a way that makes it easy for you to write separ
 
 ## Statements
 
-Computer programs are made by writing a sequence of commands for the computer to execute.  These commands are called *instructions* or *statements*.
+Computer programs are made by writing a sequence of commands for the computer to execute.  These commands are called *instructions* or *statements*. In the example below, there are five statements that control the LEDs and buttons on the Y-Board.
 
-<img src="{% link media/code.png %}">
+```cpp
+Yboard.set_led_color(1, 255, 0, 0); 
+Yboard.set_led_color(13, 0, 255, 0);
+Yboard.set_led_color(17, 0, 0, 255);
+
+int b = Yboard.get_button(1);
+
+Yboard.set_led_color(1, 255 * b, 0, 0);
+```
 
 The computer processing chip (called a *microcontroller*) executes these instructions in sequence.  It can execute instructions VERY fast (up to 240 million per second), so even if you write several instructions in a sequence, it will execute them so fast it will appear to you that they execute instantly and all at the same time.
 
-<img src="{% link media/semicolons.png %}">
+```cpp
+Yboard.set_led_color(1, 255, 0, 0); 
+Yboard.set_led_color(13, 0, 255, 0);
+Yboard.set_led_color(17, 0, 0, 255);
+```
 
 **Important:** See how each statement ends with a semicolon?  This is *required* to indicate the end of a statement.  DON'T FORGET TO ADD THESE OR YOUR CODE WON'T RUN!
 
@@ -46,12 +58,21 @@ Sometimes we want to tell the computer to ignore certain statements.  We can do 
 
 For example in the code below, we comment out the second statement so that now only LED1 and LED17 turns on (and LED13 does not).  The editor helps you remember that this code is commented out by turning it green.
 
-<img src="{% link media/comments1.png %}">
+```cpp
+Yboard.set_led_color(1, 255, 0, 0); 
+// Yboard.set_led_color(13, 0, 255, 0);
+Yboard.set_led_color(17, 0, 0, 255);
+```
 
 Comments are also used to add personal messages to your code.  This is done to help you remember what your code is supposed to do.  It also helps others who look at your code to understand it.  Here is an example:
 
-<img src="{% link media/comments2.png %}">
+```cpp
+// Turn on LED10 as green
+Yboard.set_led_color(10, 0, 255, 0);
 
+// Turn on LED15 as blue, but not as bright
+Yboard.set_led_color(15, 0, 0, 100);
+```
 
 The editor will automatically comment or uncomment code for you if you put your cursor on the line and press `Ctrl + /`
 
