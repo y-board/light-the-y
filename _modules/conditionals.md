@@ -20,14 +20,14 @@ There are 3 buttons and 2 switches we can use to control lights and sound on the
 
 The function to determine if a button is pressed is:
 
-```c
-buttons_get(<button_number>);
+```cpp
+Yboard.get_button(<button_number>);
 ```
 
 And the function to determine if a switch is ON is:
 
-```c
-switches_get(<switch_number>);
+```cpp
+Yboard.get_switch(<switch_number>);
 ```
 
 
@@ -37,9 +37,9 @@ Each of these functions returns `true` if the button/switch is pressed or ON, an
 
 We use **if statements** to evaluate **conditionals** that are `true` or `false`:
 
-```c
-if (buttons_get(1)) {
-    leds_set_color(1, 255, 0, 0);
+```cpp
+if (Yboard.get_button(1)) {
+    Yboard.set_led_color(1, 255, 0, 0);
 }
 ```
 
@@ -47,20 +47,20 @@ if (buttons_get(1)) {
 <summary markdown="span">More Details
 </summary>
 
-This block of code tells our board to turn on LED1 _if_ Button1 is pressed. The function `buttons_get()` can be used as a **conditional** because it returns a `true` or `false` value.
+This block of code tells our board to turn on LED1 _if_ Button1 is pressed. The function `Yboard.get_button()` can be used as a **conditional** because it returns a `true` or `false` value.
 
 Notice that in an **if statement** the **conditional** is placed in parenthesis and the commands to execute if it is true are placed in curly braces.
 </details>
 
 Additionally, we can chain conditionals together using `&&` or `||`. The `&&` symbol is called a "logical AND", and the `||` symbol is called "logical OR". Here's an example of using each:
 
-```c
-if(buttons_get(1) && buttons_get(2)) {
-    leds_set_color(1, 255, 0, 0);
+```cpp
+if(Yboard.get_button(1) && Yboard.get_button(2)) {
+    Yboard.set_led_color(1, 255, 0, 0);
 }
 
-if(switches_get(1) || switches_get(2)) {
-    leds_set_color(1, 0, 0, 255);
+if(Yboard.get_switch(1) || Yboard.get_switch(2)) {
+    Yboard.set_led_color(1, 0, 0, 255);
 }
 ```
 
@@ -70,7 +70,7 @@ if(switches_get(1) || switches_get(2)) {
 
 The first `if` statement tells the board "if button 1 AND button 2 are pressed, turn led 1 red". The second `if` statement tells the board "if switch 1 OR switch 2 is on, turn led 1 blue".
 
-There are several other important logical operators. For example, we can compare numbers or values using `==`. For example, `if (1 == 3)...` will always be `false` and `if (1 < 3)...` will always be `true`. On the other hand, `if (buttons_get(1) == true)...` will be `true` if button 1 is pressed and `false` if it is not. Because `buttons_get(1)` already tells us this without comparing it, the `== true` part in this condition is not necessary.
+There are several other important logical operators. For example, we can compare numbers or values using `==`. For example, `if (1 == 3)...` will always be `false` and `if (1 < 3)...` will always be `true`. On the other hand, `if (Yboard.get_button(1) == true)...` will be `true` if button 1 is pressed and `false` if it is not. Because `Yboard.get_button(1)` already tells us this without comparing it, the `== true` part in this condition is not necessary.
 
 If you want to learn about the other logical operators, google "cpp logical operators".
 </details>
@@ -78,12 +78,12 @@ If you want to learn about the other logical operators, google "cpp logical oper
 ## Examples
 We can use an `else` block to make the board do something else when the `if` block is `false`:
 
-```c
+```cpp
 while(true) {
-    if (buttons_get(1)) {
-        leds_set_color(1, 255, 0, 0);
+    if (Yboard.get_button(1)) {
+        Yboard.set_led_color(1, 255, 0, 0);
     } else {
-        leds_set_color(1, 0, 0, 0);
+        Yboard.set_led_color(1, 0, 0, 0);
     }
 }
 ```
@@ -99,16 +99,16 @@ Let's try combining more loops and if statements!
 
 We could get the board to only check the state of our button for the first 10 seconds after we program it, and then light up LED15 after those 10 seconds, like this:
 
-```c
+```cpp
 for(int count = 0; count < 100; count++) {
-    if (buttons_get(1)) {
-        leds_set_color(1, 255, 0, 0);
+    if (Yboard.get_button(1)) {
+        Yboard.set_led_color(1, 255, 0, 0);
     } else {
-        leds_set_color(1, 255, 0, 0);
+        Yboard.set_led_color(1, 255, 0, 0);
     }
     delay(100);
 }
-leds_set_color(15, 255, 0, 0);
+Yboard.set_led_color(15, 255, 0, 0);
 ```
 
 <details markdown="block">
@@ -120,16 +120,16 @@ This code block only checks if Button1 is pressed in 0.1 second increments for 1
 
 We can chain as many conditionals together as we want by using `else if` blocks:
 
-```c
+```cpp
 while (true) {
-    if (buttons_get(1) && buttons_get(2)) {
-        leds_set_color(1, 255, 0, 0);
-    } else if (buttons_get(2) && buttons_get(3)) {
-        leds_set_color(1, 255, 255, 0);
-    } else if (buttons_get(1) && buttons_get(3)) {
-        leds_set_color(1, 0, 255, 0);
+    if (Yboard.get_button(1) && Yboard.get_button(2)) {
+        Yboard.set_led_color(1, 255, 0, 0);
+    } else if (Yboard.get_button(2) && Yboard.get_button(3)) {
+        Yboard.set_led_color(1, 255, 255, 0);
+    } else if (Yboard.get_button(1) && Yboard.get_button(3)) {
+        Yboard.set_led_color(1, 0, 255, 0);
     } else {
-        leds_set_color(1, 0, 0, 0);
+        Yboard.set_led_color(1, 0, 0, 0);
     }
 }
 ```
@@ -143,15 +143,15 @@ Chaining conditionals gives us a lot of freedom to make our code do exactly what
 
 Let's try one final example using a switch instead of a button:
 
-```c
+```cpp
 while (true) {
-    if(switches_get(2)) {
-        while(switches_get(2)) {
-            leds_set_color(1, 255, 0, 0);
+    if(Yboard.get_switch(2)) {
+        while(Yboard.get_switch(2)) {
+            Yboard.set_led_color(1, 255, 0, 0);
         }
     } else {
-        while(switches_get(2) == false) {
-            leds_set_color(1, 0, 0, 0);
+        while(Yboard.get_switch(2) == false) {
+            Yboard.set_led_color(1, 0, 0, 0);
         }
     }
 }
@@ -165,7 +165,7 @@ Woah! That looks a little scary! We have `if` statements inside of infinite loop
 
 There are a few important things to notice in this example:
 
-* The second conditional checks if Switch2 is NOT on using `switches_get(2) == false`
+* The second conditional checks if Switch2 is NOT on using `Yboard.get_switch(2) == false`
 * There is almost always more than one way to write code that works. Be creative, and try to find a solution that is simple, clear, and fast.
 </details>
 
