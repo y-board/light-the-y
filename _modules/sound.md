@@ -10,8 +10,7 @@ order: 3
 <details markdown="block">
 <summary markdown="span">Sounds On The Y-Badge
 </summary>
-
-Your Y-Badge has a buzzer built into it. This buzzer is able to play single-note sounds by turning an electromagnet on and off at high speeds. The magnetic field that is produced vibrates a small disk very quickly, creating the sound you hear. We can specify the frequency of the buzzer in order to play different notes, and how long that note is played for. However, we can't specify the volume of the sound; it's fixed.
+Y-Badge v3 has a speaker and Y-Badge v2 has a buzzer. Both can be used to play sounds. The speaker is able to play a wider range of sounds, but the buzzer is simpler to use. Both are able to play sounds by turning an electromagnet on and off at high speeds. The magnetic field that is produced vibrates a small disk very quickly, creating the sound you hear. We can specify the frequency of the buzzer in order to play different notes, and how long that note is played for.
 </details>
 
 <p align="center"><img src="{% link media/buzzer.png %}" width="400" hspace="5%" vspace="2%"/></p>
@@ -77,7 +76,7 @@ sound_activity();
     <summary markdown="span">Why Does This Happen?
     </summary>
     
-    The `Yboard.play_note()` function is a **non-blocking** function, which means other functions that are called after it will actually run at the same time. However, the buzzer can only play one note at a time, so any additional `Yboard.play_note()` calls will wait until the one before has finished.
+    The `Yboard.play_note()` function is a **non-blocking** function, which means other functions that are called after it will actually run at the same time. However, the speaker can only play one note at a time, so any additional `Yboard.play_note()` calls will wait until the one before has finished.
     </details>
 
 ## Challenges
