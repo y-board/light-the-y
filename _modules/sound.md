@@ -13,7 +13,10 @@ order: 3
 Y-Badge v3 has a speaker and Y-Badge v2 has a buzzer. Both can be used to play sounds. The speaker is able to play a wider range of sounds, but the buzzer is simpler to use. Both are able to play sounds by turning an electromagnet on and off at high speeds. The magnetic field that is produced vibrates a small disk very quickly, creating the sound you hear. We can specify the frequency of the buzzer in order to play different notes, and how long that note is played for.
 </details>
 
-<p align="center"><img src="{% link media/buzzer.png %}" width="400" hspace="5%" vspace="2%"/></p>
+<p align="center"><img src="{% link media/buzzer.png %}" width="400" hspace="5%" vspace="2%"/>
+<br>
+Y-Board v2 Buzzer. Y-Board v3 has a speaker.
+</p>
 
 ## Functions
 
