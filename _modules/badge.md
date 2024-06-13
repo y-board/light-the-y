@@ -19,26 +19,16 @@ The knob is a device known as a **potentiometer**. We send a _voltage_ through i
 
 ## Functions
 
-We can use the value returned from the `knob_get()` function to change the brightness of the LEDs on our board. This is the code:
+We can use the value returned from the `Yboard.get_knob()` function to change the brightness of the LEDs on our board. This is the code:
 
-```c
+```cpp
 while(true) {
-    int brightness = 255 * knob_get() / 100;
-    leds_set_brightness(brightness);
+    int brightness = Yboard.get_knob();
+    Yboard.set_led_brightness(brightness);
 
-    //then use leds_set_color() as normal inside this loop.
+    // then use Yboard.set_led_color() as normal inside this loop.
 }
 ```
-
-<details markdown="block">
-<summary markdown="span">More Details
-</summary>
-You'll notice that we've multiplied the value of `knob_get()` by 255 and divided it by 100. The reason is because `leds_set_brightness()` needs a brightness between 0 and 255, but `knob_get()` gives us a value between 0 and 100. We can _scale_ our value from `knob_get()` to a value that `leds_set_brightness()` will understand by _multiplying_ it by the maximum value of our _brightness function_ and _dividing_ by the maximum value of our _knob function_.
-
-Notice also that we are monitoring the value of `knob_get()` continuously by placing it inside an infinite `while` loop.
-
-There are other things you can try to control with `knob_get()` (for example, you could use it to change the _color_ of LEDs rather than brightness) but brightness is the easiest. Feel free to experiment with it!
-</details>
 
 ## Design Your Own Y-Badge
 
