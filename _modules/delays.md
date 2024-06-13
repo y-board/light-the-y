@@ -16,10 +16,14 @@ Since the computer runs our instructions very fast, sometimes we want to instruc
 Delay statements allow us to stop the computer for a set amount of time.
 </details>
 
-<img src="{% link media/delay.png %}">
+```cpp
+Yboard.set_led_color(1, 255, 0, 0);  // Run these together first
+Yboard.set_led_color(10, 0, 0, 255); 
+delay(1000);                         // Wait a bit
+Yboard.set_led_color(1, 0, 0, 0);    // Then run this
+```
 
 This code turns on LED1 as red and LED10 as blue.  Then, it waits for 1 second before turning off LED1.
-
 
 ## Functions
 The function to cause a delay in your code is this:
@@ -37,27 +41,28 @@ delay(<milliseconds>);
 
 ## Examples
 To make LED3 display bright red and then switch to bright green after half a second, then switch to bright blue after another half second, you can use this code:
-```c
-leds_set_color(3, 255, 0, 0);
+
+```cpp
+Yboard.set_led_color(3, 255, 0, 0);
 delay(500);
-leds_set_color(3, 0, 255, 0);
+Yboard.set_led_color(3, 0, 255, 0);
 delay(500);
-leds_set_color(3, 0, 0, 255);
+Yboard.set_led_color(3, 0, 0, 255);
 ```
 
 To make LED15 display bright yellow and then slowly turn off, you can use this code:
-```c
-leds_set_color(15, 255, 255, 0);
+```cpp
+Yboard.set_led_color(15, 255, 255, 0);
 delay(500);
-leds_set_color(15, 204, 204, 0);
+Yboard.set_led_color(15, 204, 204, 0);
 delay(500);
-leds_set_color(15, 153, 153, 0);
+Yboard.set_led_color(15, 153, 153, 0);
 delay(500);
-leds_set_color(15, 102, 102, 0);
+Yboard.set_led_color(15, 102, 102, 0);
 delay(500);
-leds_set_color(15, 51, 51, 0);
+Yboard.set_led_color(15, 51, 51, 0);
 delay(500);
-leds_set_color(15, 0, 0, 0);
+Yboard.set_led_color(15, 0, 0, 0);
 ```
 
 ## Before You Start
