@@ -23,8 +23,8 @@ There are 20 LEDs on the Y-Badge circuit board.
 To make things happen on the Y-badge, you will need to call **functions** from your code. A function is a set of instructions that a computer can follow to perform a specific task. Functions are very useful because they allow programmers to write code that can be reused multiple times in a program.
 
 The function to set an LED color looks like this:
-```c
-leds_set_color(<LED number>, <red>, <green>, <blue>);
+```cpp
+Yboard.set_led_color(<LED number>, <red>, <green>, <blue>);
 ```
 
 * The `<LED number>` can be any value from 1 to 20.
@@ -33,13 +33,13 @@ leds_set_color(<LED number>, <red>, <green>, <blue>);
 ## Examples
 To make LED3 display bright red, you should use this statement in your code (don't forget to add the semicolon):
 
-```c
-leds_set_color(3, 255, 0, 0);
+```cpp
+Yboard.set_led_color(3, 255, 0, 0);
 ```
 
 To make LED15 display bright yellow, you should turn on the red and green pixels to max brightness:
-```c
-leds_set_color(15, 255, 255, 0);
+```cpp
+Yboard.set_led_color(15, 255, 255, 0);
 ```
 
 Add the example code to your own to test it out. Don't forget to click "upload" in the top right corner dropdown to program your board with new code! 
@@ -53,7 +53,7 @@ Add the example code to your own to test it out. Don't forget to click "upload" 
 
 1. What happens if you use _**0, 0, 0**_ for your RGB values?
 
-1. Figure out the RGB value for your favorite color by using the `led_set_color`.
+1. Figure out the RGB value for your favorite color by using the `Yboard.set_led_color`.
 
 
 ## Challenges
@@ -67,12 +67,15 @@ led_challenge1();
 // led_challenge3();
 ```
 
-**Challenge 1:** Turn on LEDs 1, 13, and 17. Make them 3 different colors. \
+**Challenge 1:** Turn on LEDs 1, 13, and 17. Make them 3 different colors.
+
 <img src="{% link media/led_challenge_1.jpg %}" width="400" hspace="5%" vspace="10px">
 
-**Challenge 2:** Make one of the LEDs orange. \
+**Challenge 2:** Make one of the LEDs orange.
+
 <img src="{% link media/led_challenge_2.jpg %}" width="400" hspace="5%" vspace="10px">
 
-**Challenge 3:** Turn on all of the LEDs with a progression between colors, starting with pure red and going to pure blue. \
+**Challenge 3:** Turn on all of the LEDs with a progression between colors, starting with pure red and going to pure blue.
+
 <img src="{% link media/led_challenge_3.jpg %}" width="400" hspace="5%" vspace="10px">
 
