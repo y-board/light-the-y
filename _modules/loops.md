@@ -18,11 +18,11 @@ As a programmer, it's important to write code that isn't repetitive; it makes yo
 
 **While loops** are loops that run the code inside them _until a certain condition is met_. We can also use `while` loops to make our code run forever. For example, the following code will make LED1 on our board blink forever:
 
-```c
+```cpp
 while (true) {
-    leds_set_color(1, 255, 0, 0);
+    Yboard.set_led_color(1, 255, 0, 0);
     delay(250);
-    leds_set_color(1, 0, 0, 0);
+    Yboard.set_led_color(1, 0, 0, 0);
     delay(250);
 }
 ```
@@ -39,12 +39,12 @@ There are a few things to notice about this loop:
 
 What if we wanted to use a `while` loop to make the first 10 leds blink one time each, in sequence? We could do something like the following:
 
-```c
+```cpp
 int currentLed = 1;
 while(currentLed <= 10) {
-    leds_set_color(currentLed, 255, 0, 0);
+    Yboard.set_led_color(currentLed, 255, 0, 0);
     delay(250);
-    leds_set_color(currentLed, 0, 0, 0);
+    Yboard.set_led_color(currentLed, 0, 0, 0);
     currentLed++;
 }
 ```
@@ -55,11 +55,11 @@ This loop has a **loop condition** that isn't always true, because we increment 
 
 A `for` loop to do the same thing as above looks like the following:
 
-```c
+```cpp
 for(int currentLed = 1; currentLed <= 10; currentLed++) {
-    leds_set_color(currentLed, 255, 0, 0);
+    Yboard.set_led_color(currentLed, 255, 0, 0);
     delay(250);
-    leds_set_color(currentLed, 0, 0, 0);
+    Yboard.set_led_color(currentLed, 0, 0, 0);
 }
 ```
 
