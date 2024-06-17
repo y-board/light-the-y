@@ -79,7 +79,7 @@ Notice the similarities between a `for` loop and a `while` loop. We still declar
 
 ## Examples
 
-The following code will wait until any audio playing is done, before continuing past the loop and turning on an LED:
+The following code will wait until any audio playing is done, before continuing past the loop and turning on an LED.  The `Yboard.loop_speaker()` function is used to keep the speaker playing the audio while the loop is running.
 
 ```cpp
 while (Yboard.is_audio_playing()) {
