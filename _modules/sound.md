@@ -20,9 +20,11 @@ Y-Board v2 Buzzer. Y-Board v3 has a speaker.
 
 ## Functions
 
+### Single Notes
+
 The function to play a sound looks like this:
 ```cpp
-Yboard.play_note_background(<note>, <duration>);
+Yboard.play_note(<note_frequency>, <duration>);
 ```
 
 
@@ -30,33 +32,59 @@ Yboard.play_note_background(<note>, <duration>);
 
 * The `<duration>` should be the length you want the note to play in _milliseconds_ (a duration of 1000 would play the note for one second).
 
+This function above is a **blocking** function, which means that the code will wait until the sound is done playing before moving on to the next line of code. If you want to start playing a sound and then do something else at the same time, you can use the following function:
+```cpp
+Yboard.play_note_background(<note_frequency>, <duration>);
+```
+If you call this function multiple times, the notes will be queued up and played one after the other in the background.
+
+### Sequences of Notes
+
+You can also play a sequence of notes by using the following functions (either blocking, or in the background)
+```cpp
+Yboard.play_notes(<string>);
+Yboard.play_notes_background(<string>);
+```
+
+The text string supports the following characters:
+
+| Character | Description |
+|-----------|-------------|
+A–G	                | Specifies a note that will be played. |
+R                   | Specifies a rest (no sound for the duration of the note).|
++ or # after a note | Raises the preceding note one half-step (sharp).|
+- after a note      | Lowers the preceding note one half-step.
+> after a note	    | Plays the note one octave higher (multiple >’s can be used, eg: C>>)
+< after a note	    | Plays the note one octave lower (multiple <’s can be used, eg: C<<)
+1–2000 after a note	| Determines the duration of the preceding note. For example, C16 specifies C played as a sixteenth note, B1 is B played as a whole note. If no duration is specified, the note is played as a quarter note. |
+O followed by a # | Changes the octave. Valid range is 4-7. Default is 5.
+T followed by a # |   Changes the tempo. Valid range is 40-240. Default is 120.
+V followed by a # |   Changes the volume.  Valid range is 1-10. Default is 5.
+!                 |  Resets octave, tempo, and volume to default values.
+spaces            |   Spaces can be placed between notes or commands for readability, but not within a note or command (eg: `"C4# D4"` is valid, `"C 4 # D 4"` is not. `"T120 A B C"` is valid, `"T 120 A B C"` is not).
+
+### Checking if the Sound is Done
+
+The following function will return `true` if the sounds is still playing, and `false` if it is done:
+```cpp
+Yboard.is_audio_playing();
+```
+You may need to learn about [loops]({% link _modules/loops.md %}) and [conditional statements]({% link _modules/conditionals.md %}) before you can use this function in your code.
+
+
 ## Examples
 
 To play a G5 for 1/4 second, you would write:
 
 ```cpp
-Yboard.play_note_background(NOTE_G5, 250)
+Yboard.play_note(NOTE_G5, 250)
 ```
 
-To play "Twinkle Twinkle Little Star", you would use the following code:
+To play "Twinkle Twinkle Little Star" in the background, you could use the following code:
 
 ```cpp
-Yboard.play_note_background(NOTE_C4, 400);
-Yboard.play_note_background(NOTE_C4, 400);
-Yboard.play_note_background(NOTE_G4, 400);
-Yboard.play_note_background(NOTE_G4, 400);
-Yboard.play_note_background(NOTE_A4, 400);
-Yboard.play_note_background(NOTE_A4, 400);
-Yboard.play_note_background(NOTE_G4, 800);
-Yboard.play_note_background(NOTE_F4, 400);
-Yboard.play_note_background(NOTE_F4, 400);
-Yboard.play_note_background(NOTE_E4, 400);
-Yboard.play_note_background(NOTE_E4, 400);
-Yboard.play_note_background(NOTE_D4, 400);
-Yboard.play_note_background(NOTE_D4, 400);
-Yboard.play_note_background(NOTE_C4, 800);
+Yboard.play_notes_background("O4 CCGGAAG2 FFEEDDC2");
 ```
-
 
 ## Exploration
 
@@ -82,6 +110,8 @@ sound_activity();
     The `Yboard.play_note_background()` function is a **non-blocking** function, which means other functions that are called after it will actually run at the same time. However, the speaker can only play one note at a time, so any additional `Yboard.play_note_background()` calls will wait until the one before has finished.
     </details>
 
+1. Play a scale of notes in Octave 5.  Then play the same scale in Octave 6, but at double the tempo.
+
 ## Challenges
 
 <details markdown="block">
@@ -99,3 +129,5 @@ sound_exploration();
 **Challenge 1:** Experiment with the durations of the above song to add some rythm or adjust the speed of the song. How long the notes are played in comparison to each other can change how the song sounds (note how some notes are played twice as long as others above). Can you make the song twice as fast?
 
 **Challenge 2:** Finish the rest of "Twinkle Twinkle Little Star" by adding more to the code.
+
+**Challenge 3:** Look up the notes to a song you like and try to play it on the Y-Board. You can use the `play_notes` function to play the song in the background while you do other things.
