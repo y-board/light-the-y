@@ -1,10 +1,10 @@
 ---
 layout: lab
 toc: false
-title: "Module 9: Create Your Badge"
+title: "Module 10: Create Your Badge"
 short_title: Create Your Badge
 icon: fa-kit fa-y-badge
-order: 9
+order: 10
 ---
 
 <details markdown-="block">
