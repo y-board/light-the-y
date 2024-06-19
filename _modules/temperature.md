@@ -7,6 +7,12 @@ icon: fa-solid fa-temperature-three-quarters
 order: 7
 ---
 
+<div class="alert alert-warning" role="alert">
+<i class="fa-duotone fa-triangle-exclamation"></i>
+This module only works with **Y-Board v3**.
+</div>
+
+
 <details markdown="block">
 <summary markdown="span">Temperature and Humidity Sensor on the Y-Badge
 </summary>
