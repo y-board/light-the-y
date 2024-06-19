@@ -14,7 +14,7 @@ order: 7
 There is a temperature and humidity sensor on the Y-Badge board. This sensor is used to measure the temperature and humidity of the environment around the board.
 </details>
 
-<p align="center"><img src="{% link media/buttons_and_switches.png %}" width="400" hspace="5%" vspace="2%"/></p>
+<p align="center"><img src="{% link media/temperature.jpeg %}" width="400" hspace="5%" vspace="2%"/></p>
 
 ## Functions
 
