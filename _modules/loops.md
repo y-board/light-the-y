@@ -14,7 +14,8 @@ order: 5
 As a programmer, it's important to write code that isn't repetitive; it makes your program much easier to understand and speeds up the pace at which you can work. **Loops** are a fundamental programming tool we can use to eliminate repetitive code. Similar to functions, they can include as many commands inside them as you'd like. Unlike functions, they are able to _repeat those commands_ for as long as you want them to. We will explore two types of loops: **while loops** and **for loops**.
 </details>
 
-## While Loops
+## Loops
+### While Loops
 
 **While loops** are loops that run the code inside them _until a certain condition is met_. We can also use `while` loops to make our code run forever. For example, the following code will make LED1 on our board blink forever:
 
@@ -51,7 +52,7 @@ while(currentLed <= 10) {
 
 This loop has a **loop condition** that isn't always true, because we increment the value of `currentLed` every time it runs using `currentLed++;`. We want it to run as long as `currentLed <= 10` is true. Once `currentLed` is 11 or larger, the loop won't run again. 
 
-## For Loops
+### For Loops
 
 A `for` loop to do the same thing as above looks like the following:
 
@@ -76,7 +77,19 @@ Our code to make the first 10 leds blink using a `while` loop is a little clunky
 Notice the similarities between a `for` loop and a `while` loop. We still declare a variable called `currentLed`, we still have a **loop condition** that keeps track of whether the loop should run again, and we still increment `currentLed` every time the loop runs. But, we do all of that on a single line inside the parenthesis. This is a nice way to organize our code and keep track of our variable in one spot.
 </details>
 
-## Exploration:
+## Examples
+
+The following code will wait until any audio playing is done, before continuing past the loop and turning on an LED.  The `Yboard.loop_speaker()` function is used to keep the speaker playing the audio while the loop is running.
+
+```cpp
+while (Yboard.is_audio_playing()) {
+    Yboard.loop_speaker();
+}
+Yboard.set_led_color(1, 255, 0, 0);
+```
+
+
+## Exploration
 <details markdown="block">
 <summary markdown="span">Remember to change `main.cpp` before continuing...
 </summary>
@@ -112,8 +125,10 @@ loop_exploration();
 
 **Challenge 1:** Copy the code for "Twinkle Twinkle Little Star" from the `sound_activity.cpp` file and play it on repeat using a loop.
 
-**Challenge 2:** Make a single LED circle around the board forever, you choose the speed. \
+**Challenge 2:** Play a song of your choice in the background, and then create a loop that will blink an LED until the song is done playing.
+
+**Challenge 3:** Make a single LED circle around the board forever, you choose the speed. \
 <img src="{% link media/chasing_cw_lights.gif %}" width="400" hspace="5%" vspace="10px">
 
-**Challenge 3:** Change the last program to make the LED circle around the other direction. \
+**Challenge 4:** Change the last program to make the LED circle around the other direction. \
 <img src="{% link media/chasing_ccw_lights.gif %}" width="400" hspace="5%" vspace="10px">
