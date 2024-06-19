@@ -7,6 +7,11 @@ icon: fa-solid fa-person-running-fast
 order: 8
 ---
 
+<div class="alert alert-warning" role="alert">
+<i class="fa-duotone fa-triangle-exclamation"></i>
+This module only works with **Y-Board v3**.
+</div>
+
 <details markdown="block">
 <summary markdown="span">Accelerometer on the Y-Badge
 </summary>
