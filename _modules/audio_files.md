@@ -65,6 +65,8 @@ You will need to convert the sound files to the correct `.wav` format before you
 ## Exploration
 1. Find a sound file at [freesound.org](https://freesound.org/), download it, and convert it to the correct format.  Play the sound file on the Y-Board.
 
+1. Update your program to play the sound file when a button is pressed, but only if switch 1 is up.  If switch one is slid down, stop playing the sound file.
+
 ## Challenge
 
 1. Create a program that plays different sound effects on the Y-board depending on which button is pressed and how the switches are set.  
