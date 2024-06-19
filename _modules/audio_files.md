@@ -1,11 +1,16 @@
 ---
 layout: lab
 toc: false
-title: "Module 7: Audio Files"
+title: "Module 9: Audio Files"
 short_title: Audio Files
 icon: fa-solid fa-file-audio
-order: 7
+order: 9
 ---
+
+<div class="alert alert-warning" role="alert">
+<i class="fa-duotone fa-triangle-exclamation"></i>
+This module only works with **Y-Board v3**.
+</div>
 
 <details markdown="block">
 <summary markdown="span">Sounds Files On The Y-Board
@@ -41,14 +46,32 @@ Yboard.set_sound_file_volume(<volume>);
 
 ## Obtaining Sound Files
 
-You can download sound files from the internet. There are many websites that offer free sound files, such as [freesound.org](https://freesound.org/). 
+You can download sound files from the internet. There are many websites that offer free sound files, such as [freesound.org](https://freesound.org/) (note: this website requires you to create an account to download the audio files). 
 
-You will need to convert the sound files to the `.wav` format before you can use them on the Y-Board.  To convert a sound file to the `.wav` format:
+You will need to convert the sound files to the correct `.wav` format before you can use them on the Y-Board.  To convert a sound file to the `.wav` format:
 1. Open the *Audacity* program on the computer.
-1. Import the sound file into Audacity.
-1. Export the sound file as a `.wav` file, selecting *Mono*, *16-bit PCM*, and *16000 Hz* as the format.
+1. Import the sound file into Audacity (Select *File*->*Open* and choose the sound file you downloaded).
+1. Export the sound file as a `.wav` file, by selecting *File*->*Export Audio*, and choosing a filename and folder to save the file.
+1. In the *Export Audio* dialog box, choose the following settings:
+    * Format: WAV (Microsoft)
+    * Channels: Mono
+    * Sample Rate: 16000 Hz
+    * Encoding: Signed 16-bit PCM
+
+        <img src="{% link media/audacity_export.png %}" width="700 "/>
+1. Click *Export* 
+1. Copy the `.wav` file to the SD card.
 
 ## Exploration
+1. Find a sound file at [freesound.org](https://freesound.org/), download it, and convert it to the correct format.  Play the sound file on the Y-Board.
+
+## Challenge
+
+1. Create a program that plays different sound effects on the Y-board depending on which button is pressed and how the switches are set.  
+
+1. Can you create a program that plays a sound effect when you shake the Y-Board? 
+
+1. Can you create a program that plays a song louder or quieter depending on the position of the knob?  (You can read about the knob in the [Create Your Badge]({% link _modules/badge.md %}) module). 
 
 
 
