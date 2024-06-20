@@ -20,26 +20,6 @@ Y-Board v2 Buzzer. Y-Board v3 has a speaker.
 
 ## Functions
 
-### Single Notes
-
-The function to play a sound looks like this:
-```cpp
-Yboard.play_note(<note_frequency>, <duration>);
-```
-
-
-* The `<note>` should be a number that represents the frequency. For example, 262 could be used to play "middle C". We have created several constants that represent the values of these notes. For example, typing `NOTE_C4` in your code is the same as typing the number `262`. For a list of other note options, explore the `ybadge.h` file.
-
-* The `<duration>` should be the length you want the note to play in _milliseconds_ (a duration of 1000 would play the note for one second).
-
-This function above is a **blocking** function, which means that the code will wait until the sound is done playing before moving on to the next line of code. If you want to start playing a sound and then do something else at the same time, you can use the following function:
-```cpp
-Yboard.play_note_background(<note_frequency>, <duration>);
-```
-If you call this function multiple times, the notes will be queued up and played one after the other in the background.
-
-### Sequences of Notes
-
 You can also play a sequence of notes by using the following functions (either blocking, or in the background)
 ```cpp
 Yboard.play_notes(<string>);
@@ -48,20 +28,20 @@ Yboard.play_notes_background(<string>);
 
 The text string supports the following characters:
 
-| Character | Description |
-|-----------|-------------|
-A–G	                | Specifies a note that will be played. |
-R                   | Specifies a rest (no sound for the duration of the note).|
-+ or # after a note | Raises the preceding note one half-step (sharp).|
-- after a note      | Lowers the preceding note one half-step.
-> after a note	    | Plays the note one octave higher (multiple >’s can be used, eg: C>>)
-< after a note	    | Plays the note one octave lower (multiple <’s can be used, eg: C<<)
-1–2000 after a note	| Determines the duration of the preceding note. For example, C16 specifies C played as a sixteenth note, B1 is B played as a whole note. If no duration is specified, the note is played as a quarter note. |
-O followed by a # | Changes the octave. Valid range is 4-7. Default is 5.
-T followed by a # |   Changes the tempo. Valid range is 40-240. Default is 120.
-V followed by a # |   Changes the volume.  Valid range is 1-10. Default is 5.
-!                 |  Resets octave, tempo, and volume to default values.
-spaces            |   Spaces can be placed between notes or commands for readability, but not within a note or command (eg: `"C4# D4"` is valid, `"C 4 # D 4"` is not. `"T120 A B C"` is valid, `"T 120 A B C"` is not).
+| Character           | Description                                                                                                                                                                                                |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| A–G                 | Specifies a note that will be played.                                                                                                                                                                      |
+| R                   | Specifies a rest (no sound for the duration of the note).                                                                                                                                                  |
+| + or # after a note | Raises the preceding note one half-step (sharp).                                                                                                                                                           |
+| - after a note      | Lowers the preceding note one half-step.                                                                                                                                                                   |
+| > after a note      | Plays the note one octave higher (multiple >’s can be used, eg: C>>)                                                                                                                                       |
+| < after a note      | Plays the note one octave lower (multiple <’s can be used, eg: C<<)                                                                                                                                        |
+| 1–2000 after a note | Determines the duration of the preceding note. For example, C16 specifies C played as a sixteenth note, B1 is B played as a whole note. If no duration is specified, the note is played as a quarter note. |
+| O followed by a #   | Changes the octave. Valid range is 4-7. Default is 5.                                                                                                                                                      |
+| T followed by a #   | Changes the tempo. Valid range is 40-240. Default is 120.                                                                                                                                                  |
+| V followed by a #   | Changes the volume.  Valid range is 1-10. Default is 5.                                                                                                                                                    |
+| !                   | Resets octave, tempo, and volume to default values.                                                                                                                                                        |
+| spaces              | Spaces can be placed between notes or commands for readability, but not within a note or command (eg: `"C4# D4"` is valid, `"C 4 # D 4"` is not. `"T120 A B C"` is valid, `"T 120 A B C"` is not).         |
 
 ### Checking if the Sound is Done
 
@@ -102,15 +82,15 @@ sound_activity();
 
 1. Make the speaker play C, D, E, D, C for 500ms each.
 
-1. What happens if you try to call `Yboard.set_led_color(1, 255, 0, 0)` to turn LED 1 red right after you call `Yboard.play_note_background(NOTE_C4, 5000)` to play middle C for 5 seconds? Does the board wait to turn the light on until the sound is done playing?
+2. What happens if you try to call `Yboard.set_led_color(1, 255, 0, 0)` to turn LED 1 red right after you call `Yboard.play_notes_background("C")` to play middle C for 1 seconds? Does the board wait to turn the light on until the sound is done playing?
     <details markdown="block">
     <summary markdown="span">Why Does This Happen?
     </summary>
     
-    The `Yboard.play_note_background()` function is a **non-blocking** function, which means other functions that are called after it will actually run at the same time. However, the speaker can only play one note at a time, so any additional `Yboard.play_note_background()` calls will wait until the one before has finished.
+    The `Yboard.play_notes_background()` function is a **non-blocking** function, which means other functions that are called after it will actually run at the same time. However, the speaker can only play one note at a time, so any additional `Yboard.play_notes_background()` calls will wait until the one before has finished.
     </details>
 
-1. Play a scale of notes in Octave 5.  Then play the same scale in Octave 6, but at double the tempo.
+3. Play a scale of notes in Octave 5.  Then play the same scale in Octave 6, but at double the tempo.
 
 ## Challenges
 
