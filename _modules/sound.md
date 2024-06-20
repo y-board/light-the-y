@@ -54,10 +54,10 @@ You may need to learn about [loops]({% link _modules/loops.md %}) and [condition
 
 ## Examples
 
-To play "Twinkle Twinkle Little Star" in the background using Octave 4 and 180 beats per minute, you could use the following code:
+To play "Twinkle Twinkle Little Star" using Octave 4 and 180 beats per minute, you could use the following code:
 
 ```cpp
-Yboard.play_notes_background("O4 T180 CCGGAAG2 FFEEDDC2");
+Yboard.play_notes("O4 T180 CCGGAAG2 FFEEDDC2");
 ```
 
 ## Exploration
