@@ -14,10 +14,10 @@ This module only works with **Y-Board v3**.
 
 
 <details markdown="block">
-<summary markdown="span">Temperature and Humidity Sensor on the Y-Badge
+<summary markdown="span">Temperature and Humidity Sensor on the Y-Board
 </summary>
 
-There is a temperature and humidity sensor on the Y-Badge board. This sensor is used to measure the temperature and humidity of the environment around the board.
+There is a temperature and humidity sensor on the Y-Board. This sensor is used to measure the temperature and humidity of the environment around the board.
 </details>
 
 <p align="center"><img src="{% link media/temperature.jpeg %}" width="400" hspace="5%" vspace="2%"/></p>

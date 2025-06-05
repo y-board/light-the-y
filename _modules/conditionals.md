@@ -8,10 +8,10 @@ order: 6
 ---
 
 <details markdown="block">
-<summary markdown="span">Buttons and Switches on the Y-Badge
+<summary markdown="span">Buttons and Switches on the Y-Board
 </summary>
 
-There are 3 buttons and 2 switches we can use to control lights and sound on the Y-Badge board. There is also a switch for powering the board from the battery, and two buttons used to configure the board. All of them are labeled.
+There are 3 buttons and 2 switches we can use to control lights and sound on the Y-Board. There is also a switch for powering the board from the battery, and two buttons used to configure the board. All of them are labeled.
 </details>
 
 <p align="center"><img src="{% link media/buttons_and_switches.png %}" width="400" hspace="5%" vspace="2%"/></p>

@@ -13,10 +13,10 @@ This module only works with **Y-Board v3**.
 </div>
 
 <details markdown="block">
-<summary markdown="span">Accelerometer on the Y-Badge
+<summary markdown="span">Accelerometer on the Y-Board
 </summary>
 
-There is an accelerometer temperature on the Y-Badge board. This sensor is used to measure the acceleration of the board in three dimensions: x, y, and z. The accelerometer can be used to detect the orientation of the board, detect movement, and more. The sensor returns values in milli-g's, which is a unit of acceleration. 1 g is equal to 9.8 m/s<sup>2</sup>.
+There is an accelerometer on the Y-Board. This sensor is used to measure the acceleration of the board in three dimensions: x, y, and z. The accelerometer can be used to detect the orientation of the board, detect movement, and more. The sensor returns values in milli-g's, which is a unit of acceleration. 1 g is equal to 9.8 m/s<sup>2</sup>.
 </details>
 
 <p align="center"><img src="{% link media/accelerometer.jpeg %}" width="400" hspace="5%" vspace="2%"/></p>

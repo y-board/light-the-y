@@ -19,9 +19,9 @@ short_title: Light-the-
 email: jgoeders@byu.edu
 host: localhost
 baseurl: "/light-the-y"
-url: "https://y-badge.github.io"
+url: "https://y-board.github.io"
 github:
-  url: https://github.com/y-badge/light-the-y
+  url: https://github.com/y-board/light-the-y
   # fileurl: https://github.com/byu-cpe/ecen330_student/blob/main
 
 show_construction_message: false

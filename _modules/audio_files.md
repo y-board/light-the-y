@@ -73,7 +73,7 @@ You will need to convert the sound files to the correct `.wav` format before you
 
 1. Can you create a program that plays a sound effect when you shake the Y-Board? 
 
-1. Can you create a program that plays a song louder or quieter depending on the position of the knob?  (You can read about the knob in the [Create Your Badge]({% link _modules/badge.md %}) module). 
+1. Can you create a program that plays a song louder or quieter depending on the position of the knob?  (You can read about the knob in the [Create Your Board]({% link _modules/board.md %}) module). 
 
 
 

@@ -1,14 +1,14 @@
 ---
 layout: lab
 toc: false
-title: "Module 10: Create Your Badge"
-short_title: Create Your Badge
+title: "Module 10: Create Your Board"
+short_title: Create Your Board
 icon: fa-kit fa-y-badge
 order: 10
 ---
 
 <details markdown-="block">
-<summary markdown="span">The Knob on the Y-Badge
+<summary markdown="span">The Knob on the Y-Board
 </summary>
 
 The knob is a device known as a **potentiometer**. We send a _voltage_ through it and measure how much of that voltage is allowed to pass through, based on the position of the knob. This allows us to return a value based on the current position of the knob using the `Yboard.get_knob()` function.
@@ -41,9 +41,9 @@ There are other things you can try to control with `Yboard.get_knob()` (for exam
 </details>
 
 
-## Design Your Own Y-Badge
+## Design Your Own Y-Board
 
-Now it's your turn to customize your badge. Write code to make it your own. You could make it into a three-key piano, display a spectacular light show, or anything else. The possibilities are endless! Just be sure to put all the skills you've learned to good use!
+Now it's your turn to customize your board. Write code to make it your own. You could make it into a three-key piano, display a spectacular light show, or anything else. The possibilities are endless! Just be sure to put all the skills you've learned to good use!
 
 <details markdown="block">
 <summary markdown="span">Remember to change `main.cpp` before continuing...

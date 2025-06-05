@@ -8,9 +8,9 @@ order: 3
 ---
 
 <details markdown="block">
-<summary markdown="span">Sounds On The Y-Badge
+<summary markdown="span">Sounds On The Y-Board
 </summary>
-Y-Badge v3 has a speaker and Y-Badge v2 has a buzzer. Both can be used to play sounds. The speaker is able to play a wider range of sounds, but the buzzer is simpler to use. Both are able to play sounds by turning an electromagnet on and off at high speeds. The magnetic field that is produced vibrates a small disk very quickly, creating the sound you hear. We can specify the frequency of the buzzer in order to play different notes, and how long that note is played for.
+Y-Board v3 has a speaker and Y-Board v2 has a buzzer. Both can be used to play sounds. The speaker is able to play a wider range of sounds, but the buzzer is simpler to use. Both are able to play sounds by turning an electromagnet on and off at high speeds. The magnetic field that is produced vibrates a small disk very quickly, creating the sound you hear. We can specify the frequency of the buzzer in order to play different notes, and how long that note is played for.
 </details>
 
 <p align="center"><img src="{% link media/buzzer.png %}" width="400" hspace="5%" vspace="2%"/>
@@ -37,7 +37,7 @@ The text string supports the following characters:
 | > after a note      | Plays the note one octave higher (multiple >’s can be used, eg: C>>)                                                                                                                                       |
 | < after a note      | Plays the note one octave lower (multiple <’s can be used, eg: C<<)                                                                                                                                        |
 | 1–2000 after a note | Determines the duration of the preceding note. For example, C16 specifies C played as a sixteenth note, B1 is B played as a whole note. If no duration is specified, the note is played as a quarter note. |
-| . after a note      | "Dots" increase the length by 50%. Each additional dot adds half as much as the previous dot, so that "A.." is 1.75 times the length of "A".
+| . after a note      | "Dots" increase the length by 50%. Each additional dot adds half as much as the previous dot, so that "A.." is 1.75 times the length of "A".                                                               |
 | O followed by a #   | Changes the octave. Valid range is 4-7. Default is 5.                                                                                                                                                      |
 | T followed by a #   | Changes the tempo. Valid range is 40-240. Default is 120.                                                                                                                                                  |
 | V followed by a #   | Changes the volume.  Valid range is 1-10. Default is 5.                                                                                                                                                    |

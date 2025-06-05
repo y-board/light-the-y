@@ -8,7 +8,7 @@ order: 1
 ---
 
 
-There are 20 LEDs on the Y-Badge circuit board.
+There are 20 LEDs on the Y-Board circuit board.
 
 * Each LED is labeled LED1 to LED20.
 * Each of these LEDs are RGB (red-green-blue) LEDs, meaning that they are actually three smaller red, green, and blue lights packaged together. For each LED, you can set the brightness of the red, green, and blue lights individually, making the LED appear to be any color you like.
@@ -20,7 +20,7 @@ There are 20 LEDs on the Y-Badge circuit board.
 
 ## Functions
 
-To make things happen on the Y-badge, you will need to call **functions** from your code. A function is a set of instructions that a computer can follow to perform a specific task. Functions are very useful because they allow programmers to write code that can be reused multiple times in a program.
+To make things happen on the Y-Board, you will need to call **functions** from your code. A function is a set of instructions that a computer can follow to perform a specific task. Functions are very useful because they allow programmers to write code that can be reused multiple times in a program.
 
 The function to set an LED color looks like this:
 ```cpp
