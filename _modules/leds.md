@@ -31,13 +31,13 @@ Yboard.set_led_color(<LED number>, <red>, <green>, <blue>);
 * The `red`, `green`, and `blue` values represent the brightness of that color and can be any value from 0 to 255.
 
 ## Examples
-To make L3 display bright red, you should use this statement in your code (don't forget to add the semicolon):
+To make LED 3 display bright red, you should use this statement in your code (don't forget to add the semicolon):
 
 ```cpp
 Yboard.set_led_color(3, 255, 0, 0);
 ```
 
-To make L15 display bright yellow, you should turn on the red and green pixels to max brightness:
+To make LED 15 display bright yellow, you should turn on the red and green pixels to max brightness:
 ```cpp
 Yboard.set_led_color(15, 255, 255, 0);
 ```
