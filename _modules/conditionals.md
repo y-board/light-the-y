@@ -11,7 +11,7 @@ order: 6
 <summary markdown="span">Buttons and Switches on the Y-Board
 </summary>
 
-There are 3 buttons and 2 switches we can use to control lights and sound on the Y-Board. There is also a switch for powering the board from the battery, and two buttons used to configure the board. All of them are labeled.
+There are 5 buttons, 4 switches, and 6 DIP switches we can use to control lights and sound on the Y-Board. There is also a switch for powering the board.
 </details>
 
 <p align="center"><img src="{% link media/buttons_and_switches.png %}" width="400" hspace="5%" vspace="2%"/></p>
@@ -47,7 +47,7 @@ if (Yboard.get_button(1)) {
 <summary markdown="span">More Details
 </summary>
 
-This block of code tells our board to turn on LED1 _if_ Button1 is pressed. The function `Yboard.get_button()` can be used as a **conditional** because it returns a `true` or `false` value.
+This block of code tells our board to turn on LED 1 _if_ button 1 is pressed. The function `Yboard.get_button()` can be used as a **conditional** because it returns a `true` or `false` value.
 
 Notice that in an **if statement** the **conditional** is placed in parenthesis and the commands to execute if it is true are placed in curly braces.
 </details>
@@ -92,12 +92,12 @@ while(true) {
 <summary markdown="span">Why The Infinite Loop?
 </summary>
 
-If you copy one of the above examples into your program, and then try to upload it to your board and press the buttons, LED1 won't turn on! The reason why is that the _if_ statement is run immediately when you upload your code and it is only run once. In order to get the board to _continuously check_ the state of Button1 and turn LED1 on if it is pressed, we need to wrap our `if` statement in a `while` loop.
+If you copy one of the above examples into your program, and then try to upload it to your board and press the buttons, LED 1 won't turn on! The reason why is that the _if_ statement is run immediately when you upload your code and it is only run once. In order to get the board to _continuously check_ the state of Button 1 and turn LED 1 on if it is pressed, we need to wrap our `if` statement in a `while` loop.
 
 Let's try combining more loops and if statements!
 </details>
 
-We could get the board to only check the state of our button for the first 10 seconds after we program it, and then light up LED15 after those 10 seconds, like this:
+We could get the board to only check the state of our button for the first 10 seconds after we program it, and then light up LED 15 after those 10 seconds, like this:
 
 ```cpp
 for(int count = 0; count < 100; count++) {
@@ -115,7 +115,7 @@ Yboard.set_led_color(15, 255, 0, 0);
 <summary markdown="span">More Details
 </summary>
 
-This code block only checks if Button1 is pressed in 0.1 second increments for 10 seconds. 0.1 seconds is faster than the average person can press the button, so it will work just fine, and once the `for` loop is done, you can continue writing your code as normal.
+This code block only checks if Button 1 is pressed in 0.1 second increments for 10 seconds. 0.1 seconds is faster than the average person can press the button, so it will work just fine, and once the `for` loop is done, you can continue writing your code as normal.
 </details>
 
 We can chain as many conditionals together as we want by using `else if` blocks:
@@ -161,11 +161,11 @@ while (true) {
 <summary markdown="span">More Details
 </summary>
 
-Woah! That looks a little scary! We have `if` statements inside of infinite loops, and more `while` loops inside of them. However, this code does exactly the same thing as our first example with a `while` loop above. If Switch2 on our board is ON, LED1 will turn on. And if Switch2 is OFF, LED2 will turn off.
+Woah! That looks a little scary! We have `if` statements inside of infinite loops, and more `while` loops inside of them. However, this code does exactly the same thing as our first example with a `while` loop above. If switch 2 on our board is ON, LED 1 will turn on. And if switch 2 is OFF, LED 2 will turn off.
 
 There are a few important things to notice in this example:
 
-* The second conditional checks if Switch2 is NOT on using `Yboard.get_switch(2) == false`
+* The second conditional checks if switch 2 is NOT on using `Yboard.get_switch(2) == false`
 * There is almost always more than one way to write code that works. Be creative, and try to find a solution that is simple, clear, and fast.
 </details>
 
@@ -180,9 +180,9 @@ conditionals_activity();
 ```
 </details>
 
-1. Reuse your code from the last module to make a single light circle around the board, but _only if Switch1 is turned on_.
+1. Reuse your code from the last module to make a single light circle around the board, but _only if switch 1 is turned on_.
 
-1. Make the light circle around in the opposite direction _if Switch2 is on_ but if both switches are on or off, do nothing.
+1. Make the light circle around in the opposite direction _if switch 2 is on_ but if both switches are on or off, do nothing.
 
 ## Challenges
 
@@ -198,7 +198,7 @@ conditionals_exploration();
 ```
 </details>
 
-**Challenge 1:** Make your board play a C note if Button1 is pressed, D note if Button2 is pressed, and E note if Button3 is pressed.
+**Challenge 1:** Make your board play a C note if button 1 is pressed, D note if button 2 is pressed, and E note if button 3 is pressed.
 
 <details markdown="block">
 <summary markdown="span">Hint
@@ -207,10 +207,10 @@ conditionals_exploration();
 You can use a `while` loop inside your `if` statements to play the note for as long as you are holding the button. Use the same condition for both your `if` statements and your nested `while` loop. Set the duration on `speaker_play_note` to something small like 20ms.
 </details>
 
-**Challenge 2:** Use `&&` and `||` to chain conditions together so that if any one button is pressed LED1 turns red, if any two are pressed, LED1 turns yellow, and if all three are pressed LED1 turns green. Can you make all of the lights do this instead of just LED1?
+**Challenge 2:** Use `&&` and `||` to chain conditions together so that if any one button is pressed LED 1 turns red, if any two are pressed, LED 1 turns yellow, and if all three are pressed LED 1 turns green. Can you make all of the lights do this instead of just LED 1?
 
 <details markdown="block">
-<summary markdown="span">More Details
+<summary markdown="span">Hint
 </summary>
 
 Use a `for` loop inside of your `if` statements.

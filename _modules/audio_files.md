@@ -1,10 +1,10 @@
 ---
 layout: lab
 toc: false
-title: "Module 9: Audio Files"
+title: "Module 10: Audio Files"
 short_title: Audio Files
 icon: fa-solid fa-file-audio
-order: 9
+order: 10
 ---
 
 <div class="alert alert-warning" role="alert">
