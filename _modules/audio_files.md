@@ -7,15 +7,10 @@ icon: fa-solid fa-file-audio
 order: 10
 ---
 
-<div class="alert alert-warning" role="alert">
-<i class="fa-duotone fa-triangle-exclamation"></i>
-This module only works with **Y-Board v3**.
-</div>
-
 <details markdown="block">
 <summary markdown="span">Sounds Files On The Y-Board
 </summary>
-The Y-Board v3 has a speaker and an SD card reader, allowing you to play audio files from the SD card.  These files are in the `.wav` format, which is a common format for audio files. The data in the file represents a sound wave, as shown below.  
+The Y-Board has a speaker and an SD card reader, allowing you to play audio files from the SD card.  These files are in the `.wav` format, which is a common format for audio files. The data in the file represents a sound wave, as shown below.  
 </details>
 
 <p align="center"><img src="{% link media/wave.png %}" width="1000" hspace="5%" vspace="2%"/>
@@ -46,21 +41,27 @@ Yboard.set_sound_file_volume(<volume>);
 
 ## Obtaining Sound Files
 
-You can download sound files from the internet. There are many websites that offer free sound files, such as [freesound.org](https://freesound.org/) (note: this website requires you to create an account to download the audio files). 
+You can download sound files from the internet. There are many websites that offer free sound files, such as [freesound.org](https://freesound.org/) (note: this website requires you to create an account to download the audio files). The board supports `.wav` and `.mp3` files.
 
-You will need to convert the sound files to the correct `.wav` format before you can use them on the Y-Board.  To convert a sound file to the `.wav` format:
+
+
+<details markdown="block">
+<summary markdown="span">If for some reason you need to convert a file, you can follow these steps.
+</summary>
+To convert a sound file to the `.wav` format:
 1. Open the *Audacity* program on the computer.
-1. Import the sound file into Audacity (Select *File*->*Open* and choose the sound file you downloaded).
-1. Export the sound file as a `.wav` file, by selecting *File*->*Export Audio*, and choosing a filename and folder to save the file.
-1. In the *Export Audio* dialog box, choose the following settings:
+2. Import the sound file into Audacity (Select *File*->*Open* and choose the sound file you downloaded).
+3. Export the sound file as a `.wav` file, by selecting *File*->*Export Audio*, and choosing a filename and folder to save the file.
+4. In the *Export Audio* dialog box, choose the following settings:
     * Format: WAV (Microsoft)
     * Channels: Mono
     * Sample Rate: 16000 Hz
     * Encoding: Signed 16-bit PCM
+5. Click *Export* 
+6. Copy the `.wav` file to the SD card.
 
-        <img src="{% link media/audacity_export.png %}" width="700 "/>
-1. Click *Export* 
-1. Copy the `.wav` file to the SD card.
+<img src="{% link media/audacity_export.png %}" width="700 "/>
+</details>
 
 ## Exploration
 1. Find a sound file at [freesound.org](https://freesound.org/), download it, and convert it to the correct format.  Play the sound file on the Y-Board.
@@ -69,11 +70,11 @@ You will need to convert the sound files to the correct `.wav` format before you
 
 ## Challenge
 
-1. Create a program that plays different sound effects on the Y-board depending on which button is pressed and how the switches are set.  
+**Challenge 1:** Create a program that plays different sound effects on the Y-board depending on which button is pressed and how the switches are set.  
 
-1. Can you create a program that plays a sound effect when you shake the Y-Board? 
+**Challenge 2:** Can you create a program that plays a sound effect when you shake the Y-Board? 
 
-1. Can you create a program that plays a song louder or quieter depending on the position of the knob?  (You can read about the knob in the [Create Your Board]({% link _modules/board.md %}) module). 
+**Challenge 3:** Can you create a program that plays a song louder or quieter depending on the position of the knob? 
 
 
 

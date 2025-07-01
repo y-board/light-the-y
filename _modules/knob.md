@@ -78,6 +78,6 @@ knob_exploration();
 ```
 </details>
 
-1. Light up the LEDs as you turn the knob. The LEDs should light up one by one as you turn the knob to the right, and turn off one by one as you turn the knob to the left.
+**Challenge 1:** Light up the LEDs as you turn the knob. The LEDs should light up one by one as you turn the knob to the right, and turn off one by one as you turn the knob to the left.
 
-2. If switch 1 is on, have the knob control the red component of the LED color, if switch 2 is on, have the knob control the green component of the LED color, and if switch 3 is on, have the knob control the blue component of the LED color.
+**Challenge 2:** If switch 1 is on, have the knob control the red component of the LED color, if switch 2 is on, have the knob control the green component of the LED color, and if switch 3 is on, have the knob control the blue component of the LED color.
