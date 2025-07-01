@@ -23,7 +23,7 @@ delay(1000);                         // Wait a bit
 Yboard.set_led_color(1, 0, 0, 0);    // Then run this
 ```
 
-This code turns on LED1 as red and LED10 as blue.  Then, it waits for 1 second before turning off LED1.
+This code turns on LED 1 as red and LED 10 as blue.  Then, it waits for 1 second before turning off LED1.
 
 ## Functions
 The function to cause a delay in your code is this:
@@ -92,7 +92,7 @@ delay_exploration();
 //   delay_challenge3();
 ```
 
-**Challenge 1:** Turn on L5 as red. Wait 2 seconds and then turn it off and immediately turn on L6 as red. Wait 2 seconds and move the red light to L7, then L8 and then L9.
+**Challenge 1:** Turn on LED 5 as red. Wait 2 seconds and then turn it off and immediately turn on LED 6 as red. Wait 2 seconds and move the red light to LED 7, then LED 8 and then LED 9.
 
 <img src="{% link media/delay_challenge_1.gif %}" width="400" hspace="5%" vspace="10px">
 
@@ -100,7 +100,7 @@ delay_exploration();
 
 <img src="{% link media/delay_challenge_2.gif %}" width="400" hspace="5%" vspace="10px">
 
-**Challenge 3:** Make L1 and L2 blink for 5 seconds but at different rates.  :1 should blink once per second and :2 should blink once every 2 seconds. Pick any color you would like for the LEDs.
+**Challenge 3:** Make LED 1 and LED 2 blink for 5 seconds but at different rates.  :1 should blink once per second and :2 should blink once every 2 seconds. Pick any color you would like for the LEDs.
 
 <img src="{% link media/delay_challenge_3.gif %}" width="400" hspace="5%" vspace="10px">
 

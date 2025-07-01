@@ -11,18 +11,28 @@ order: 7
 <summary markdown="span">The Knob on the Y-Board
 </summary>
 
-The knob is a device known as a **potentiometer**. We send a _voltage_ through it and measure how much of that voltage is allowed to pass through, based on the position of the knob. This allows us to return a value based on the current position of the knob using the `Yboard.get_knob()` function.
-
+The knob is a device known as a **rotary encoder**. It can be turned left or right, and it can also be pressed down like a button. Every time the knob is turned, it sends a pulse to the  board so that it can keep track of how far it has been turned. While the knob can be turned left and right as much as you want, there is a value for how far it has been turned, postive for right and negative for left.
 </details>
 
 <p align="center"><img src="{% link media/knob.png %}" width="400" hspace="5%" vspace="10px"></p>
 
 ## Functions
 
-We can use the value returned from the `Yboard.get_knob()` function to change the brightness of the LEDs on our board. This is the code:
+There are a few functions that we can use to interact with the knob. To get the knob position, you can call `Yboard.get_knob()`. If you want to reset the knob position to zero, you can call `Yboard.reset_knob()`. If you want to check if the knob is pressed down, you can call `Yboard.get_knob_button()`.
+
+## Examples
 
 ```cpp
 while(true) {
+    int knob_position = Yboard.get_knob();
+    // Make sure the knob value is not too low or too high.
+    if(knob_position < 0) {
+        knob_position = 0;
+    }
+    else if(knob_position > 100) {
+        knob_position = 100;
+    }
+
     int brightness = 255 * Yboard.get_knob() / 100;
     Yboard.set_led_brightness(brightness);
 
@@ -39,3 +49,35 @@ Notice also that we are monitoring the value of `Yboard.get_knob()` continuously
 
 There are other things you can try to control with `Yboard.get_knob()` (for example, you could use it to change the _color_ of LEDs rather than brightness) but brightness is the easiest. Feel free to experiment with it!
 </details>
+
+## Exploration
+
+<details markdown="block">
+<summary markdown="span">Remember to change `main.cpp` before continuing...
+</summary>
+> 📝 **_NOTE:_** You will need to go to `main.cpp` and change the comments to call the correct activity function:
+```c
+// conditionals_activity();
+knob_activity();
+```
+</details>
+
+1. Have the knob control the brightness of the LEDs. You can use the code example above to get started.
+
+## Challenges
+
+<details markdown="block">
+<summary markdown="span">Remember to comment/uncomment the correct function calls...
+</summary>
+_Remember to comment out the `knob_exploration();` call in the `knob_activity` function and uncomment the correct challenge function:_
+
+```c
+knob_exploration();
+// knob_challenge1();
+// knob_challenge2();
+```
+</details>
+
+1. Light up the LEDs as you turn the knob. The LEDs should light up one by one as you turn the knob to the right, and turn off one by one as you turn the knob to the left.
+
+2. If switch 1 is on, have the knob control the red component of the LED color, if switch 2 is on, have the knob control the green component of the LED color, and if switch 3 is on, have the knob control the blue component of the LED color.
