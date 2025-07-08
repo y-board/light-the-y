@@ -38,7 +38,7 @@ We've created a **code repository** that stores the demo applications. You will 
 1. Enter the url `https://github.com/y-board/demos.git` and hit Enter \
 <img src="{% link media/vscode_gui_clone_demos.png %}" width="800" vspace="10px">
 
-1. A window will open and ask you to select the destination folder. Make sure you click "Home" on the left hand side of the window, then click the green "Select as Repository Destination" button \
+1. A window will open and ask you to select the destination folder. Make sure you click "Home" on the left hand side of the window, then click the "Select as Repository Destination" button \
 <img src="{% link media/select_destination_folder.png %}" width="800" vspace="10px">
 
 1. When asked if you want to open the project, click "Open"
