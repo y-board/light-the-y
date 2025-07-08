@@ -51,5 +51,5 @@ Yboard.stop_recording();
 
 **Challenge 1:** Write a program that records audio when a button is pressed, and stops recording when the button is released. Play back the recorded audio after the button is released. Turn the LEDs red while recording and green while playing back the audio.
 
-**Challenge 1:** Write a program that uses one button to record audio and another button to play back the recorded audio. Update the display to show the status of the recording and playback (e.g., "Recording..." or "Playing...").
+**Challenge 2:** Write a program that uses one button to record audio and another button to play back the recorded audio. Update the display to show the status of the recording and playback (e.g., "Recording..." or "Playing...").
 ```
