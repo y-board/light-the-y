@@ -14,7 +14,7 @@ order: 9
 There is an accelerometer on the Y-Board. This sensor is used to measure the acceleration of the board in three dimensions: x, y, and z. The accelerometer can be used to detect the orientation of the board, detect movement, and more. The sensor returns values in milli-g's, which is a unit of acceleration. 1 g is equal to 9.8 m/s<sup>2</sup>.
 </details>
 
-<p align="center"><img src="{% link media/accelerometer.jpeg %}" width="400" hspace="5%" vspace="2%"/></p>
+<p align="center"><img src="{% link media/accelerometer.jpg %}" width="400" hspace="5%" vspace="2%"/></p>
 
 ## Functions
 

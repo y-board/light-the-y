@@ -14,7 +14,7 @@ order: 7
 The knob is a device known as a **rotary encoder**. It can be turned left or right, and it can also be pressed down like a button. Every time the knob is turned, it sends a pulse to the  board so that it can keep track of how far it has been turned. While the knob can be turned left and right as much as you want, there is a value for how far it has been turned, postive for right and negative for left.
 </details>
 
-<p align="center"><img src="{% link media/knob.png %}" width="400" hspace="5%" vspace="10px"></p>
+<p align="center"><img src="{% link media/knob.jpg %}" width="400" hspace="5%" vspace="10px"></p>
 
 ## Functions
 

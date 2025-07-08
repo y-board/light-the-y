@@ -14,7 +14,7 @@ There are 35 LEDs on the Y-Board circuit board.
 * Each of these LEDs are RGB (red-green-blue) LEDs, meaning that they are actually three smaller red, green, and blue lights packaged together. For each LED, you can set the brightness of the red, green, and blue lights individually, making the LED appear to be any color you like.
 
 <p align="middle">
-<img src="{% link media/led_zoomed.png %}" width="32%" hspace="5%" vspace="2%">
+<img src="{% link media/led_zoomed.jpg %}" width="32%" hspace="5%" vspace="2%">
 <img src="{% link media/rgb_led.png %}" width="32%" hspace="5%" vspace="2%">
 </p>
 
