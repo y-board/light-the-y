@@ -10,12 +10,12 @@ order: 3
 <details markdown="block">
 <summary markdown="span">Sounds On The Y-Board
 </summary>
-Y-Board v3 has a speaker and Y-Board v2 has a buzzer. Both can be used to play sounds. The speaker is able to play a wider range of sounds, but the buzzer is simpler to use. Both are able to play sounds by turning an electromagnet on and off at high speeds. The magnetic field that is produced vibrates a small disk very quickly, creating the sound you hear. We can specify the frequency of the buzzer in order to play different notes, and how long that note is played for.
+Y-Board has a speaker. The speaker is able to play a wider range of sounds by turning an electromagnet on and off at high speeds. The magnetic field that is produced vibrates a small disk very quickly, creating the sound you hear. We can specify different notes to play, and how long that note is played for. You are also able to play sound files like MP3 and WAV, which is covered in the <a href="{% link _modules/audio_files.md %}">Audio Files</a> module.
 </details>
 
 <p align="center"><img src="{% link media/buzzer.png %}" width="400" hspace="5%" vspace="2%"/>
 <br>
-Y-Board v2 Buzzer. Y-Board v3 has a speaker.
+The Y-Board speaker
 </p>
 
 ## Functions

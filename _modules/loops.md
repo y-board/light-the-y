@@ -17,7 +17,7 @@ As a programmer, it's important to write code that isn't repetitive; it makes yo
 ## Loops
 ### While Loops
 
-**While loops** are loops that run the code inside them _until a certain condition is met_. We can also use `while` loops to make our code run forever. For example, the following code will make LED1 on our board blink forever:
+**While loops** are loops that run the code inside them _until a certain condition is met_. We can also use `while` loops to make our code run forever. For example, the following code will make LED 1 on our board blink forever:
 
 ```cpp
 while (true) {
