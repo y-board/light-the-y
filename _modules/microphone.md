@@ -42,7 +42,7 @@ Yboard.stop_recording();
 
 ## Exploration
 
-1. Update the example above to record audio for 10 seconds instead of 5 seconds.
+1. Update the example above to record audio for 10 seconds instead of 5 seconds. How do you know when the recording has started and stopped? Update the LEDS to show you the status of the board.
 
 2. Update the example above to start recording when a button is pressed.
 
