@@ -23,17 +23,21 @@ There are a few functions that we can use to interact with the knob. To get the 
 ## Examples
 
 ```cpp
+Yboard.set_led_brightness(0);             // Set initial brightness to 0
+Yboard.set_all_leds_color(255, 255, 255); // Set all LEDs to white
+
 while(true) {
     int knob_position = Yboard.get_knob();
+    Serial.printf("Knob position: %d\n", knob_position);
+
     // Make sure the knob value is not too low or too high.
-    if(knob_position < 0) {
+    if (knob_position < 0) {
         knob_position = 0;
-    }
-    else if(knob_position > 100) {
+    } else if (knob_position > 100) {
         knob_position = 100;
     }
 
-    int brightness = 255 * Yboard.get_knob() / 100;
+    int brightness = 255 * knob_position / 100;
     Yboard.set_led_brightness(brightness);
 
     // Then use Yboard.set_led_color() as normal inside this loop.
