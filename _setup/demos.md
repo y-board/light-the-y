@@ -38,7 +38,7 @@ We've created a **code repository** that stores the demo applications. You will 
 1. Enter the url `https://github.com/y-board/demos.git` and hit Enter \
 <img src="{% link media/vscode_gui_clone_demos.png %}" width="800" vspace="10px">
 
-1. A window will open and ask you to select the destination folder. Make sure you click "Home" on the left hand side of the window, then click the green "Select as Repository Destination" button \
+1. A window will open and ask you to select the destination folder. Make sure you click "Home" on the left hand side of the window, then click the "Select as Repository Destination" button \
 <img src="{% link media/select_destination_folder.png %}" width="800" vspace="10px">
 
 1. When asked if you want to open the project, click "Open"
@@ -50,7 +50,7 @@ We've created a **code repository** that stores the demo applications. You will 
 Once you have the demos repository open in VS Code, you can view the structure of the project and looks at the demos available.  Once you have decided on a demo to run, you will need to open the demo folder in its own VS Code window.  Follow the steps below to do this:
 
 1. Select the file *Explorer* button on the left toolbar
-1. Expand the `y-board-v2` or `y-board-v3` folder to view the demos available for your board.
+1. Expand the `y-board-v2`, `y-board-v3`, or `y-board-v4` folder to view the demos available for your board.
 1. Note the different folders inside your board folder.  Each folder contains a separate demo application.
 <img src="{% link media/demos_file_browser.png %}" width="800" vspace="10px">
 1. Once you have decided on a demo to run, click *File*->*Open Folder* and select the folder for the demo you want to run.

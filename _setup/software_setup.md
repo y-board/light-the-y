@@ -7,6 +7,11 @@ number: 1
 icon: fa-solid fa-computer
 ---
 
+This page will help you get the software you need installed on your computer, and will help you get the starting code for your Y-Board.  Follow the steps below to get started.  If you are using the BYU lab computers, step 1 is already done, and step 2 might already be done as well.
+1. [Install Visual Studio Code](#install-vs-code).  This is the program we will use to write code for the Y-Board.
+1. [Install PlatformIO Extension in VS Code](#install-platformio-extension-in-vs-code). This will allow us to program our code onto the Y-Board.
+1. [Clone GitHub Repository](#clone-github-repository). This will give you the starting code for your Y-Board.
+
 ## Install VS Code
 
 ### Install VS Code on Linux
