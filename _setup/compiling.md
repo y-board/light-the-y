@@ -31,6 +31,9 @@ If your code compiles correctly and uploads to the board, you should see somethi
 
 <p align="center"><img src="{% link media/successful_upload.png %}" width="900" vspace="20px"></p>
 
+The board should be programmed with the test program, that will show the status of the buttons, switches and knob on the screen.  If you press and hold the center button, you can record a short audio clip, and it will it back when you release the button.  It should look like this:
+
+<p align="center"><img src="{% link media/demo_program.png %}" width="700" vspace="20px"></p>
 
 
 ## Compile Errors
