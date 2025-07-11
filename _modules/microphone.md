@@ -12,7 +12,7 @@ order: 11
 The Y-Board has a microphone on the top left corner. This microphone can be used to record audio. The audio is recorded in the `.wav` format, which is a common format for audio files. The data in the file represents a sound wave, similar to the audio files you can play on the Y-Board.
 </details>
 
-<p align="center"><img src="{% link media/wave.png %}" width="1000" hspace="5%" vspace="2%"/></p>
+<p align="center"><img src="{% link media/mic.jpg %}" width="300" hspace="5%" vspace="2%"/></p>
 
 ## Functions
 

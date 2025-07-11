@@ -13,7 +13,7 @@ order: 3
 Y-Board has a speaker. The speaker is able to play a wider range of sounds by turning an electromagnet on and off at high speeds. The magnetic field that is produced vibrates a small disk very quickly, creating the sound you hear. We can specify different notes to play, and how long that note is played for. You are also able to play sound files like MP3 and WAV, which is covered in the <a href="{% link _modules/audio_files.md %}">Audio Files</a> module.
 </details>
 
-<p align="center"><img src="{% link media/buzzer.png %}" width="400" hspace="5%" vspace="2%"/>
+<p align="center"><img src="{% link media/speaker.jpg %}" width="400" hspace="5%" vspace="2%"/>
 <br>
 The Y-Board speaker
 </p>

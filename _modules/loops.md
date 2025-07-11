@@ -101,12 +101,14 @@ loop_activity();
 </details>
 
 1. Use a loop to turn on all the LEDs white. \
-<img src="{% link media/white_lights.png %}" width="400" hspace="5%" vspace="10px">
+<img src="{% link media/white_lights.jpg %}" width="400" hspace="5%" vspace="10px">
 
 1. Make all the LEDs blink. On for 500ms then off for 500ms, repeated forever.
     * Hint: Try using `for` loops _inside_ of a `while` loop.
+<video autoplay loop muted playsinline width="400">
+    <source src="{% link media/white_blinking_lights.webm %}" type="video/webm">
+</video>
 
-    <img src="{% link media/white_blinking_lights.gif %}" width="400" hspace="5%" vspace="10px">
 
 ## Challenges:
 
@@ -128,7 +130,11 @@ loop_exploration();
 **Challenge 2:** Play a song of your choice in the background, and then create a loop that will blink an LED until the song is done playing.
 
 **Challenge 3:** Make a single LED circle around the board forever, you choose the speed. \
-<img src="{% link media/chasing_cw_lights.gif %}" width="400" hspace="5%" vspace="10px">
+<video autoplay loop muted playsinline width="400">
+    <source src="{% link media/chasing_cw_lights.webm %}" type="video/webm">
+</video>
 
 **Challenge 4:** Change the last program to make the LED circle around the other direction. \
-<img src="{% link media/chasing_ccw_lights.gif %}" width="400" hspace="5%" vspace="10px">
+<video autoplay loop muted playsinline width="400">
+    <source src="{% link media/chasing_ccw_lights.webm %}" type="video/webm">
+</video>

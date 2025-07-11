@@ -14,7 +14,7 @@ order: 6
 There are 5 buttons, 4 switches, and 6 DIP switches we can use to control lights and sound on the Y-Board. There is also a switch for powering the board.
 </details>
 
-<p align="center"><img src="{% link media/buttons_and_switches.png %}" width="400" hspace="5%" vspace="2%"/></p>
+<p align="center"><img src="{% link media/buttons_and_switches.jpg %}" width="400" hspace="5%" vspace="2%"/></p>
 
 ## Functions
 

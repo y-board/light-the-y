@@ -13,7 +13,7 @@ order: 8
 Y-Board has a single color display that is 128 pixels wide and 64 pixels long. You can use it to display text, shapes, and other graphics. The display is controlled by the `Yboard` object, which provides functions to draw on the display.
 </details>
 
-<p align="center"><img src="{% link media/wave.png %}" width="1000" hspace="5%" vspace="2%"/></p>
+<p align="center"><img src="{% link media/display.jpg %}" width="350" hspace="5%" vspace="2%"/></p>
 
 ## Functions
 
