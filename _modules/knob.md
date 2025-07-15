@@ -28,7 +28,6 @@ Yboard.set_all_leds_color(255, 255, 255); // Set all LEDs to white
 
 while(true) {
     int knob_position = Yboard.get_knob();
-    Serial.printf("Knob position: %d\n", knob_position);
 
     // Make sure the knob value is not too low or too high.
     if (knob_position < 0) {
@@ -39,6 +38,8 @@ while(true) {
 
     int brightness = 255 * knob_position / 100;
     Yboard.set_led_brightness(brightness);
+
+    delay(50);
 
     // Then use Yboard.set_led_color() as normal inside this loop.
 }
