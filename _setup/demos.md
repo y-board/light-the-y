@@ -7,13 +7,9 @@ number: 3
 icon: fa-solid fa-gamepad-modern
 ---
 
-We have created several demo applications that you can use to explore the capabilities of the Y-Board. Each demo is a complete project that you can load onto the Y-Board and run. The demos are designed to be self-contained, so you can run them without needing to write any code.
+We have created several demo applications that you can use to explore the capabilities of the Y-Board. Each demo is a complete project that you can load onto the Y-Board and run. The demos are designed to be self-contained, so you can run them without needing to write any code. You can download the demos and run them on your Y-Board from a web browser using the following link: <https://y-board.github.io/demo-flasher>.
 
-
-The demos are stored on Github at the following link: <https://github.com/y-board/demos>
-
-To run these on your computer, you will need to get these files on your local computer.
-
+If you want to take a look at the source code of the demos, build them on your own computer, or modify them, the demos are stored on Github at the following link: <https://github.com/y-board/demos>. To run these on your computer, you will need to get these files on your local computer using the steps below.
 
 ## Clone GitHub Repository
 
