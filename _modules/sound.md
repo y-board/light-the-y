@@ -101,8 +101,8 @@ sound_exploration();
 ```
 </details>
 
-**Challenge 1:** Experiment with the durations of the above song to add some rythm or adjust the speed of the song. How long the notes are played in comparison to each other can change how the song sounds (note how some notes are played twice as long as others above). Can you make the song twice as fast?
+**Challenge 1:** Experiment with the durations of the above song to add some rhythm or adjust the speed of the song. How long the notes are played in comparison to each other can change how the song sounds (note how some notes are played twice as long as others above). Can you make the song twice as fast?
 
 **Challenge 2:** Finish the rest of "Twinkle Twinkle Little Star" by adding more to the code.
 
-**Challenge 3:** Look up the notes to a song you like and try to play it on the Y-Board. You can use the `play_notes` function to play the song in the background while you do other things.
+**Challenge 3:** Look up the notes to a song you like and try to play it on the Y-Board. You can use the `play_notes_background` function to play the song in the background while you do other things.
