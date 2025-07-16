@@ -50,7 +50,7 @@ The following function will return `true` if the sounds is still playing, and `f
 ```cpp
 Yboard.is_audio_playing();
 ```
-You may need to learn about [loops]({% link _modules/loops.md %}) and [conditional statements]({% link _modules/conditionals.md %}) before you can use this function in your code.
+You may need to learn about [loops]({% link _modules/loops.md %}) and [conditional statements]({% link _modules/buttons_switches.md %}) before you can use this function in your code.
 
 
 ## Examples
@@ -68,8 +68,10 @@ Yboard.play_notes("O4 T180 CCGGAAG2 FFEEDDC2");
 </summary>
 > 📝 **_NOTE:_** You will need to go to `main.cpp` and change the comments to call the correct activity function:
 ```c
+// led_activity();
 // delay_activity();
 sound_activity();
+// variables_activity();
 ```
 </details>
 

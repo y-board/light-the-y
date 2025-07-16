@@ -42,8 +42,21 @@ To make LED 15 display bright yellow, you should turn on the red and green pixel
 Yboard.set_led_color(15, 255, 255, 0);
 ```
 
-Add the example code to your own to test it out. Don't forget to click the upload button in the top right corner dropdown to program your board with new code! 
+Add the example code to your own to test it out.
+
+_**Important**: Each time you start a new activity, you should go back to `main.cpp`, to comment out the old activity function call and uncomment the activity function that you want to call.  Before starting this activity, make sure the code in your `main.cpp` looks like this:_
+
+```c
+// test_program();
+led_activity();
+// delay_activity();
+// sound_activity();
+```
+
+Once you have done that, you're ready to add your code to the `led_activity()` function.   Don't forget to click the upload button (bottom bar, or top right corner dropdown) to program your board with new code! 
 <p align="middle"><img src="{% link media/upload_examples.png %}" width="800" vspace="10px"></p>
+
+
 
 ## Exploration
 
@@ -58,14 +71,7 @@ Add the example code to your own to test it out. Don't forget to click the uploa
 
 ## Challenges
 
-_Remember to comment out the `led_exploration();` call in the `led_activity` function and uncomment the correct challenge function:_
 
-```c
-// led_exploration();
-led_challenge1();
-// led_challenge2();
-// led_challenge3();
-```
 
 **Challenge 1:** Turn on LEDs 2, 30, and 23. Make them 3 different colors.
 

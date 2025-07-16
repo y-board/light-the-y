@@ -64,6 +64,13 @@ To convert a sound file to the `.wav` format:
 </details>
 
 ## Exploration
+
+<details markdown="block">
+<summary markdown="span">Remember to change `main.cpp` before continuing...
+</summary>
+> 📝 **_NOTE:_** You will need to go to `main.cpp` and change the comments to call the correct activity function.
+</details>
+
 1. Find a sound file at [freesound.org](https://freesound.org/), download it, and convert it to the correct format.  Play the sound file on the Y-Board.
 
 1. Update your program to play the sound file when a button is pressed, but only if switch 1 is up.  If switch one is slid down, stop playing the sound file.

@@ -62,8 +62,10 @@ There are other things you can try to control with `Yboard.get_knob()` (for exam
 </summary>
 > 📝 **_NOTE:_** You will need to go to `main.cpp` and change the comments to call the correct activity function:
 ```c
-// conditionals_activity();
+// loop_activity();
+// buttons_switches_activity();
 knob_activity();
+// display_activity();
 ```
 </details>
 

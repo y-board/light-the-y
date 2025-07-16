@@ -95,8 +95,10 @@ Yboard.set_led_color(1, 255, 0, 0);
 </summary>
 > 📝 **_NOTE:_** You will need to go to `main.cpp` and change the comments to call the correct activity function:
 ```c
+// sound_activity();
 // variables_activity();
 loop_activity();
+// buttons_switches_activity();
 ```
 </details>
 

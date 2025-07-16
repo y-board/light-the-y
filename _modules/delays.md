@@ -67,10 +67,13 @@ Yboard.set_led_color(15, 0, 0, 0);
 
 ## Before You Start
 
-Each time we start a new activity, you will need to go to the `main.cpp` file and change which activity function is called when the program starts up. Before proceeding, go to `main.cpp` and comment out the `led_activity()` function call, and uncomment the `delay_activity()` function call:
+_Remember, each time you start a new activity, you should go back to `main.cpp`, to comment out the old activity function call and uncomment the activity function that you want to call.  Before starting this activity, make sure the code in your **main.cpp** looks like this:_
+
 ```c
+// test_program();
 // led_activity();
 delay_activity();
+// sound_activity();
 ```
 
 ## Exploration

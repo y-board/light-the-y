@@ -59,6 +59,17 @@ Yboard.display.display();
 
 ## Exploration
 
+<details markdown="block">
+<summary markdown="span">Remember to change `main.cpp` before continuing...
+</summary>
+> 📝 **_NOTE:_** You will need to go to `main.cpp` and change the comments to call the correct activity function:
+```c
+// buttons_switches_activity();
+// knob_activity();
+display_activity();
+```
+</details>
+
 1. Write a program that displays your name on the display, centered vertically and horizontally.
 2. When a button is pressed, display a message on the display that says "Button Pressed!" and then clear the display after 2 seconds.
 

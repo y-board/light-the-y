@@ -96,9 +96,10 @@ variables_activity();
 _Remember to comment out the `variables_exploration();` call in the `variables_activity` function and uncomment the correct challenge function:_
 
 ```c
-variables_exploration();
-// variables_challenge1();
-// variables_challenge2();
+// delay_activity();
+// sound_activity();
+variables_activity();
+// loop_activity();
 ```
 </details>
 

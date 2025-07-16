@@ -41,6 +41,11 @@ Yboard.stop_recording();
 
 
 ## Exploration
+<details markdown="block">
+<summary markdown="span">Remember to change `main.cpp` before continuing...
+</summary>
+> 📝 **_NOTE:_** You will need to go to `main.cpp` and change the comments to call the correct activity function.
+</details>
 
 1. Update the example above to record audio for 10 seconds instead of 5 seconds. How do you know when the recording has started and stopped? Update the LEDS to show you the status of the board.
 

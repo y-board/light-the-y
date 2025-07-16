@@ -175,8 +175,10 @@ There are a few important things to notice in this example:
 </summary>
 > 📝 **_NOTE:_** You will need to go to `main.cpp` and change the comments to call the correct activity function:
 ```c
+// variables_activity();
 // loop_activity();
-conditionals_activity();
+buttons_switches_activity();
+// knob_activity();
 ```
 </details>
 
