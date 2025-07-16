@@ -86,14 +86,6 @@ delay_activity();
 
 ## Challenges
 
-_As you work on the challenges below, we don't want you to erase your existing code.  Instead, each challenge will be coded in their own function.  You will need to comment out the `delay_exploration();` call in the `delay_activity` function and uncomment the correct challenge function:_
-
-```c
-delay_exploration();
-//   delay_challenge1();
-//   delay_challenge2();
-//   delay_challenge3();
-```
 
 **Challenge 1:** Turn on LED 10 as red. Wait 2 seconds and then turn it off and immediately turn on LED 11 as red. Wait 2 seconds and move the red light to LED 12, then LED 13, then LED 14 and then LED 15.
 
